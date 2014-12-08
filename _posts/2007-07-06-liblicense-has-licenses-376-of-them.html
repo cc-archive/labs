@@ -1,0 +1,26 @@
+---
+layout: post
+title: Liblicense has licenses! 376 of them...
+date: 2007-07-06 05:37:27.000000000 -04:00
+categories:
+- license engine
+- rdf
+- summer of code
+- system integrated licensing
+tags: []
+status: publish
+type: post
+published: true
+meta: {}
+author:
+  login: jakin
+  email: ''
+  display_name: jakin
+  first_name: ''
+  last_name: ''
+---
+<p>Prepping for the 0.1 release, I've generated RDF descriptions of all CC licenses in all available jurisdictions, as well as the GPL, LGPL, and Public Domain.</p>
+<p>Available here:<br />
+<a href="https://cctools.svn.sourceforge.net/svnroot/cctools/liblicense/trunk/licenses/">https://cctools.svn.sourceforge.net/svnroot/cctools/liblicense/trunk/licenses/</a></p>
+<p>Each license, if applicable, has all the attributes laid out <a href="http://wiki.creativecommons.org/Liblicense#Attributes">on the wiki</a>, including localization.  One problem, however, is getting localized descriptions of the licenses.  That isn't available at <a href="https://cctools.svn.sourceforge.net/svnroot/cctools/i18n/trunk/i18n/">https://cctools.svn.sourceforge.net/svnroot/cctools/i18n/trunk/i18n/</a></p>
+<p>Licenses were generated with <a href="https://cctools.svn.sourceforge.net/svnroot/cctools/liblicense/trunk/gen_licenses.py">this python script</a>, which reads the relevant information from creativecommons.org and cctools svn.</p>

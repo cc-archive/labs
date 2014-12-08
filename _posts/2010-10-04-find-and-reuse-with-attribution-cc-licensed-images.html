@@ -1,0 +1,32 @@
+---
+layout: post
+title: 'Find and Reuse Images: Painless Attribution'
+date: 2010-10-04 23:28:50.000000000 -04:00
+categories:
+- tools
+tags:
+- attribution
+- cc rel
+- flickr
+- search
+- wikimedia commons
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+  _wp_old_slug: ''
+author:
+  login: nathan
+  email: ''
+  display_name: nathan
+  first_name: ''
+  last_name: ''
+---
+<p>Finding CC licensed images and using them properly is something many people seem to struggle with: finding them can be straight-forward, but many sites don't provide copy and paste reuse code that complies with the license. <a href="http://www.nottingham.ac.uk/xpert/">Xpert</a>, a project of University of Nottingham, has launched an <a href="http://www.nottingham.ac.uk/xpert/attribution/">image search tool</a> that helps with this. Xpert Attribution tool searches Wikimedia Commons and Flickr and provides an easy way to get the image with the attribution information overlaid, or (even better, in my opinion) with RDFa suitable for embedding. I've combined the two below (downloading the image with attribution, and adding the structured-data enriched embed code below it).</p>
+<div style="border:1px solid #444; padding: 0.5em; width:450px;">
+<img src="img/flower.jpg" alt="" title="flower" width="420" height="325" class="aligncenter size-full wp-image-1130" />
+<p xmlns:cc="http://creativecommons.org/ns#" about="http://commons.wikimedia.org/wiki/File:-_Schlumbergera_trunctata_-.jpg"> Taken from http://upload.wikimedia.org/wikipedia/commons/e/eb/-_Schlumbergera_trunctata_-.jpg on 2010-10-05<br /> Original URL - <a target="new" href="http://commons.wikimedia.org/wiki/File:-_Schlumbergera_trunctata_-.jpg" rel="cc:attributionURL">http://commons.wikimedia.org/wiki/File:-_Schlumbergera_trunctata_-.jpg</a> created on February 2007<br /><span property="cc:attributionName">Nino Barbieri</span> <a href="http://creativecommons.org/licenses/by-sa/2.5/" rel="license">CC BY-SA 2.5</a></p>
+</div>
+<p>The inclusion of structured data with the HTML means you can click the license link above and the license deed will display the attribution information, as well as our generated attribution HTML.</p>
+<p><a href="http://labs.creativecommons.org/files/2010/10/Screenshot-Creative-Commons-—-Attribution-ShareAlike-2.5-Generic-Google-Chrome.png"><img src="img/Screenshot-Creative-Commons-&#8212;-Attribution-ShareAlike-2.5-Generic-Google-Chrome.png" alt="" title="Attribution information on the deed" width="781" height="164" class="aligncenter size-full wp-image-1137" /></a></p>

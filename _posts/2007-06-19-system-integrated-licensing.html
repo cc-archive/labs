@@ -1,0 +1,52 @@
+---
+layout: post
+title: System Integrated Licensing
+date: 2007-06-19 20:24:54.000000000 -04:00
+categories:
+- development
+- Interns 2007
+- license
+- one laptop per child
+- software
+- system integrated licensing
+tags: []
+status: publish
+type: post
+published: true
+meta: {}
+author:
+  login: tannewt
+  email: ''
+  display_name: tannewt
+  first_name: ''
+  last_name: ''
+---
+<p>I've been asked, as a tech intern here at Creative Commons, to create a way of locally tracking file licenses on a system.  A while back Jon <a href="http://wiki.creativecommons.org/Licenses_in_Operating_Systems_Specification">wrote down his ideas</a> about system-wide license tracking  on the Creative Commons wiki.  The purpose of this system would be to provide an interface for developers to access the available licenses on a system.  Additionally,  like the existing online license chooser, this library, called libLicense, will feature a way to choose a license through toggling certain flags available for a family of licenses.  Naturally, the first family available will be the Creative Commons licenses. The larger goal for the summer is to utilize this library in a few initial systems.  Currently, I'm looking at integration into <a href="http://www.gnome.org">Gnome</a> and Sugar (from the <a href="http://www.laptop.org">One Laptop Per Child</a> project).  This further work will occur after libLicense is working.</p>
+<p><strong> Data</strong></p>
+<p>To run libLicense the data of all the licenses will need to be stored in some sort of fashion. My initial thought is this:</p>
+<ul>
+<li>All data will be stored in a directory.  On Linux this directory would be /usr/share/licenses .  (This is borrowed from Jon's thoughts.)</li>
+<li>Families of licenses will be stored in a subdirectory of the licenses directory.  For example, the Creative Commons licenses would be stored within creative_commons.</li>
+<li>Within these family directories each specific license will be stored in a file with the naming scheme &lt;bitcode&gt;-&lt;short name&gt;-&lt;jurisdiction&gt;-&lt;locale&gt;.license .  These files will store the license uri, name, status (active or retired), description and legal text.  How this will be stored is up in the air.  My intial thoughts include  separating each attribute on a line or having a format similar to .desktop files.</li>
+<li>In addition to storing license data, some family information must be stored, namely the family bit flags.  In the case of the Creative Commons licenses, the bit flags would be Attribution, Share-Alike, Non-Commercial and No Derivatives.  They would combine to create the bitcode present in the license filename. These bit flags would be the heart of the license chooser logic.  If the combination does not exist, the flags are incompatible.</li>
+</ul>
+<p><strong>API</strong><br />
+The library would potentially have these functions:</p>
+<p><strong>get_jurisdiction(uri) </strong>- returns the jurisdiction for the given license.<br />
+<strong>get_jurisdictions(short or bitcode) </strong>- returns the available jurisdiction for the given short name or bitcode.<br />
+<strong>get_locale(uri)</strong> - returns the locale for the given license.<br />
+<strong>get_locales(jurisdiction, short or bitcode)</strong> - returns the available locales for the given jurisdiction and short name or bitcode.<br />
+<strong> get_name(uri)</strong> - returns the name of the license.<br />
+<strong> get_version(uri)</strong> - returns the version of the license.<br />
+<strong> get_versions(short, jurisdiction) </strong>- returns the available versions for the given short name or bitcode and jurisdiction.<br />
+<strong> get_short(uri) </strong>- returns the short name for the given uri.<br />
+<strong> has_flag(attribute,uri)</strong> - returns if the flag is set for the given uri.<br />
+<strong>family_flags(family) </strong>- returns the flags available for a given family.<br />
+<strong>family(uri)</strong> - returns the family the given uri belongs to.<br />
+<strong> get_notification(uri[,url]) </strong>- returns the notification string for the given url with an option to provide a verification url.<br />
+<strong> verify_uri(uri) </strong>- returns whether or not the given uri is recognized by the system.<br />
+<strong> get_license(family,flags, jurisdiction,locale)</strong> - returns the uri which satisfies the given attributes.<br />
+<strong> get_all_licenses() </strong>- returns all general licenses available.<br />
+<strong> get_general_licenses(family) </strong>- returns all general licenses in a family.<br />
+<strong> get_families()</strong> - returns a list of available families.</p>
+<p>Did I miss something?  Does something not make sense?  Please post a comment.</p>

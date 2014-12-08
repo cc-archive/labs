@@ -1,0 +1,33 @@
+---
+layout: post
+title: More helpful 404 pages
+date: 2011-01-28 23:36:44.000000000 -05:00
+categories:
+- development
+- license engine
+tags:
+- cc.engine
+- licenses
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '14'
+  _wp_old_slug: ''
+author:
+  login: cwebber
+  email: ''
+  display_name: cwebber
+  first_name: ''
+  last_name: ''
+---
+<p>This is one of those little features that tends to go into the license engine that runs on the creativecommons.org website which are helpful and small, but not too noticeable if not pointed out.  I usually do a pretty bad job of making note of these when they go out, but this time, I'm doing better!</p>
+<p>Even most people who don't know anything about HTTP know that a 404 status code on the web somehow means that the thing you were looking for isn't actually there.  How frustrating!  But if it's not there, maybe we have enough information to help you find what you actually wanted.</p>
+<p>That's the idea between the work that went into <a href="http://code.creativecommons.org/issues/issue255">Issue 255: "Smart" 404 pages</a>.  Maybe we didn't find a license (or public domain tool) under the URL you put in, but we might be able to help you find a license that <i>does</i> exist.  For example, licenses listed under /licenses/ on creativecommons.org are parsed out like <b>/licenses/{code}/{version}/</b> or <b>/licenses/{code}/{version}/{jurisdiction}/</b>.  Knowing that, we can give a list of licenses for what licenses someone might have meant when they:</p>
+<ul>
+<li><a href="http://creativecommons.org/licenses/by/">left out the version</a></li>
+<li><a href="http://creativecommons.org/licenses/by/8888.88/">put in a bogus version</a></li>
+<li><a href="http://creativecommons.org/licenses/by/8888.88/es/">put in a bogus version, but with a real jurisdiction</a></li>
+<li><a href="http://creativecommons.org/licenses/by/3.0/lolcats/">put in a real version, but a bogus jurisdiction</a></li>
+</ul>
+<p>The pages mostly look like a <a href="http://creativecommons.org/not-a-real-url/">normal creativecommons.org 404 page</a>, but with just a bit more contextually helpful information (the "were you looking for" section).  And, of course, they still return a 404 status code!</p>

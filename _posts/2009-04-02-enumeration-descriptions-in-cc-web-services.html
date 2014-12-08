@@ -1,0 +1,28 @@
+---
+layout: post
+title: Enumeration descriptions in CC Web Services
+date: 2009-04-02 21:14:05.000000000 -04:00
+categories: []
+tags:
+- api
+- rst
+- sphinx
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '2'
+author:
+  login: nathan
+  email: ''
+  display_name: nathan
+  first_name: ''
+  last_name: ''
+---
+<p>We had a request come in from a developer using the <a href="http://api.creativecommons.org/">CC web services</a> for better contextual information about the choices users make when selecting a license.  In particular, they wanted to present users with information about what <em>"ShareAlike"</em> means.  As I dug into it I realized that the existing <code>&lt;description&gt;</code> we provided for the questions themselves are... well, bad.  I can only imagine how hard it'd be to craft a user interface using <strong>those</strong> as help text.</p>
+<p>I just pushed an update to the <a href="https://api.creativecommons.org/docs/readme_dev.html">development version</a> of the API that adds <code>&lt;description&gt;</code> elements to the individual <code>&lt;enum&gt;</code> elements.  These map to the help pop-ups we use on the main license chooser.  If all seems well we'll push this down to <a href="https://api.creativecommons.org/docs/readme_15.html">1.5</a> as well.</p>
+<p>I should also note that this update includes two new, very nice (for me) improvements:</p>
+<ul>
+<li>I finally landed Frank's test suite work from last summer.  We had intended to replace the whole API with a leaner version, but that's still in the works.  So in the interim, we have a test suite and I'm not afraid of change anymore (on this project at least).</li>
+<li>I've updated the documentation to use <a href="http://sphinx.pocoo.org/">Sphinx</a>.  <a href="http://en.wikipedia.org/wiki/ReStructuredText">ReStructured Text</a> is the secret weapon of many a Python project; Sphinx makes it even more powerful, providing a set of directives and tools to generate something that looks, well, at least decent.</li>
+</ul>

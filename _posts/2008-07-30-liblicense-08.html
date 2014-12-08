@@ -1,0 +1,31 @@
+---
+layout: post
+title: liblicense 0.8 (important) fixes RDF predicate error
+date: 2008-07-30 20:44:42.000000000 -04:00
+categories:
+- Debian
+- liblicense
+- metadata
+- rdf
+- releases
+- software
+- standards
+- xmp
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '12'
+author:
+  login: asheesh
+  email: ''
+  display_name: asheesh
+  first_name: ''
+  last_name: ''
+---
+<p>Brown paper bag release: liblicense claims that the RDF predicate for a file's license is http://creativecommons.org/ns#License rather than http://creativecommons.org/ns#license.  Only the latter is correct.</p>
+<p>Any code compiled with liblicense between 0.6 and 0.7.1 (inclusive) contains this mistake.</p>
+<p>This time I have audited the library for other insanities like the one fixed here, and there are none.  Great thanks to Nathan Yergler for spotting this.  I took this chance to change ll_write() and ll_read() to *NOT* take NULL as a valid predicate; this makes the implementation simpler (and more correct).</p>
+<p>Sadly, I have bumped the API and ABI numbers accordingly.  It's available in SourceForge at http://sf.net/projects/cctools, and will be uploaded to Debian and Fedora shortly (and will follow from Debian to Ubuntu).</p>
+<p>I'm going to head to Argentina for a vacation and Debconf shortly, so there'll be no activity from on liblicense for a few weeks. I would <strong>love</strong> help with liblicense in the form of further unit tests. Let's squash those bugs by just demonstrating all the cases the license should work in.</p>

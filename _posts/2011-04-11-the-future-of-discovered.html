@@ -1,0 +1,27 @@
+---
+layout: post
+title: The Future of DiscoverEd
+date: 2011-04-11 20:42:06.000000000 -04:00
+categories:
+- Describing OER
+- DiscoverEd
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '3'
+author:
+  login: nathan
+  email: ''
+  display_name: nathan
+  first_name: ''
+  last_name: ''
+---
+<p>The <a href="http://wiki.creativecommons.org/DiscoverEd">DiscoverEd</a> project was started in 2008 to explore how structured data could be applied to improving search for open educational resources (OER). Since then we have seen the ability of a working prototype to engage people’s imaginations, and have been fortunate to have our work supported by the Hewlett Foundation, Open Society Foundation, and the Bill &amp; Melinda Gates Foundation, through their support of AgShare. Today, in an effort to focus our resources and expertise on areas that will have maximum impact, we’re discontinuing development of the project.</p>
+<p>DiscoverEd was initially conceived as a Google Custom Search Engine (CSE), which would utilize labels provided by curators. When we ran into issues with applying labels at the resource level, instead of to broad URL patterns, we began to look for alternate implementations. Creative Commons chose to build on <a href="http://nutch.apache.org/">Apache Nutch</a>, an open source search engine. We previously built on Nutch when developing the prototype CC Search in 2003-2004, which was later retired when Yahoo! and later Google added CC support to their search products.</p>
+<p>Building on Apache Nutch, we added the ability to index and search on structured data encountered in web pages. This structured data, usually in the form of RDFa, could describe the license, subject area, education level, or language of a resource. In developing DiscoverEd, we recognized that structured data could be useful more broadly than just for OER, so while these are the fields we focused on as a starting point, DiscoverEd indexes all structured data it encounters, making it very flexible for emergent and exploratory vocabularies.</p>
+<p>DiscoverEd succeeded in demonstrating how structured data and full text indexing can work together to provide a richer, more flexible search interface. By allowing users to perform an initial search using a familiar keyword search, and then refine by additional fields, users are able to iteratively refine their search. (See <a href="http://openaccess.uoc.edu/webapps/o2/bitstream/10609/4852/6/Yergler.pdf">our paper from OpenEd 2010</a> for a fuller discussion of the search interface implemented, and how it addressees user needs.) The code for DiscoverEd is freely available under the Apache Software License, and can be found in its <a href="http://gitorious.org/discovered">repository hosted by Gitorious</a>. While Creative Commons is not currently developing the code, we may return to it in the future if an opportunity presents itself, or if there is a need to test additional ideas related to search and discovery.</p>
+<p>Creative Commons is discontinuing development to focus our resources and expertise where we can have maximum impact. We do not have the resources needed to run DiscoverEd at web scale, but would love to see someone take that on. Through the development of DiscoverEd, Creative Commons has observed that there have been many attempts to describe educational resources and how they relate together in a complete, rigorous manner. These attempts have failed to gain the traction necessary for widespread adoption on the scale of Dublin Core, or <a href="http://wiki.creativecommons.org/CC_REL">CC REL</a>. There is an opportunity for the community to build consensus around a set of properties for describing resources, attempting to balance utility (enough information to be useful) with succinctness (only describing that which is necessary, to avoid unnecessary impediments to adoption).</p>
+<p>With the generous support of the Hewlett Foundation, Creative Commons will be working over the next year to identify key factors to success. You can follow the work in the <a href="http://labs.creativecommons.org/category/describing-oer/">“Describing OER” category</a> on this blog, or on the <a href="http://wiki.creativecommons.org/Describing_OER">Describing OER</a> wiki page.</p>
+<p><strong>Update/Clarification (13 April 2011):</strong> Search for CC licensed ("open") content is largely solved: Google has implemented a version at web scale, and CC REL provides a clear mechanism for marking and labeling. However, search and discovery for open educational resources is not a solved problem: many projects, including DiscoverEd, have tried different approaches to the issue, but none has successfully deployed a web scale OER search engine. Creative Commons has identified the lack of a vocabulary with widespread adoption as one issue impeding progress. While we plan to focus our efforts on that particular problem, we encourage others to continue working on the larger challenge of OER discovery.</p>

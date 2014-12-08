@@ -1,0 +1,79 @@
+---
+layout: post
+title: 32 to 64 bit remotely
+date: 2008-07-15 23:09:42.000000000 -04:00
+categories:
+- Debian
+- software
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '11'
+author:
+  login: nkinkade
+  email: ''
+  display_name: nkinkade
+  first_name: ''
+  last_name: ''
+---
+<p>A couple months ago I <a href="http://labs.creativecommons.org/2008/04/03/varnish-cache-at-cc/">posted here</a> about some of our experiences with <a href="http://varnish.projects.linpro.no/">Varnish Cache</a> as an HTTP accelerator.  By and large I have been very impressed with Varnish.  We even found that it had the unexpected benefit of acting as a buffer in front of Apache, preventing Apache from getting overwhelmed with too many slow requests.  Apache would get wedged once it had reached it's MaxClients limit, whereas Varnish seems to happily queue up thousands of requests even if the backend (Apache) is going slowly.</p>
+<p>However, after a while we started running into other problems with Varnish, and I found the probable answer in <a href="http://varnish.projects.linpro.no/ticket/85">a bug report</a> at the Varnish site.  It turns out that Varnish was written with a 64 bit system in mind.  That isn't to say that it won't work nicely on a 32 bit system, just that you better not expect high server load, or else you'll start running into resource limitations in a hurry.  This left us with about 2 options: Move to 64 bit or ditch Varnish for something like Squid.  Seeing as how I was loathe to do the latter, we decided to go 64 bit, which in any case is another logical step into the 21st century.</p>
+<p>The problem was that our servers are co-located in data centers around the country.  We didn't want to hassle with reprovisioning all of the them.  <a href="http://creativecommons.org/about/people/#83">Asheesh</a> did the the first remote conversion based on <a href="http://www.underhanded.org/papers/debian-conversion/remotedeb.html">some outdated document</a> he found on remotely converting from Red Hat Linux to Debian.  It went well and we haven't had a single problem on that converted machine since.  Varnish loves 64bit.</p>
+<p>I have now converted two more machines, and this last time I documented the steps I took.  I post them here for future reference and with the hope that it may help someone else.  Note that these steps are somewhat specific to Debian Linux, but the concepts should be generally applicable to any UNIX-like system.  There are no real instructions below, so you just have to infer the method from the steps.  See the <a href="http://www.underhanded.org/papers/debian-conversion/remotedeb.html">aforementioned article</a> for more verbose, though dated, explanations.  <strong>BE WARNED</strong> that if you make a mistake and don't have some <a href="http://www.serverbeach.com/products/rapid_rescue.php">lovely rescue method</a> then you may be forced to call your hosting company to salvage the wreckage:</p>
+<ul>
+<li>[ssh server]</li>
+<li>aptitude install linux-image-amd64</li>
+<li>reboot</li>
+<li>[ssh server]</li>
+<li>sudo su -</li>
+<li>aptitude install debootstrap # if not already installed</li>
+<li>swapoff -a</li>
+<li>sfdisk -l /dev/sda # to determine swap partition, /dev/sda5 in this case</li>
+<li>mke2fs -j /dev/sda5</li>
+<li>mount /dev/sda5 /mnt</li>
+<li>cfdisk /dev/sda  # set /dev/sda5 to type 83 (Linux)</li>
+<li>debootstrap --arch amd64 etch /mnt http://http.us.debian.org/debian</li>
+<li>mv /mnt/etc /mnt/etc.LOL</li>
+<li>cp -a /etc /mnt/</li>
+<li>mv /mnt/boot /mnt/boot.LOL</li>
+<li>cp -a /boot /mnt/  # this is really just so that the dpkg post-install hooks don't issue lots of warnings about things not being in /boot that it expects.</li>
+<li>chroot /mnt</li>
+<li>aptitude update</li>
+<li>aptitude dist-upgrade</li>
+<li>aptitude install locales</li>
+<li>dpkg-reconfigure locales # optional (I selected All locales, default UTF-8)</li>
+<li>aptitude install ssh sudo grub vim # and any other things you want</li>
+<li>aptitude install linux-image-amd64</li>
+<li>vi /etc/fstab # change /dev/sda5 to mount on / and comment out old swap entry</li>
+<li>mkdir /home/nkinkade # just so I have a home, not necessary really</li>
+<li>exit # get out of chroot</li>
+<li>vi /boot/grub/menu.lst  # change root= of default option from sda6 to sda5</li>
+<li>reboot</li>
+<li>[ssh server]</li>
+<li>sudo su -</li>
+<li>mount /dev/sda6 /mnt</li>
+<li>chroot mnt</li>
+<li>dpkg --get-selections &gt; ia32_dpkg_selections</li>
+<li>exit</li>
+<li>mv /home /home.LOL</li>
+<li>cp -a /mnt/home /</li>
+<li>mv /root /root.LOL</li>
+<li>cp -a /mnt/root /</li>
+<li>mkdir /mnt/ia32</li>
+<li>mv /mnt/* /mnt/ia32</li>
+<li>mv /mnt/.* /mnt/ia32</li>
+<li>cp -a bin boot dev etc etc.LOL home initrd initrd.img lib lib64 media opt root sbin srv tmp usr var vmlinuz /mnt</li>
+<li>mkdir /mnt/proc /mnt/sys</li>
+<li>vi /mnt/etc/fstab # make /dev/sda6 be mounted on / again, leave swap commented out</li>
+<li>vi /boot/grub/menu.lst # change the default boot option back to root=/dev/sda6</li>
+<li>reboot</li>
+<li>[ssh server]</li>
+<li>sudo su -</li>
+<li>mkswap /dev/sda5</li>
+<li>vi /etc/fstab (uncomment swap line)</li>
+<li>swapon -a</li>
+<li>dpkg --set-selections &lt; /ia32/ia32_dpkg_selections</li>
+<li>apt-get dselect-upgrade # step through all the questions about changed /etc/files, etc.</li>
+</ul>

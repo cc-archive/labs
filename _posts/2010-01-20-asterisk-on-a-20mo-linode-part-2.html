@@ -1,0 +1,52 @@
+---
+layout: post
+title: Asterisk on a $20/mo. Linode, part 2.
+date: 2010-01-20 23:56:49.000000000 -05:00
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '11'
+author:
+  login: nkinkade
+  email: ''
+  display_name: nkinkade
+  first_name: ''
+  last_name: ''
+---
+<p>I mentioned in my recent post about running Asterisk on a $20/month Linode that I would try to follow up with a review of the steps necessary to actually get it working.  This isn't going to be a detailed review, but just a more or less bulleted list of steps to take.</p>
+<p>In the previous post I said that I had run into a kernel-package bug (<a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=508487">#508487</a>) that was preventing me from successfully building a Xen kernel with make-kpkg.  So I installed the version from unstable, in which the bug had been fixed.  This step may not be necessary at some point:</p>
+<p># vi /etc/apt/sources.lst<br />
+[change deb-src to point to an unstable repository]<br />
+# apt-get update<br />
+# mkdir kernel-package && cd kernel-package<br />
+# apt-get source kernel-package<br />
+# apt-get build-dep kernel-package<br />
+# dpkg-buildpackage -rfakeroot -uc -b<br />
+# dpkg -i kernel-package_12.025_all.deb</p>
+<p>Now to build the kernel.</p>
+<p># cd /usr/src<br />
+# apt-get source linux-image-`uname -r`<br />
+# cd linux-2.6-2.6.26<br />
+# aptitude install linux-patch-debian-2.6.26<br />
+# /usr/src/kernel-patches/all/2.6.26/apply/debian -a amd64 -f xen<br />
+# make menuconfig<br />
+[<em>Processor type & features</em> -&gt; <em>Timer frequency</em> -&gt; <em>1000 HZ</em>]<br />
+# make-kpkg clean<br />
+# make-kpkg --initrd kernel_image<br />
+[wait a good while for the kernel to compile]<br />
+# mv /lib/modules/2.6.26/kernel/ /root/kernel.old.old<br />
+# dpkg -i ../linux-xen0-2.6.26_2.6.26-10.00.Custom_amd64.deb<br />
+# update-initramfs -c -k 2.6.26</p>
+<p>Now to build the <a href="http://www.voip-info.org/wiki/view/DAHDI">Zaptel</a> (DAHDI) kernel modules.  It would normally be just a few steps, but there were some other problems regarding references to the RTC in zaptel-sources.  You can find more information about this at the  <a href="http://www.voip-info.org/wiki/view/Asterisk+timer+ztdummy">voip-info.org wiki</a>, most relevantly under the heading "<em>zaptel and xen-kernel 2.6.26-1-xen-686 in Debian Lenny</em>": </p>
+<p># apt-get install zaptel-source<br />
+# cd /usr/src<br />
+# vi modules/zaptel/kernel/ztdummy.c<br />
+[comment out <em>#define USE_RTC</em> lines]<br />
+# m-a prepare<br />
+# m-a build zaptel<br />
+# m-a install zaptel<br />
+# modprobe ztdummy</p>
+<p>I think those are the basic steps I took.  The actual path was much less clean, as I hit bugs and went back and forth.  It's possible I have missed a step or two in there, or that the way I went about things wasn't right, ideal or even correct.  Of course, all of this also presupposes that you have already configured your Linode to boot from a custom local kernel instead of the default Linode kernel.  <a href="http://library.linode.com/advanced/pv-grub-howto">Instructions</a> on how to do this can be found at at linode.com.</p>
