@@ -1,8 +1,0 @@
-The idea here is to have some common place for code for dealing with 
-CC licensing that can be re-used in many different places. Currently, this
-is spread all over, so now we can hopefully start to locate it all together.
-
-To create a new place for your code, like something in JAVA, please create
-a new folder with the simple name for the language, like /java. Then, start
-throwing your code in there...let's go!
-
