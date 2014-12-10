@@ -3,6 +3,13 @@ layout: post
 title:  "How creativecommons.org is built"
 date:   2014-12-10 10:05:34
 categories: infrastructure
+author:
+  login: mattl
+  display_as: Matt Lee
+  title: Technical Lead
+  email: ''
+  first_name: ''
+  last_name: ''
 ---
 On Tuesday, December 9th 2014 you may have noticed a bit of downtime on creativecommons.org.
 
