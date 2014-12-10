@@ -6,7 +6,7 @@ categories: infrastructure
 ---
 On Tuesday, December 9th 2014 you may have noticed a bit of downtime on creativecommons.org.
 
-This is both an outage report, but also a little insight into how the Creative Commons website is built. I was happily assisted in this work by former technical lead at Creative Commons, Christoper Allen Webber who you may know as one of the developers of GNU MediaGoblin, where he drew me [as a time-travelling goblin](http://mediagoblin.com/u/cwebber/m/machalus-duke-of-time/).
+This is both an outage report, but also a little insight into how the Creative Commons website is built. I was happily assisted in this work by former technical lead at Creative Commons, Christopher Allen Webber who you may know as one of the developers of GNU MediaGoblin, where he drew me [as a time-travelling goblin](http://mediagoblin.com/u/cwebber/m/machalus-duke-of-time/).
 
 In short, CC's website was down for two reasons:
 
