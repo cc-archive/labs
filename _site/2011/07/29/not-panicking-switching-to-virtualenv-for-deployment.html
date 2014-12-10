@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>Not Panicking: switching to Virtualenv for deployment&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">Not Panicking: switching to Virtualenv for deployment</h1>
+    <p class="post-meta">Jul 29, 2011 by cwebber</p>
+  </header>
+
+  <article class="post-content">
+    <p>I've written about <a href="http://labs.creativecommons.org/2010/03/16/using-virtualenv-and-zc-buildout-together/">zc.buildout and virtualenv before</a> and how to use them both simultaneously, which I find to be useful for development on my own machine.  I really admire both of these tools; I especially think that buildout is really great for projects where you want developers to be able to get your package running quickly without having to understand how python packaging works.  (I <a href="http://docs.mediagoblin.org/hackinghowto.html">use buildout for this purpose</a> for one of my own personal projects, <a href="http://mediagoblin.org">MediaGoblin</a>, and I think it's served a wonderful purpose of getting new contributors up and going quickly.)</p>
+<p>Anyway, in that previous blogpost about zc.buildout and virtualenv I erroneously suggested that virtualenv is best for multiple packages in development and zc.buildout is better for just one.  I was rightly corrected that you can use the develop line of a buildout config file to specify multiple python packages.  So this is what we've been doing for the last year roughly, running a meta-package with <a href="http://code.creativecommons.org/viewgit/cc.engine.git/">cc.engine</a> checked out of git and the rest running out of python packages.</p>
+<p>We've been doing packaging and <a href="http://labs.creativecommons.org/2011/02/14/your-own-python-egg-baskets-package-repositories/">releasing to our own egg basket</a> for a while, and for the most part that has worked out, but our system administrator Nathan Kinkade pointed out that we don't really need packages, it's a bunch of extra steps to build, nobody outside of CC is using these packages, and it's a lot easier to rollback a git repository in case of an emergency than it is a python package.</p>
+<p>That lead me to reconsider the way we're currently doing deployment and my growing feeling that maybe zc.buildout, while great for developing locally, really just isn't a good option for deployment.  Whenever I want to pull down new versions of packages, I would run buildout.  But buildout likes to do something which makes this period very, very painful: if for whatever reason it can't manage to install all packages, it tears down the entire environment.  It removes ./bin/python, it removes all other scripts.  I've found this to be highly stressful, especially because you never know if some package on <a href="http://pypi.python.org">PyPi</a> is going to time out and then suddenly as punishment <a href="https://bugs.launchpad.net/zc.buildout/+bug/516243">your environment no longer works</a>, suddenly parts of creativecommons.org aren't running, and you start to have a minor panic attack as you rush to get things up again.  That's not very great.</p>
+<p>Anyway, I always stress out about this, which has lead me to adding coping mechanisms to <a href="http://code.creativecommons.org/viewgit/cc.controlpanel.git/tree/fabfile.py">our fabric deploy script</a>:</p>
+<p><img src="img/dont_panic_terminal.png" alt="Don't Panic! screenshot" /></p>
+<p>This helps reduce my blood pressure somewhat, but anyway, we decided to move from buildout to virtualenv for deployment.  Actually, there's not much more to say; it only took a couple of hours to make the switch and there really wasn't anything special to say about it.  It just works and generally seems a lot simpler.</p>
+<p>In short: buildout is pretty great.  If you're looking for an option to make it really, <i>really</i> easy for people who want to try out your project to get something working or start contributing, it's the closest the python world has to an interface as simple as (or simpler than) `./configure &amp;&amp; make`.  But as for deployment... especially if you'd like to do code checkouts of your main packages, just go with virtualenv.</p></p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

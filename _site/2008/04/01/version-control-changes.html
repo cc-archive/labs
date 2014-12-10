@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>Version Control Changes&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">Version Control Changes</h1>
+    <p class="post-meta">Apr 1, 2008 by nathan</p>
+  </header>
+
+  <article class="post-content">
+    <p>I alluded to it in my <a href="http://techblog.creativecommons.org/2008/03/27/destination-sanity/">last post</a> and wanted to provide some more details and context on the changes we're making (have made) to our source control systems.  Since I started working on CC code in late 2003 we've hosted our source repository in the <a href="http://sourceforge.net/projects/cctools">CC Tools project</a> at <a href="http://sourceforge.net">Sourceforge.net</a>, first in <a href="http://en.wikipedia.org/wiki/Concurrent_Versions_System">CVS</a>, later in <a href="http://en.wikipedia.org/wiki/Subversion_(software)">Subversion</a>.  Sourceforge.net has been great in one major respect &mdash; to the best of my knowledge we've never had a data loss issue.  Of course, many times using Sourceforge has also felt like something to endure rather than appreciate.  It was while enduring the delayed availability of Subversion that we decided to move the <a href="http://wiki.creativecommons.org/CcPublisher">ccPublisher</a> code base to <a href="http://developer.berlios.de/projects/cctools">Berlios.de</a>, which was marginally better.  </p>
+<p>Since the beginning of 2008 a few things have conspired to finally push us over the edge and decide to leave Sourceforge.net behind.  On one hand we've been itching to work with a <a href="http://en.wikipedia.org/wiki/Distributed_Version_Control_System">distributed version control</a> system (we wound up choosing <a href="http://en.wikipedia.org/wiki/Git_%28software%29">Git</a>).  While using Sourceforge didn't rule that out, I wanted to make sure that we had a place to publish our repositories publicly, both for redundancy and transparency.  Accepting this as a task just made me more amenable to also creating a place to publish a Subversion repository. The other event was a morning of outages (again) on Sourceforge's Subversion server.  I was trying to commit updates to the license deeds (just over 20,000 files updated), and the operation kept failing mid-way through.  Note that this is a commit that can take up to 12 hours when successful.  </p>
+<p>Two days later we were cutting over to a new system, hosted at <a href="http://code.creativecommons.org">code.creativecommons.org</a>.  We turned off write access to the Sourceforge repository, synced it, and asked contributors for public keys, which we're using for authentication.  The new system supports both Git and <a href="http://code.creativecommons.org/viewsvn">Subversion</a>, public key authentication for committers (using the pretty slick <a href="http://scie.nti.st/2007/11/14/hosting-git-repositories-the-easy-and-secure-way">gitosis</a> on the git side) and is fast.  Really, really, really fast when compared to our Sourceforge repository.</p>
+<p>Total estimated time for testing and deployment: 2 person-days.</p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

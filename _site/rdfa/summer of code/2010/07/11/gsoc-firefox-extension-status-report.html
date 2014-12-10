@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>GSoC Firefox Extension: Status Report&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">GSoC Firefox Extension: Status Report</h1>
+    <p class="post-meta">Jul 11, 2010 by igorlukanin</p>
+  </header>
+
+  <article class="post-content">
+    <p>The extension for Firefox web browser I'm developing has a number of improvements in the code base, as well as in the UI. So, ladies and gentlemen, let`s get familiar with them.</p>
+<p>The <a href="http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/cc.ff_ext.xpi">current version</a> of the extension may be downloaded and tried yourself (choose Save Link As from the context menu, then install).<br />
+<!--more--></p>
+<h3>Technical docs update, current focus and progress</h3>
+<p>There`re two docs I`ve put in the repo: <a title="the 1st" href="http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/doc/FUNCSPEC">the 1st</a>, describing the UI the extension has/would have and the RDFa predicates it perceives/would perceive, and <a title="the 2nd" href="http://code.creativecommons.org/viewgit/cc.ff_ext.git/plain/doc/WEBSITES">the 2nd</a>, describing what web sites the extension is tested against now. This docs may be primarily used to see what low-level features are going to be implemented in the nearest future, as well as to value the progress.<img src="img/trans.gif" alt="" /></p>
+<p>Now that development is focused on enlarging the list of supported RDFa predicates, that would lead to drastic UI improvements.</p>
+<p>I'm proud to say that for now two languages (English &amp; Russian) are maintained for the UI, so I'm hoping to catch the most part of possible localization problems before I actually move to multi-language support. Also, a <a title="smart way" href="https://developer.mozilla.org/en/Localization_and_Plurals">smart way</a> of handling plurals is introduced (for example, used in the location bar icon tooltip text), being one of the ways to create a human being-friendly UI.</p>
+<h3>Development process-related aspects</h3>
+<p>There`s a number of aspects I had "fun" to discover about the Firefox and its internal mechanisms.</p>
+<p>The 1st thing is a bit obvious: it has a strong legacy impact, at least in the UI. I had pleasure to dig into the UI code of Fx (written in XUL/CSS/JavaScript), using a text editor and the DOM Inspector<a title="DOM Inspector" href="https://developer.mozilla.org/en/dom_inspector"></a>. Some UI elements that are viewed as a box or a label, are represented as a number (up to 5-6 and more) of nested blocks. Well, quite a common case for an average web page, but too bad if you want to create a component looking the same, so that you have to collect all those random n-pixel paddings specified for every nested element.</p>
+<p>The 2nd thing relates to the recommended way to point the browser to the extension being developed. The way (mentioned <a href="http://blog.mozilla.com/addons/2009/01/28/how-to-develop-a-firefox-extension/">here</a>) is to create a text file in the extensions` directory in your profile containing the path to the extension directory (so, it may be put anywhere). I though this mechanism is primarily supported for Windows, because creating symlinks is not a very common operation there (what I did myself). Then, while testing extension uninstall process, it appeared that Fx just removes all files (and keeps directories) in the place of an extension when it gets uninstalled. Working perfectly when deleting a usual extension (a single zip-compressed *.xpi file), this behavior used to silently drop my local git repo, making to think of not using symlinks/doing frequent backups/pushing on every commit. :)</p>
+<h3>Feedback</h3>
+<p>Al usual, I'll be pleased if anyone tries the extension, probably <a href="http://code.creativecommons.org/issues/">reporting any issues</a>. Any opinions are welcome here in comments, on the <code>irc.freenode.net#cc</code> channel, by <a href="mailto:mail@igor.lukanin.name">email</a> or via <a title="jabber@igor.lukanin.name">Jabber</a>.</p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

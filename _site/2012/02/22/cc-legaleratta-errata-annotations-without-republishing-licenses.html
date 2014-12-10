@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>cc.legaleratta: errata annotations without republishing licenses&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">cc.legaleratta: errata annotations without republishing licenses</h1>
+    <p class="post-meta">Feb 22, 2012 by lunpa</p>
+  </header>
+
+  <article class="post-content">
+    <p><a href="http://labs.creativecommons.org/files/2012/02/errata_highlighted1.png"><img class="alignnone size-full wp-image-1726" src="img/errata_highlighted1.png" alt="Screenshot of the errata tool." width="796" height="461" /></a></p>
+<p>The html for the legalcode pages cannot be changed once they are published.  The reason for this is because we provide sha1 hashes of them so that they may be redistributed.  It also is a reason of credibility; that the license you've applied to your work today will still be the same one tomorrow.  However, sometimes there are errors.  They need to be accessible, yet they usually are too small to merit releasing a new version of the license.</p>
+<p>The solution to this problem so far has been an errata page on our wiki.  But, that isn't apparent from just looking at the license; and the errata page is disorganized and confusing to read.</p>
+<p>I'm proud to say that we're currently testing a tool I wrote last week that will fix this problem: cc.legalerrata.  This was originally intended to be implemented with the upcoming 4.0 licenses, but it turns out the 3.0 licenses have a hook for a tool like this already in place.  The 3.0 licenses include a script at the address <a href="http://creativecommons.org/includes/errata.js">http://creativecommons.org/includes/errata.js</a>, which was blank until a few days ago.  Now the script is used to bootstrap an application in the page.  Once bootstrapped, the tool queries the server for appropriate errata; if errata is returned, a toolbar appears and the user is presented with the option to apply the errata to the text of the page.  Additionally, the changes made can be highlighted via the toolbar.</p>
+<p>Currently, this tool is disabled on the live site while we verify that the machine readable errata is actually correct.  You can however try out the tool while we test it, via our staging site.  For example, you can try our <a href="http://staging.creativecommons.org/licenses/by-sa/3.0/legalcode">BY-SA legalcode on staging here</a>.</p>
+<p>If you're interested, you can read <a href="http://wiki.creativecommons.org/4.0_License_Errata_Annotation_Tool">the original proposal for the tool</a>. There are two versions of the tool described there, and some pretty ui diagrams that I drew of both versions.  Here is one of my diagrams:</p>
+<p><img class="alignnone" src="img/Errata_tool_alternate.jpg" alt="UI mockup for the errata tool." width="834" height="978" /></p>
+<p>The actual implementation of the tool ended up being much simpler than the proposed one.  Json is still used for storing the machine readable errata, but rather than a convoluted scheme of managing text diffs, machine readable errata is a collection of entries that contain a css selector, attribute overrides (optional), and html fragments.  The css selectors are used by jquery to select an element in the dom; the element's innerHTML attribute is then written over by the html fragment. The html fragment itself is the original innerHTML of the node, but with subtractions noted by &lt;del&gt;&lt;/del&gt; tags, and additions noted by &lt;ins&gt;&lt;/ins&gt; tags.  These files are maintained by hand at this current time, with no plans of writing a frontend for it.  The errata tool takes a snapshot of the page's html before and after overriding it, so that you can efficiently toggle between view modes.  CSS in both errata modes to either make the text look clean (subtractions hidden) or to accomplish highlighting.</p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

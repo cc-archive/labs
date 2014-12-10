@@ -1,0 +1,13 @@
+This is the Creative Commons JavaScript license selector
+in the form of a JavaScript widget.
+
+Web browsers can only be expected to load a single file from us.
+
+The code is structured as follows:
+* An HTML page includes source.js
+* source.js loads the CSS and static JS files that hardly change
+* source.js
+
+To consider:
+* License jurisdictions
+* Localization

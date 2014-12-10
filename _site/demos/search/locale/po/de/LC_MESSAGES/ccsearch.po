@@ -1,0 +1,140 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# John Weitzmann <john@creativecommons.de>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: http://code.creativecommons.org/issues/\n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2011-06-25 21:56+0000\n"
+"Last-Translator: jhweitzmann <john@creativecommons.de>\n"
+"Language-Team: German (http://www.transifex.net/projects/p/CC/team/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Finden Sie Inhalte, die geteilt, genutzt und remixt werden können."
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Geben Sie Ihre Suchanfrage ein"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Ich möchte etwas finden, das ich ..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "für <em>kommerzielle Zwecke</em> nutzen darf"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr ""
+"<em>verändern</em>, <em>anpassen</em> oder worauf ich <em>aufbauen</em> darf"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Suchen mit"
+
+#: index.php:53
+msgid "Video"
+msgstr "Video"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Image"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Musik"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Medien"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Was ist das?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr ""
+"Bitte beachten Sie, dass search.creativecommons.org <em>keine "
+"Suchmaschine</em> ist, sondern nur einen komfortablen Zugang zu Suchdiensten"
+" anderer unabhängiger Anbieter darstellt. CC hat keine Kontrolle über die "
+"Suchergebnisse. <em>Gehen Sie nicht ohne Weiteres davon aus, dass alle "
+"Suchergebnisse dieses Suchportals unter CC-Lizenz stehen</em>. Sie sollten "
+"immer noch einmal überprüfen, ob das jeweilige Werk/der Inhalt tatsächlich "
+"unter einer CC-Lizenz steht, indem Sie dem entsprechenden Link folgen. Da "
+"keine Registrierung erforderlich ist, um eine CC-Lizenz zu vergeben, kann CC"
+" auch nicht beurteilen, was unter die Bedingungen einer CC-Lizenz gestellt "
+"wurde und was nicht. Falls Sie sich nicht sicher sind, sollten Sie den "
+"Rechteinhaber direkt kontaktieren oder die Seite, auf der Sie das Werk/den "
+"Inhalt gefunden haben."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>CC Search</strong></a> zum "
+"Browser hinzufügen."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Lernen"
+" Sie</strong></a> wie Sie CC Search in Ihrem Firefox Search Bar an- und "
+"abschalten."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Beim Übersetzen helfen"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Kontakt"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "An CC spenden"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Policies/Richtlinien"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Datenschutz"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Nutzungsbedingungen"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Entwickler"
+
+

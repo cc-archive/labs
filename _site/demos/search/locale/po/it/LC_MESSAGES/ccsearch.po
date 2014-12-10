@@ -1,0 +1,141 @@
+# Copyright (C) 2011 Creative Commons
+# 
+#   <ironbishop@fsfe.org>, 2011.
+# Nathan Kinkade <nkinkade@creativecommons.org>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: http://code.creativecommons.org/issues/\n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2011-06-02 06:47+0000\n"
+"Last-Translator: ironbishop <ironbishop@fsfe.org>\n"
+"Language-Team: Italian (http://www.transifex.net/projects/p/CC/team/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Trova contenuti da poter condividere, usare e remixare"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Inserisci la tua ricerca"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Voglio qualcosa che io possa..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "usare per <em>scopi commerciali</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr ""
+"<em>modificare</em>, <em>adattare</em> o <em>usare come base di "
+"partenza</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Cerca usando"
+
+#: index.php:53
+msgid "Video"
+msgstr "Video"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Immagini"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Musica"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Contenuti multimediali"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Cos'è questo?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr ""
+"Nota bene: search.creativecommons.org <em>non è un motore di ricerca</em>, "
+"ma piuttosto offre un accesso agevole a servizi di ricerca forniti da altre "
+"organizzazioni indipendenti. CC non ha alcun controllo sui risultati che "
+"vengono forniti. <em>Non dare per scontato che i risultati visualizzati in "
+"questo portale siano licenziati con Creative Commons</em>. Verifica sempre "
+"che l'opera sia realmente licenziata con una licenza CC seguendo il "
+"collegamento. Poichè non vi è alcuna registrazione per l'utilizzo delle "
+"licenze CC, Creative Commons non ha modo di sapere quando un'opera sia o non"
+" sia licenziata con CC. Se hai dubbi in merito contatta direttamente il "
+"detentore dei diritti o cerca di contattare il sito in cui hai trovato il "
+"contenuto."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Aggiungi la ricerca "
+"CC</strong></a> al tuo browser."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Scopri"
+" come</strong></a> cambiare motore di ricerca nella barra di ricerca di "
+"Firefox."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Aiuta a tradurre"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Contatti"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Dona a CC"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Policy"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Privacy"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Termini di Utilizzo"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Sviluppatori"
+
+

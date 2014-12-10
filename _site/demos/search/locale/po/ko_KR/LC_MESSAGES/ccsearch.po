@@ -1,0 +1,123 @@
+# Copyright (C) 2011 Creative Commons
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: http://code.creativecommons.org/issues/\n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2011-03-22 15:15+0000\n"
+"Last-Translator: partrita <partrita@gmail.com>\n"
+"Language-Team: Korean (http://www.transifex.net/projects/p/CC/team/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr ""
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "검색어를 입력하십시오"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "내가 할수 있는것을 원합니다..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "<em>상업적 목적</em> 사용에 대한"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr ", <em>개조, 수정 또는 빌드</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "를 사용하여 검색"
+
+#: index.php:53
+msgid "Video"
+msgstr "비디오"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "이미지"
+
+#: index.php:71
+msgid "Web"
+msgstr "웹"
+
+#: index.php:83
+msgid "Music"
+msgstr "음악"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "미디어"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "씨씨검색(CC Search)이란? "
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr ""
+"하지만, 그 <em>검색 엔진 search.creativecommons.org는하지</em> 유의하시기 바랍니다 오히려 다른 독립적인 "
+"단체에 의해 서비스를 제공하는 검색을 제공하는 편리한 액세스를. 참조가 반환됩니다 이상의 결과가 제어할 수 없음. <em>라이선스 컨벤션"
+" 센터 아래에 결과가 표시 그러지 가정하고있는 포털 사이트에서 검색.</em> 당신은 항상 작품의 링크를 따라 컨벤션 센터 라이센스하에 "
+"실제로 있는지 확인합니다. 참조 라이센스를 이용할 수 없습니다 등록이 없으므로, 참조는 것에 참조 라이센스의 조건에 따라 배치되지 "
+"않았습니다 확인할 방법이 없습니다. 당신이 의심하는 경우, 직접 저작권 자에게 연락해야하거나 콘텐츠를 찾은 사이트를 문의하려고합니다."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "당신의 브라우저에.<strong><a href=\"#\" id=\"addOpenSearch\">CC 검색 추가</a></strong>"
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr ""
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "번역 돕기"
+
+#: index.php:151
+msgid "Contact"
+msgstr "연락처"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "CC에 기부"
+
+#: index.php:155
+msgid "Policies"
+msgstr "정책"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "개인 정보 보호 정책"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "이용 약관"
+
+#: index.php:161
+msgid "Developers"
+msgstr "개발자"

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>Setting kernel clocksource to HPET solves mysterious performance issues&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">Setting kernel clocksource to HPET solves mysterious performance issues</h1>
+    <p class="post-meta">Apr 10, 2012 by nkinkade</p>
+  </header>
+
+  <article class="post-content">
+    <p>For quite a long time the server which runs this very site has had some performance issues.   This same server runs one or two instances of Mediawiki, and I have always just presumed that Mediawiki was the cause of the problems.  I really didn't give it too much more thought, since the issues weren't causing many horrible user-facing performance issues.  The server sort of hobbled along in the background, fairly loaded, but still managing to serve up pages decently.  However, the problem most seriously manifested itself for me personally when working in a remote shell.  Sometimes I'd go to save a file and the operation would take 10 or 15 seconds to complete.  I ignored this, too, for some time, but it reached a point where I couldn't take it any longer.</p>
+<p>I watched the output of top for a while, sorting on various metrics, and noticed that <em>flush</em> and <em>kjournald</em> were pegged at the top when sorted by process state, both being in a disk-wait ("D") state.  This didn't make any sense to me, since the machine doesn't host any really busy sites and should have plenty of memory to handle what it has.  I decided to do a web search for "<em>linux flush kswapd</em>" to see what it would turn up.  As it turns out, the very <a href="http://old.nabble.com/Re%3A-kswapd-continuously-active-p27500336.html">first article</a> returned in the search ended up indirectly shedding light on this issue, even though it turned out to be mostly unrelated to my own problem.  However, what I did take away from it was learning of a utility that I didn't previous know about.  Namely, <em><a href="https://perf.wiki.kernel.org/">perf</a></em>, and specifically <em><a href="https://perf.wiki.kernel.org/articles/t/u/t/Tutorial.html#Live_analysis_with_perf_top">perf top -a</a></em>.</p>
+<p>What I discovered upon running this command was that the kernel was spending a huge amount of time (60% to 80%) running the function <em>acpi_pm_read</em>.  A little investigation on this tracked it back to the kernel <em>clocksource</em> being set to <em>acpi_pm</em>.  The current, and available, clocksource(s) can be discovered by running the following, respectively:</p>
+<pre>
+$ cat /sys/devices/system/clocksource/clocksource0/current_clocksource
+$ cat /sys/devices/system/clocksource/clocksource0/available_clocksource
+</pre>
+<p>I then went to another machine, also running Mediawiki, but one not having any performance issues, and found its <em>clocksource</em> to be <em>hpet</em>.  After a little more research, some experiementing, and a few reboots, I found that adding the kernel parameter <em>hpet=force</em> to the variable <em>GRUB_CMDLINE_LINUX_DEFAULT</em> in <em>/etc/default/grub</em> and then running <em>update-grub</em> got the system using <em>hpet</em> as the clocksource.  And this seems to have totally cleared up the issues on the machine.  Processor usage is way down, memory usage is way down, processes in the disk-wait state are down, and our Mediawiki site is returning pages much faster that it ever has.</p>
+<p>For reference, here are a few machine specifications which might be useful for others investigating this:</p>
+<ul>
+<li>OS: Debian Squeeze</li>
+<li>Processors: 2 x AMD Opteron 246</li>
+</ul>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

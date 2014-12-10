@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>Your own python egg baskets / package repositories&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">Your own python egg baskets / package repositories</h1>
+    <p class="post-meta">Feb 14, 2011 by cwebber</p>
+  </header>
+
+  <article class="post-content">
+    <p>At Creative Commons sometimes we have python packages that we use a lot but which aren't generally useful enough to put on <a href="http://pypi.python.org/pypi">PyPi</a> (such as <a href="http://code.creativecommons.org/viewgit/cc.license.git/">cc.license</a> and <a href="http://code.creativecommons.org/viewgit/license.rdf.git/">cc.licenserdf</a>).  Luckily, as long as you and your organization don't have a problem with having your packages available publicly, it's fairly easy to put up a public egg basket (that is, a simple repository to put your python eggs/packages).  And doing so has several advantages:</p>
+<ul>
+<li>You can avoid cluttering up PyPi with packages that have a very marginal or internal audience.  cc.licenserdf matters a lot for our site, but probably is worthless to anyone searching for "RDF" tools on pypi.</li>
+<li>Putting a package up on PyPi suggests a certain amount of responsibility to keep that updated and keep its API stable.  If it's for internal use, maybe that responsibility is unwanted or unneeded.</li>
+<li>Using proper python packaging means you can take full advantage of python's ecosystem of installation tools, including useful dependency resolution.</li>
+<li>Making packaged releases encourages a certain amount of responsibility toward your internal dependencies, reducing the "cowboy coding" factor (fun, but often not good in an environment that requires stability).</li>
+</ul>
+<p>So, how to do it?  The first step is to make a directory that's statically served by Apache.  Ours is at <a href="http://code.creativecommons.org/basket/">http://code.creativecommons.org/basket/</a>.  The directory has the <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Sticky_bit">sticky bit</a> set so that everyone on the server can write to it without clobbering each other, kind of like in <code>/tmp/</code> on most GNU/Linux installs.  Everyone puts their tarballs up here.  As for you or your organization's "your own" packages, I think it's fine to put all your eggs in just one basket like this. :)</p>
+<p>But what should those packages look like?</p>
+<p>Generally at the toplevel of your package you have something that looks like:</p>
+<pre style="border: 1pt solid #AEBDCC;background-color: #fbfcfc;padding: 5pt;font-family: courier, monospace;font-size: 90%;overflow:auto"><span style="color: #cd0000;background-color: #ececec">from</span> setuptools <span style="color: #cd0000;background-color: #ececec">import</span> setup, find_packages
+<span style="color: #cd0000;background-color: #ececec">import</span> sys, os
+
+setup(
+    name=<span style="color: #00cd66;background-color: #ececec">'licenseclarity'</span>,
+    version=<span style="color: #00cd66;background-color: #ececec">'0.1'</span>,
+    packages=[<span style="color: #00cd66;background-color: #ececec">'licenseclarity'</span>],
+    description=<span style="color: #00cd66;background-color: #ececec">"Tools to clarify any licensing issue you have ever had"</span>,
+
+    author=<span style="color: #00cd66;background-color: #ececec">'John Doe(ig)'</span>,
+    author_email=<span style="color: #00cd66;background-color: #ececec">'johndoe-ig@example.org'</span>,
+    <span style="color: #ba55d3;background-color: #ececec">license</span>=<span style="color: #00cd66;background-color: #ececec">'MIT'</span>,
+
+    <span style="color: #4f94cd;background-color: #ececec"># ... etc ...
+</span>
+    <b><span style="color: #4f94cd;background-color: #ececec"># Put your dependencies here...
+</span>    install_requires=[
+        <span style="color: #00cd66;background-color: #ececec">'setuptools'</span>,
+        <span style="color: #00cd66;background-color: #ececec">'dependency1'</span>,
+        <span style="color: #00cd66;background-color: #ececec">'dependency2'</span>,
+        ],
+
+    <span style="color: #4f94cd;background-color: #ececec"># And a link to your basket here
+</span>    dependency_links=[
+        <span style="color: #00cd66;background-color: #ececec">'http://code.creativecommons.org/basket/'</span>,
+        ],</b>
+    )
+</pre>
+<p>Obviously, replace values with ones that make sense for your package.  The main things we're talking about here are <a href="http://peak.telecommunity.com/DevCenter/setuptools#declaring-dependencies">install_requires</a> and <a href="http://peak.telecommunity.com/DevCenter/setuptools#dependencies-that-aren-t-in-pypi">dependency_links</a>.  Replace install_requires with whatever list of dependencies your package requires, and put your your own egg basket in the dependency_links list.  After that, I guess set up whatever other large number of attributes you can apply to the setup function that make sense to your package (entry_points maybe?  zip_safe=False is a nice one).</p>
+<p>Lastly, maybe now that you have an egg basket, you'd like to know how to make some eggs to put in that basket.  Pretty easy once you have setup.py!  All you really need to do is this:</p>
+<pre style="border: 1pt solid #AEBDCC;background-color: #fbfcfc;padding: 5pt;font-family: courier, monospace;font-size: 90%;overflow:auto">python setup.py sdist</pre>
+<p>Assuming things run well, do an `ls` into your dist/ directory.  Hey, what do you know!  There's a tarball there.  cp or scp or (heaven forbid) ftp it to your egg basket, and there you go.  You just made a release!  Maybe the next time you do it you'll want to increment the version number.</p>
+<p><b>Appendix: Why you should always list your dependencies in your package</b></p>
+<p>Lastly I'd like to make a comment on only using <a href="http://www.buildout.org/">buildout's</a> <a href="http://www.buildout.org/docs/tutorial.html#installing-eggs">config file</a> or <a href="http://pip.openplans.org/">pip's</a> <a href="http://pip.openplans.org/requirement-format.html">requirements file</a> to declare requirements: it's completely crazy, don't do it!  Well okay, it's not <i>completely</i> crazy, but you really should fill out the install_requires section in setup.py regardless of whether you are also using those tools.  There are a couple of reasons for this:</p>
+<ul>
+<li>Recursive dependencies: maybe someone will use your module as a library, and then they'll have to declare your dependencies all over again if you don't put them in install_requires.  Let python's package management tools handle the dependency graph logic, that's where it belongs.</li>
+<li>What happens if you build your tool in buildout and someone wants to use virtualenv/pip or vice versa?  Both of these tools will check the install_requires section anyway, so be nice and fill it out!</li>
+</ul>
+<p>Of course there are some awesome things that buildout and the pip requirements file can do to; for example they can install dependencies from VCS and etc which is useful in particular cases, particularly for certain in-development packages.  By all means, use these tools to do that (and lots of other cool things, because both buildout and virtualenv/pip are pretty awesome).  Just be a good packager and also fill out install_requires.</p>
+<p>Now you have your own egg basket (which is completely vegan), you know how to make packages to put in it, and everyone is happy.  Horray! Today we learned things (maybe).</p>
+<p><i>Thanks to <a href="http://asheesh.org/">Asheesh Laroia</a> for his detailed feedback on this post.</i></p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

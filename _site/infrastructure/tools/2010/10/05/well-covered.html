@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>Well Covered&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">Well Covered</h1>
+    <p class="post-meta">Oct 5, 2010 by nathan</p>
+  </header>
+
+  <article class="post-content">
+    <p>When we <a href="http://labs.creativecommons.org/2010/08/12/welcome-hudson-to-creative-commons/">rolled out</a> <a href="http://code.creativecommons.org/hudson">Hudson for CC code</a> last month, I already knew that I wanted to have test coverage reporting. There's simply no reason not to: it provides a way to understand how complete your tests are, and when combined with branch testing, gives you an easy way to figure out what tests need to be written (or where to target your test writing efforts).</p>
+<p>Last week I updated <a href="http://wiki.creativecommons.org/DiscoverEd">DiscoverEd</a> to use <a href="http://cobertura.sourceforge.net/">Cobertura</a> for <a href="http://code.creativecommons.org/hudson/job/discovered/cobertura/">coverage</a>. It was pretty easy to crib the example ant build file to <a href="http://gitorious.org/discovered/repo/commit/ea1a28b823fdee9657b7f63f347c72cf5e9b82bd">add support</a> for instrumenting and testing our code.</p>
+<p>When I first tried to add <a href="http://pypi.python.org/pypi/coverage/">coverage</a> support to our Python code, I <a href="http://yergler.net/blog/2010/08/20/ci-at-cc/">encountered</a> <a href="http://bitbucket.org/ned/coveragepy/issue/82/tokenerror-when-generating-html-report">an issue</a> between coverage and Jinja2. Ned quickly committed a fix, and today I finished instrumenting our core Python projects for coverage reporting. This includes the license engine (<a href="http://code.creativecommons.org/hudson/job/cc.engine/cobertura/">cc.engine</a>), the API (<a href="http://code.creativecommons.org/hudson/job/cc.api/cobertura/">cc.api</a>), the underlying license library (<a href="http://code.creativecommons.org/hudson/job/cc.license/cobertura/">cc.license</a>), and the structured data scraper used by the deeds (<a href="http://code.creativecommons.org/hudson/job/deedscraper/cobertura/">deedscraper</a>). </p>
+<p>A pleasant surprise after instrumenting is the current state of coverage. With the exception of cc.engine, we're at greater than 90% coverage for our core code (it appears that there are lots of branches/conditionals we don't test adequately in cc.engine right now). Looking forward to seeing 100's across the board.</p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

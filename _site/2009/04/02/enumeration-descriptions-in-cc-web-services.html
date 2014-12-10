@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>Enumeration descriptions in CC Web Services&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">Enumeration descriptions in CC Web Services</h1>
+    <p class="post-meta">Apr 2, 2009 by nathan</p>
+  </header>
+
+  <article class="post-content">
+    <p>We had a request come in from a developer using the <a href="http://api.creativecommons.org/">CC web services</a> for better contextual information about the choices users make when selecting a license.  In particular, they wanted to present users with information about what <em>"ShareAlike"</em> means.  As I dug into it I realized that the existing <code>&lt;description&gt;</code> we provided for the questions themselves are... well, bad.  I can only imagine how hard it'd be to craft a user interface using <strong>those</strong> as help text.</p>
+<p>I just pushed an update to the <a href="https://api.creativecommons.org/docs/readme_dev.html">development version</a> of the API that adds <code>&lt;description&gt;</code> elements to the individual <code>&lt;enum&gt;</code> elements.  These map to the help pop-ups we use on the main license chooser.  If all seems well we'll push this down to <a href="https://api.creativecommons.org/docs/readme_15.html">1.5</a> as well.</p>
+<p>I should also note that this update includes two new, very nice (for me) improvements:</p>
+<ul>
+<li>I finally landed Frank's test suite work from last summer.  We had intended to replace the whole API with a leaner version, but that's still in the works.  So in the interim, we have a test suite and I'm not afraid of change anymore (on this project at least).</li>
+<li>I've updated the documentation to use <a href="http://sphinx.pocoo.org/">Sphinx</a>.  <a href="http://en.wikipedia.org/wiki/ReStructuredText">ReStructured Text</a> is the secret weapon of many a Python project; Sphinx makes it even more powerful, providing a set of directives and tools to generate something that looks, well, at least decent.</li>
+</ul>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

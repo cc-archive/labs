@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>Notes on CC adoption metrics from The Power of Open&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">Notes on CC adoption metrics from The Power of Open</h1>
+    <p class="post-meta">Jun 27, 2011 by ml</p>
+  </header>
+
+  <article class="post-content">
+    <p>Last week Creative Commons <a href="http://creativecommons.org/weblog/entry/27742">released</a> a book titled <a href="http://thepowerofopen.org/"><em>The Power of Open</em></a> featuring dozens of case studies of successful uses of CC tools, beautifully laid out magazine-style. The book also has a couple pages (45&46) on metrics and a pretty graph of CC adoption over the years.</p>
+<p>See the main CC blog for <a href="http://creativecommons.org/weblog/entry/28041">non-technical detail on the data behind this graph</a>. This post serves as a technical companion -- read below for how to reproduce.</p>
+<p>Every day (modulo bugs and outages) we request license link and licensed work counts from Yahoo! Site Explorer and Flickr respectively (and sometimes elsewhere, but those two are currently pertinent to our conservative estimation). You can find the data and software (if you want to start independently gathering data) <a href="http://wiki.creativecommons.org/Metrics/License_statistics">here</a>.</p>
+<p>After loading the data into MySQL, we delete some rows representing links that aren't of interest or from non-Yahoo link: queries to avoid having to filter. In the future at least the former ought be moved to a separate table.</p>
+<blockquote><p>
+<span style="font-size:xx-small"><br />
+delete from simple where license_uri = 'http://creativecommons.org/licenses/GPL/2.0/';<br />
+delete from simple where license_uri = 'http://creativecommons.org/licenses/LGPL/2.1/';<br />
+delete from simple where license_uri = 'http://creativecommons.org';<br />
+delete from simple where license_uri = 'http://www.creativecommons.org';<br />
+delete from simple where license_uri = 'http://creativecommons.org/licenses/publicdomain/1.0/';<br />
+delete from simple where license_uri = 'http://creativecommons.org/licenses/by-nc-nd/2.0/deed-music';<br />
+delete from simple where license_uri = 'http://creativecommons.org/licenses/by-nc-nd/2.0/br/creativecommons.org/licenses/sampling/1.0/br/';<br />
+delete from simple where license_uri = 'http://creativecommons.org/licenses/zero/1.0/';<br />
+delete from simple where license_uri = 'http://creativecommons.org/licenses/publicdomain';<br />
+delete from simple where search_engine != 'Yahoo';<br />
+</span>
+</p></blockquote>
+<p>The following relatively simple query obtains average counts for each distinct license across December (approximating year-end). For the six main version 2.0 licenses, Flickr knows about more licensed works than Yahoo! Site Explorer does, so Flickr numbers are used: we know at least that many works for each of those licenses exist. <code>greatest(yahoo.ct, coalesce(flickr.ct,0))</code> accomplishes this. <code>coalesce</code> is necessary for Flickr as we don't have data most of the time, and don't want to compare with NULL.</p>
+<blockquote><p>
+<span style="font-size:xx-small"><br />
+select * from ( select ym, sum(atleast) totalcount from (select yahoo.ym, yahoo.license_uri, greatest(yahoo.ct, coalesce(flickr.ct,0)) atleast from (select extract(year_month from timestamp) ym, license_uri,round(avg(count)) ct from simple group by license_uri,extract(year_month from timestamp)) yahoo left join (select extract(year_month from utc_time_stamp) ym, license_uri,round(avg(count)) ct from site_specific group by license_uri,extract(year_month from utc_time_stamp)) flickr on flickr.ym = yahoo.ym and flickr.license_uri = yahoo.license_uri) x group by ym ) x where ym regexp '12$';<br />
+</span>
+</p></blockquote>
+<p>Results of above query:</p>
+<table border="1">
+<tr>
+<th>Year End</th>
+<th>Total License Count</th>
+</tr>
+<tr>
+<td>2003</td>
+<td align="right">943,292</td>
+</tr>
+<tr>
+<td>2004</td>
+<td align="right">4,541,586</td>
+</tr>
+<tr>
+<td>2005</td>
+<td align="right">15,822,408</td>
+</tr>
+<tr>
+<td>2006</td>
+<td align="right">50,794,048</td>
+</tr>
+<tr>
+<td>2007</td>
+<td align="right">137,564,807</td>
+</tr>
+<tr>
+<td>2008</td>
+<td align="right">214,970,426</td>
+</tr>
+<tr>
+<td>2009</td>
+<td align="right">336,771,549</td>
+</tr>
+<tr>
+<td>2010</td>
+<td align="right">407,679,266</td>
+</tr>
+</table>
+<p>The more complicated query below also obtains the number of <a href="http://freedomdefined.org/Definition">fully free/libre/</a><a href="http://www.opendefinition.org/okd/">open</a> works and the proportion of works that are such:</p>
+<blockquote><p>
+<code style="font-size:xx-small"><br />
+select free.ym, freecount, totalcount, freecount/totalcount freeproportion from (select ym, sum(atleast) freecount from (select yahoo.ym, yahoo.license_uri, greatest(yahoo.ct, coalesce(flickr.ct,0)) atleast from (select extract(year_month from timestamp) ym, license_uri,round(avg(count)) ct from simple group by license_uri,extract(year_month from timestamp)) yahoo left join (select extract(year_month from utc_time_stamp) ym, license_uri,round(avg(count)) ct from site_specific group by license_uri,extract(year_month from utc_time_stamp)) flickr on flickr.ym = yahoo.ym and flickr.license_uri = yahoo.license_uri) x where license_uri regexp 'publicdomain' or license_uri regexp 'by/' or license_uri regexp 'by-sa/' group by ym) free, (select ym, sum(atleast) totalcount from (select yahoo.ym, yahoo.license_uri, greatest(yahoo.ct, coalesce(flickr.ct,0)) atleast from (select extract(year_month from timestamp) ym, license_uri,round(avg(count)) ct from simple group by license_uri,extract(year_month from timestamp)) yahoo left join (select extract(year_month from utc_time_stamp) ym, license_uri,round(avg(count)) ct from site_specific group by license_uri,extract(year_month from utc_time_stamp)) flickr on flickr.ym = yahoo.ym and flickr.license_uri = yahoo.license_uri) x group by ym) total where free.ym = total.ym and free.ym regexp '12$';<br />
+</code>
+</p></blockquote>
+<p>The above query obtains the following:</p>
+<table border="1">
+<tr>
+<th>Year End</th>
+<th>Free License Count</th>
+<th>Total License Count</th>
+<th>Free License %</th>
+</tr>
+<tr>
+<td>2003</td>
+<td align="right">208,939</td>
+<td align="right">943,292</td>
+<td align="right">22.15%</td>
+</tr>
+<tr>
+<td>2004</td>
+<td align="right">1,011,650</td>
+<td align="right">4,541,586</td>
+<td align="right">22.28%</td>
+</tr>
+<tr>
+<td>2005</td>
+<td align="right">4,369,938</td>
+<td align="right">15,822,408</td>
+<td align="right">27.62%</td>
+</tr>
+<tr>
+<td>2006</td>
+<td align="right">12,284,600</td>
+<td align="right">50,794,048</td>
+<td align="right">24.19%</td>
+</tr>
+<tr>
+<td>2007</td>
+<td align="right">40,020,147</td>
+<td align="right">137,564,807</td>
+<td align="right">29.09%</td>
+</tr>
+<tr>
+<td>2008</td>
+<td align="right">68,459,952</td>
+<td align="right">214,970,426</td>
+<td align="right">31.85%</td>
+</tr>
+<tr>
+<td>2009</td>
+<td align="right">136,938,501</td>
+<td align="right">336,771,549</td>
+<td align="right">40.66%</td>
+</tr>
+<tr>
+<td>2010</td>
+<td align="right">160,064,676</td>
+<td align="right">407,679,266</td>
+<td align="right">39.26%</td>
+</tr>
+</table>
+<p>The pretty graph in the book reflects the total number of CC licensed works and the number of fully free/libre/open CC licensed works at the end of each year; the legend and text note that the proportion of the latter has roughly doubled over the history of CC.</p>
+<p><a href="http://wiki.creativecommons.org/File:Metrics_Updated_Monthly.png"><img src="img/Metrics_Updated_Monthly.png" /></a></p>
+<p>If we look at the average for each month, not only December (remove the regular expression matching '12' at the end of the year month datestring), the data is noisier (and it appears data collection failed for two months in mid-2007, which perhaps should be interpolated):</p>
+<p>The results of the above queries and some additional charts may be <a href="http://wiki.creativecommons.org/images/0/02/CC-growth-mix.ods">downloaded as a spreadsheet</a>.</p>
+<p>As noted previously, additional data is <a href="http://labs.creativecommons.org/2010/12/09/available-for-analysis/">available for analysis</a>. There's also more that could be done with the license-link and site-specific data used above, e.g., analysis of particular license classes, version update, and jurisdiction ports. Also see the <a href="http://creativecommons.org/weblog/entry/28041">non-technical post.</a></p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

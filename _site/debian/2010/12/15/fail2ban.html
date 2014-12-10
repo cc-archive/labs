@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>fail2ban&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">fail2ban</h1>
+    <p class="post-meta">Dec 15, 2010 by nkinkade</p>
+  </header>
+
+  <article class="post-content">
+    <p>When I started at CC a number of years ago and began having to review <a href="http://sourceforge.net/projects/logwatch/">Logwatch</a> output on a daily basis, I tired quickly of the massive list of failed SSH login attempts in the log output.  I care much less about who failed to login than who actually did log in.  So the first thing I did was to reduce the verbosity of the SSH filters for Logwatch by creating the file <code>/etc/logwatch/conf/services/sshd.conf</code>, and added only "<code>Detail = 0</code>" to it.  However, I still found it annoying to have thousands of failed login attempts on virtually all servers.  Granted, I wasn't really worried that anyone would get in by trying to brute-force a login.  It was a more a matter of principle, and also a small bit that every failed login attempt uses some tiny amount of resources that could better be used for legitimate traffic.   So I implemented connection rate limiting via Netfilter.  However, that didn't work for our then software engineer <a href="http://asheesh.org">Asheesh</a>, who generally has around 30 open terminals and as many SSH connections to remote hosts, and who was hitting the rate connection limit.  So he started using the <a href="http://www.linuxjournal.com/content/speed-multiple-ssh-connections-same-server">ControlMaster</a> feature of SSH to get around this limitation.  Some time later I removed the rules altogether with the idea that they weren't doing anything useful, and were probably detrimental because the kernel was having to inspect a bunch of incoming packets and track connections.  Also, at that same time Asheesh recommend that I use a program called <a href="http://www.fail2ban.org/wiki/index.php/Main_Page">fail2ban</a> instead of tackling the issue with Netfilter.  I didn't like the idea.  Something seemed hackish about inserting Netfilter rules via some daemon process that scrapes log files of various services.  I also am an advocate of running as few services as possible on any given server; the less that runs, the less chance that something will fail in a service-impacting way.   Then, the whole thing fell into the forgotten, until a few days ago.</p>
+<p>A few days ago I was looking over the Logwatch output of our servers, as I do ever day, and was offended to find that on one server in particular there were nearly 30,000 failed SSH login attempts in a single day.   Sure, in terms of network traffic and machine resources, it's just a drop in the bucket, but it aggravated me.  I revisited the idea of fail2ban and did a bit more research.  I came to the conclusion that it was pretty stable and worked really well for most people.  So I decided to install it on one server.  I was really happy to find that it was as easy as <code>apt-get install fail2ban</code>.  Done!  On Debian, fail2ban works for SSH out-of-the-box, and I didn't have to do a thing; just another testament to the awesomeness of package management in Debian.  I was so impressed that I went ahead and installed it on all CC servers.  It has been running nicely for about a week, and failed SSH login attempts are now reduced to a few dozen a day on each machine.  Are the machines more secure?  Probably not.  But it's just one of those things that makes a sysadmin happy. </p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

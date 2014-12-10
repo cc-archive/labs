@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>Caching deeds for peak performance&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">Caching deeds for peak performance</h1>
+    <p class="post-meta">Jan 6, 2010 by nathan</p>
+  </header>
+
+  <article class="post-content">
+    <p>As Chris <a href="http://labs.creativecommons.org/2009/12/18/understanding-the-state-of-sanity-via-whiteboards-and-ascii-art/">mentioned</a>, he's been working on improving the <a href="http://creativecommons.org/choose/">license chooser</a>, among other things simplifying it and making it a better behaved <a href="http://en.wikipedia.org/wiki/Web_Server_Gateway_Interface">WSGI</a> citizen.  That code also handles generating the license deeds.  For performance reasons we like to serve those from static files; I <a href="http://yergler.net/blog/2010/01/05/caching-wsgi-applications-to-disk/">put together some details</a> about <a href="http://pypi.python.org/pypi/wsgi_cache">wsgi_cache</a>, a piece of WSGI middleware I wrote this week to help with this, on my <a href="http://yergler.net/blog/">personal blog</a>:</p>
+<blockquote><p>The idea behind wsgi_cache is that you create a disk cache for results, caching only the body of the response. We only cache the body for a simple reason—we want something else, something faster, like Apache or other web server, to serve the request when it’s a cache hit. We’ll use mod_rewrite to send the request to our WSGI application when the requested file doesn’t exist; otherwise it hits the on disk version. And cache “invalidation” becomes as simple as rm (and as fine grained as single resources).</p></blockquote>
+<p>You can read the full entry <a href="http://yergler.net/blog/2010/01/05/caching-wsgi-applications-to-disk/">here</a>, find wsgi_cache <a href="http://pypi.python.org/pypi/wsgi_cache">documentation on PyPI</a>, and get the <a href="http://code.creativecommons.org/viewgit/wsgi_cache.git/">source code</a> from our git repository.</p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Creative Commons Labs</title>
+    <description>Website of the Creative Commons tech team.
+</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 10 Dec 2014 12:07:12 -0500</pubDate>
+    <lastBuildDate>Wed, 10 Dec 2014 12:07:12 -0500</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>How creativecommons.org is built</title>
+        <description>&lt;p&gt;On Tuesday, December 9th 2014 you may have noticed a bit of downtime on creativecommons.org.&lt;/p&gt;
+
+&lt;p&gt;This is both an outage report, but also a little insight into how the Creative Commons website is built. I was happily assisted in this work by former technical lead at Creative Commons, Christopher Allen Webber who you may know as one of the developers of GNU MediaGoblin, where he drew me &lt;a href=&quot;http://mediagoblin.com/u/cwebber/m/machalus-duke-of-time/&quot;&gt;as a time-travelling goblin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In short, CC’s website was down for two reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An outdated dependency on RDQL, not SPARQL.&lt;/li&gt;
+  &lt;li&gt;An update to Ubuntu 14.04 LTS installed a version of a Zope library we use.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The Creative Commons website is a mixture of WordPress and several
+Python applications. In the near future, we plan to replace the
+WordPress portion with Jekyll.&lt;/p&gt;
+
+&lt;p&gt;The Python applications are vast, well engineered and easy to find
+your way around, even if you’re not the best Python programmer (like
+me) – they are: cc.engine, cc.license, i18n and license.rdf.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;cc.engine&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the code that handles the license chooser and the display of
+licenses on the site. As such, it’s pretty important. Chris was able
+to see that the program loaded at all by accessing its hidden start-up
+message “This is the root” – &lt;a href=&quot;https://github.com/creativecommons/creativecommons.org/blob/master/python_env/src/cc.engine/cc/engine/views.py&quot;&gt;you’ll see that here in the views.py file&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;cc.license&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the code that takes the RDF description of the license (from
+license.rdf) and returns it to the chooser or to the license
+display. Here’s where the code was updated to reflect a change from
+RDQL to SPARQL, which are both RDF query
+languages. &lt;a href=&quot;https://github.com/creativecommons/cc.license/pull/1&quot;&gt;As noted in the pull request&lt;/a&gt;
+– “one obscure query language is enough” – as
+&lt;a href=&quot;https://github.com/creativecommons/cc.license/blob/master/cc/license/_lib/functions.py&quot;&gt;you can see from the source code file&lt;/a&gt;,
+SPARQL was already in use.&lt;/p&gt;
+
+&lt;h3 id=&quot;future-goals&quot;&gt;Future goals&lt;/h3&gt;
+
+&lt;p&gt;One goal is to make the CC website very easy to people to hack on and make improvements to it. And yes, we’re a little way off on that today, but thanks to Chris, I have a better understanding of the site myself now, and I hope to pass that knowledge along with future updates to the site, especially once we move to Jekyll in the new year.&lt;/p&gt;
+
+&lt;p&gt;You can check out the &lt;a href=&quot;http://github.com/creativecommons.org&quot;&gt;CC website code&lt;/a&gt; for more info on how to recreate the CC website locally. Please help us out by filing any/all bugs/feature requests at &lt;a href=&quot;http://github.com/creativecommons.org/issues&quot;&gt;the GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://wiki.creativecommons.org/IRC&quot;&gt;our dedicated development IRC channel&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 10 Dec 2014 05:05:34 -0500</pubDate>
+        <link>/infrastructure/2014/12/10/how-creativecommons-dot-org-is-built.html</link>
+        <guid isPermaLink="true">/infrastructure/2014/12/10/how-creativecommons-dot-org-is-built.html</guid>
+        
+        
+        <category>infrastructure</category>
+        
+      </item>
+    
+      <item>
+        <title>Liberated Pixel Cup and distributed free culture projects</title>
+        <description>&lt;p style=&quot;text-align: center; font-style: italic&quot;&gt;&lt;a href=&quot;http://lpc.opengameart.org/static/lpc-style-guide/index.html&quot;&gt;&lt;img src=&quot;img/frontpage_3panels.png&quot; alt=&quot;Screenshot of the LPC style guide navigation boxes&quot; /&gt;&lt;/a&gt;&lt;br /&gt;The &lt;a href=&quot;http://lpc.opengameart.org/static/lpc-style-guide/index.html&quot;&gt;Liberated Pixel Cup style guide&lt;/a&gt;, which is the cornerstone of coordinating collaboration in &lt;a href=&quot;http://lpc.opengameart.org&quot;&gt;Liberated Pixel Cup&lt;/a&gt; themed artwork.&lt;/p&gt;
+&lt;p&gt;We &lt;a href=&quot;http://creativecommons.org/weblog/entry/32322&quot;&gt;announced&lt;/a&gt; &lt;a href=&quot;http://lpc.opengameart.org&quot;&gt;Liberated Pixel Cup&lt;/a&gt; just a little over two months ago.  In the time since the announcement, a stunning number of things have happened: we hit&amp;hellip; exceeded!&amp;hellip; the fundraising goal for the project, completed a style guide, base asset repository, and interactive demo, wrapped up the art phase, and we are now well into the coding phase.&lt;/p&gt;
+&lt;p&gt;I&#39;m happy to see things going so well.  Liberated Pixel Cup is an important project to me, and its success is near and dear to my heart. This isn&#39;t just because I think &quot;games are cool&quot; either: there are actually a lot of motivations behind Liberated Pixel Cup.  I discussed one of these in depth on my personal blog in a post titled &quot;&lt;a href=&quot;http://dustycloud.org/blog/why-faif-games-matter&quot;&gt;Why games matter to free software and free culture&lt;/a&gt;&quot;.  If you&#39;re looking for a larger-policy reason for working on free software and free culture games, you may wish to read that.&lt;/p&gt;
+&lt;p&gt;But there are other reasons why I think the Liberated Pixel Cup is important that were outside the scope of that post.  One of these is that games are one of the few direct intersections of free culture and free software (or otherwise directly functional) works (the other major instance of these I think of being 3d printing).  Ideally, we&#39;ll want to see only more and more of these combinations in the future, but what we see is that when we do, a lot of &lt;a href=&quot;http://wiki.creativecommons.org/4.0/Games_3d_printing_and_functional_content&quot;&gt;interesting questions&lt;/a&gt; are raised.  And getting these movements to connect is surely important generally.  It&#39;s also true that getting into game development is presently extremely hard as you end up splitting your efforts between designing a game engine and designing artwork assets, so reducing the barrier for certain types of games seems to be a worthy goal.&lt;/p&gt;
+&lt;p&gt;But one of the biggest reasons for doing Liberated Pixel Cup was very specific: doing distributed free culture projects is hard and has barely happened at all in the way that distributed free software projects has.  I wanted to prove that there is a way to do distributed free culture projects and achieve a coherent result.&lt;/p&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;Background thinking on distributed free culture projects&lt;/h2&gt;
+&lt;p&gt;Free software projects have operated in a distributed fashion for some time.  But for whatever reason, there are few examples of successful distributed free culture projects.  Sure, there&#39;s the obvious exception of Wikipedia and wikis generally.  However, these are very much so the exception, and it&#39;s even arguable that while free culture projects, these fall more on the data and factual information side of things than on the highly creative and artistically directed projects side of things (one might argue that Wikimedia Commons is more on the side of creative works, but this is more of an aggregation of creative works than work to create a coherent and stylistically consistent whole).&lt;/p&gt;
+&lt;p&gt;Probably the most famous example of artistic free cultural works that comes close to free software works is the Blender Foundation&#39;s films.  There&#39;s a lot that comes close here: obviously first of all in that they use a major piece of free software (Blender) as the key part of their pipeline, but more specific to workflow aspects, the Blender Foundation films release their works in much the way that a free software project releases their works: with all the source files used to build the film attached under a free license so that anyone can build, modify, and study the project.&lt;/p&gt;
+&lt;p&gt;But for the most part, Blender films &lt;i&gt;aren&#39;t&lt;/i&gt; developed in a decentralized manner (or haven&#39;t been, at the time of this writing).  For &lt;a href=&quot;http://sintel.org&quot;&gt;Sintel&lt;/a&gt;, &lt;a href=&quot;http://bigbuckbunny.org/&quot;&gt;Big Buck Bunny&lt;/a&gt;, and &lt;a href=&quot;http://elephantsdream.org/&quot;&gt;Elephants Dream&lt;/a&gt;, the development of the work was done by a small and closely knit team of artists behind closed doors and the entirety of the film was released all at once at the end of the project.  This is not to say such a pattern would comparatively disqualify something from being called free software, but it would make it a non-distributed project along the lines of what we call in free software &quot;throwing code over the wall&quot;.&lt;/p&gt;
+&lt;p&gt;This hasn&#39;t gone unnoticed by members of the community; if you frequent the &lt;a href=&quot;http://www.blenderartists.org/forum/&quot;&gt;BlenderArtists&lt;/a&gt; forums, every now and then someone brings up the idea of doing a distributed open movie project that anyone can join and contribute to.  These projects tend to start with a bunch of enthusiasm but after not too long seem to generally fizzle out (I&#39;m not going to point to any in particular because I don&#39;t want to make anyone feel on the spot, but it&#39;s easy enough to find on your own by doing a search for the terms &quot;open movie&quot; and browsing through the archives).&lt;/p&gt;
+&lt;p&gt;Why does this happen?  Is it simply that distributed free culture projects aren&#39;t possible in the way that free software projects are?  I don&#39;t believe this is true, and have been trying to think it through for some time.&lt;/p&gt;
+&lt;p&gt;One event occurred that lead to my thinking about how to approach a distributed free culture project: during the making of Sintel there was a period where they &lt;a href=&quot;http://www.sintel.org/news/guardians-community-help/&quot;&gt;asked for some outside help improving the characters&lt;/a&gt;.  I was excited about this, but thought maybe with some more careful direction they could have better results.  I sent an email to the director Colin Levy and suggested that they do a sprint instead: it would give them the opportunity to pre-allocate a list of tasks so that multiple people could work on multiple things without conflicting with each others&#39; work (resolving conflicts in 3d modeling is not as easy as it is to do with plaintext source code), they could set aside a series of time where they could give direct feedback to people working on things, and they could have a short timeline in which they could see how well things worked.  And the good news is that the Sintel team &lt;a href=&quot;http://www.sintel.org/news/community-modeling-sprint/&quot;&gt; ran such a sprint&lt;/a&gt; (I&#39;m credited in the post as &quot;cwebb&quot;) and it was a &quot;&lt;a href=&quot;http://www.sintel.org/news/modeling-sprint-a-stellar-success/&quot;&gt;stellar success&lt;/a&gt;&quot;.  (There was also later a animation sprint, but that went a bit less well&amp;hellip; I did an &lt;a href=&quot;http://creativecommons.org/weblog/entry/24149&quot;&gt;interview with Ton Roosendaal&lt;/a&gt; where he explained a bit why he thought that was.)  I&#39;m not trying to take credit for any of Sintel&#39;s success here, even in the modeling sprint (I didn&#39;t participate, I just sent that email); that would be stupid.  But I was excited to see that when properly framing things, something collaborative was possible for a free culture project.  This was a small subset of a larger project (which was still mostly done in a throw-the-work-over-the-wall fashion), but maybe some lessons here could be expanded into something larger?&lt;/p&gt;
+&lt;p&gt;I&#39;ve continued to think about this and whether or not things could be expanded to larger projects.  I had a call with a friend of mine, Bassam Kurdali, who is the director of the first open movie project, Elephants Dream, as well as &lt;a href=&quot;http://tube.freefac.org&quot;&gt;Tube&lt;/a&gt;, a new and exciting open movie film project.  I picked his brains on what he thought about running a largeish distributed free culture project would work like.&lt;/p&gt;
+&lt;p&gt;We came up with the following points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For one thing, the idea that you just throw open a project and everyone shows up and just builds their piece of the universe and bam, your world is created! &amp;hellip; is wrong.  In fact, it&#39;s even wrong for software: most free software projects that go far might have a lot of contributors with a large and varied set of interests, but there tends to be one or just a few people setting out a very specific set of &quot;project vision&quot; for the software.  If you don&#39;t have this, the software heads in all sorts of conflicting directions and falls apart under its own weight and lack of cohesion.&lt;/li&gt;
+&lt;li&gt;This is even &lt;i&gt;more so&lt;/i&gt; a problem for free culture.  When you develop an animated film, a game, or whatever, you need clear stylistic direction.  If you don&#39;t have that, you end up with a ton of pieces that you can try to mash together but don&#39;t really look like they belong together at all.  Everyone has a different idea of where the project should go and a different preference in look, and eventually you hit creative difficulties, and the piece falls apart.  But is there a way to get past this?&lt;/li&gt;
+&lt;li&gt;There are probably two ways to get past this.  One is to have a strong &quot;artistic director&quot; of the project who coordinates the entire style of the project from start to finish.  And another is to borrow an idea from programming and set up a &quot;style guide&quot;.  Bassam pointed out that python programmers are more than happy to conform to &lt;a href=&quot;http://www.python.org/dev/peps/pep-0008/&quot;&gt;PEP-8&lt;/a&gt;, the style guide that dictates the general look and feel of code.  And of course, there are plenty of other conventions in python code imposed by the language&#39;s design itself.  Could the same system work for artists?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Relatedly, around this time, Jonathan Palecek (CC software engineer, and author of the &lt;a href=&quot;http://labs.creativecommons.org/2012/07/10/dissecting_lpcd/&quot;&gt;Liberated Pixel Cup Demo&lt;/a&gt;) and I were speaking about an engine he was building and looking around on &lt;a href=&quot;http://opengameart.org/&quot;&gt;OpenGameArt&lt;/a&gt; for resources to use when prototyping the engine.  The trouble we found is exactly the problem laid out above: there are tons of &lt;i&gt;wonderful&lt;/i&gt; resources on OpenGameArt.  But the problem is that you simply can&#39;t use most of them together.  There&#39;s simply too much variance between the items.&lt;/p&gt;
+&lt;p&gt;&amp;hellip; and then it became obvious.  This is the perfect space to try to prove distributed free culture projects are possible with enough direction and preparation&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;Why we did what we did&lt;/h2&gt;
+&lt;p&gt;So that&#39;s the thinking that lead up to the point of Liberated Pixel Cup.  I approached OpenGameArt and the Free Software Foundation about the idea of a competition that bridged both free software and free culture with a specifically laid out style.  Once they were both on board (Mozilla would join later) and we knew our general direction it was time to figure out: how exactly would we structure the contest and the style guide specifically?&lt;/p&gt;
+&lt;p&gt;For one thing, we knew what building a style guide generally would look like, because there was a wonderful project called &lt;a href=&quot;http://tango.freedesktop.org/Tango_Desktop_Project&quot;&gt;Tango&lt;/a&gt; which had already done the same for vectorish application icons.  They seemed to do it exactly right with their existing &lt;a href=&quot;http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines&quot;&gt;style guide&lt;/a&gt; coupled with a &lt;a href=&quot;http://tango.freedesktop.org/Tango_Icon_Library&quot;&gt;base icon library&lt;/a&gt;.  So we went this route: we built a &lt;a href=&quot;http://lpc.opengameart.org/static/lpc-style-guide/styleguide.html&quot;&gt;style guide&lt;/a&gt;, we commissioned a series of &lt;a href=&quot;http://lpc.opengameart.org/static/lpc-style-guide/assets.html&quot;&gt;base assets&lt;/a&gt;, and to show off that in fact that the Liberated Pixel Cup style dream was real, we even built an &lt;a href=&quot;http://lpc.opengameart.org/static/lpc-style-guide/demo.html&quot;&gt;interactive demo&lt;/a&gt; that you can play with.&lt;/p&gt;
+&lt;p&gt;With that in mind, we had to make a decision on what style we wanted to shoot for.  We went with a raster-based top-down, orthographic view tiling at 32x32.  But why this specific style?  It was no accident; we had these very specific goals in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We wanted it to be adaptable to a wide variety of types of gameplay.  In the &quot;16-bit era&quot; of game consoles, there were a wide variety of games that used this perspective: adventure games, RPGs, real-time strategy games, farming simulations, civilization simulations, and so on.  We knew that it was flexible, and flexibility was critical to a design that could be useful for a variety of games for a long time to come.&lt;/li&gt;
+&lt;li&gt;We wanted it to be extendable to a variety of thematic genres.  Even though the base assets that we commissioned for Liberated Pixel Cup had some specific thematic elements to them (vaguely victorianesque interiors, some traditional fantasy game tropes), there was nothing specific about the elements described in the style guide towards one thematic genre or another.  (This was proven true in the art phase of the competition; we got some nice looking science fiction themed submissions.)&lt;/li&gt;
+&lt;li&gt;We wanted the style to be easy to collaborate on without a persistent &quot;art director&quot;.  The style we were going for was fairly well understood by having a lot history of games with &lt;i&gt;similar&lt;/i&gt; (though not exactly the same) styling.  The orthographic style and the abstracted and highly stylized proportions of the characters we had commissioned were done with clear intentions; for example, we had considered a character style that had more realistic proportions, but such a character style would require either a much more intensive set of art direction (which we could not handle such a resource with the kind of contest we wanted to run) or much longer and more specific descriptions and layouts around the characters.  Similarly, there are ways to do tiled games that have a more &quot;faked&quot; but high definition sense of perspective (even though on a flat grid you can&#39;t have real perspective lines by definition) but this would again require a lot more hand-holding than just &quot;keep it in an orthographic projection.&quot;&lt;/li&gt;
+&lt;li&gt;We wanted artwork that looked beautiful but could have a low barrier to entry for a variety of artists.  The art style we chose was intended to have specific but easy to understand rules, but ones where fairly new artists could still accomplish nice things that seemed to match, and advanced artists could use their full skills.  This affected decisions like &quot;just what kind of texturing/shading are we going to push for?&quot;&lt;/li&gt;
+&lt;li&gt;Despite the above, we wanted something that looked nice and, even though borrowing from a long history of games with similar and well understood styling, had distinctive elements.  To this end, we laid out the base directions of the art style first, then commissioned a base set of artwork, then developed a clear style guide based on the existing set of work we had.  Decisions like the general &quot;camera angle&quot; we wanted, finalized shading directions, how to handle outlines (which are colored instead of black and white in our style), were made based on the artwork produced by our commissioned work.  And we do feel that the result was something that was easy to build things off of but had a clear and distinct &quot;Liberated Pixel Cup look&quot; to it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Knowing all this, we split out the contest into three phases.  First, we had a commission / style guide phase.  Bart Kelsey of OpenGameArt and I wrote out the core aspects of the style we knew we wanted and then brought on Lanea Zimmerman as our lead artist to work out initial tiles then gradually brought in four other artists (Stephen Challener developing the base characters, Charles Sanchez doing monsters, Manuel Riecke doing character hair/accessories, and Daniel Armstrong building us a bonus castle set).  With the artists coordinating we extrapolated what we had into a style guide.&lt;/p&gt;
+&lt;p&gt;At that point we were able to move into part two, the art phase, which &lt;a href=&quot;http://lpc.opengameart.org/content/art-competition-entries-in-code-has-competition-begun&quot;&gt;recently wrapped up&lt;/a&gt;.  And I&#39;m happy to say, it was a success!  We got a large variety of entries and for the large part, most of them look like they fit beautifully with the style we set out.  And it&#39;s hard not to feel validated: we&#39;ve seen in Liberated Pixel Cup that it&#39;s possible to get a large, distributed set of people to collaborate on something big and make things that actually can work together.  And now we&#39;re finally moving on to stage three of the project, the coding phase; hopefully seeing contributions from the art contest being used in games will make that achievement seem more real.&lt;/p&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;In conclusion&lt;/h2&gt;
+&lt;p&gt;So among other agendas behind Liberated Pixel Cup was proving that distributed, collaborative free culture projects can be done if approached right.  And I believe we showed that it can in this case: with enough forethought, careful planning, and creating the kind of conditions that made artists &lt;i&gt;want&lt;/i&gt; to create a cohesive set of works.&lt;/p&gt;
+&lt;p&gt;Can the approach we took with Liberated Pixel Cup work across all free culture projects?  I don&#39;t think it&#39;s quite that simple; we made some very specific choices as to the decisions we wanted to take given the kind of project we intended to run (eg, the choice for non-realistically proportioned characters being done because we knew with everyone working separately we couldn&#39;t have a careful &quot;art director&quot; type person&amp;hellip; but if we were working on a film, we probably would go for something with a style that might need more negotiation).  But what I do think is that if you have people who know their field well and decide to take the forethought to give a project clear planning and direction, a &quot;distributed, collaborative free culture project&quot; is more than possible.  Creating something that&#39;s cohesive takes more work than just &quot;throwing open the doors and letting everyone toss in whatever they feel like&quot;, but if you take the time to plan things out, you really can get people collaborating on something wonderful and even have it fit together beautifully.  And so, I hope we see more of such projects in the future!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Jul 2012 16:26:11 -0400</pubDate>
+        <link>/2012/07/11/liberated-pixel-cup-and-distributed-free-culture-projects.html</link>
+        <guid isPermaLink="true">/2012/07/11/liberated-pixel-cup-and-distributed-free-culture-projects.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Dissecting the Liberated Pixel Cup Demo</title>
+        <description>&lt;p&gt;&lt;img src=&quot;img/dissecting_lpcd.png&quot; alt=&quot;&quot; title=&quot;screenshot&quot; width=&quot;640&quot; height=&quot;480&quot; class=&quot;alignnone size-full wp-image-1781&quot; style=&quot;margin: auto; display: block;&quot; /&gt;&lt;/p&gt;
+&lt;h3&gt;ABSTRACT&lt;/h3&gt;
+&lt;p&gt;
+The &lt;a href=&quot;http://lpc.opengameart.org/static/lpc-style-guide/demo.html&quot; target=&quot;_blank&quot;&gt;Liberated Pixel Cup Demo&lt;/a&gt; (LPCD) was written by yours truly over the course of two weeks, prior to the art phase of the Liberated Pixel Cup contest.  The demo had several intended purposes.  First, to test the usability of the base tile set for building levels.  Second, to show character sprites interacting with environments and to demonstrate animations.  And third, to inspire.  As there has been some interest in the construction of the demo, this article is an overview to how the demo was constructed.  Before I go into any detail, it is worth noting that this demo was put together without really knowing how much time would have been available to work on it.  Because of this, the demo progressed through several stages - each playable and a plausible endpoint - before arriving to what it is today.  This is reflected in a few places in the source code, either in code that was written with the best of intentions or in code that was written to be the foundation for something that never came to be.&lt;/p&gt;
+&lt;h3&gt;STRUCTURE&lt;/h3&gt;
+&lt;p&gt;
+Complex JavaScript programs get messy pretty fast.  This is largely because it is impractical to split a JavaScript program across several files.  Lack of namespaces and overly verbose language features (like Object.__defineGetter__) probably don&#39;t help the matter.  &lt;a href=&quot;http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/&quot; target=&quot;_blank&quot;&gt;There is a ridiculous amount of information&lt;/a&gt; on how to organize your code and keep sane.  I&#39;ve yet to fall madly in love with any of these solutions.&lt;/p&gt;
+&lt;p&gt;
+Here&#39;s what I usually do:&lt;br /&gt;
+I start by defining a dummy module using the object notation (I call this the &#39;header&#39;). Then I monkey patch all of my functions into it.  As I add function definitions and the like, I update the module to reflect the expected structure. Function stubs have comments next to them outlining the expected arguments.  I don&#39;t use a closure to fake a private scope for the module.  Instead, the module is organized to keep calls, callbacks, and different sorts of data separate.  It makes testing your code much easier.  If you want to scare people from touching something, throw some underscores in front of its name.&lt;/p&gt;
+&lt;p&gt;
+The program itself is split into several files, grouping code more or less by purpose.  &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/header.js&quot; target=&quot;_blank&quot;&gt;Header.js&lt;/a&gt; contains the module object definition, and the starting point of execution for the game engine.  All of the remaining files are appended to the end of this file (the order doesn&#39;t really matter).  Assembly of the program (as well as minification) is automated via a make file.&lt;/p&gt;
+&lt;p&gt;
+The advantages of using this organizational scheme are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The header provides a simple reference and easy visualization of the program&#39;s structure.&lt;/li&gt;
+&lt;li&gt;Doesn&#39;t do anything clever with language features to make it work.&lt;/li&gt;
+&lt;li&gt;Looks cleaner to me.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+The only disadvantage I can think of is that the header must be maintained as the program is written. It isn&#39;t easy to tell if the header is maintained well, since the program can still run if function stubs are missing or some of the variables aren&#39;t defined.&lt;/p&gt;
+&lt;h3&gt;GRAPHICS ENGINE&lt;/h3&gt;
+&lt;p&gt;
+Levels are built using the program &lt;a href=&quot;http://www.mapeditor.org/&quot; target=&quot;_blank&quot;&gt;Tiled&lt;/a&gt;, with the level data exported to json.  The levels are tiled on a 32x32 grid, which turned out to be a mistake.  If I wrote this again, I would go with a 16x16 grid instead, to simplify the conversion of world coordinates &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/graphics.js#line58&quot; target=&quot;_blank&quot;&gt;to&lt;/a&gt; and &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/controls.js#line121&quot; target=&quot;_blank&quot;&gt;from&lt;/a&gt; screen space coordinates.  This is explained further in the section about the physics engine.&lt;/p&gt;
+&lt;p&gt;
+Tile boards are rendered upon two html5 canvas elements;  an iframe between the two is where the actors are drawn.  Level data may contain more than two layers, but will be automatically flattened into two layers &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/map_loader.js#line80&quot; target=&quot;_blank&quot;&gt;when the level is rendered&lt;/a&gt;.  &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line80&quot; target=&quot;_blank&quot;&gt;Actors are represented with div elements&lt;/a&gt;; css is used to &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line96&quot; target=&quot;_blank&quot;&gt;crop and position&lt;/a&gt; them. For actors inheriting from VisibleKind, &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line206&quot; target=&quot;_blank&quot;&gt;Z-index is used to do depth sorting&lt;/a&gt;, which is why the actors are in an iframe.  Depth sorting behavior is done on the actor&#39;s _dirty method, &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line263&quot; target=&quot;_blank&quot;&gt;which may be overridden&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+Art assets are fetched in the background by creating a new Image object in JavaScript.  The onload callback is used to inform the engine when the resource is ready for use.  When the json file for a level is being parsed, &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/map_loader.js#line243&quot; target=&quot;_blank&quot;&gt;the number of pending downloads is incremented&lt;/a&gt; when an image download is started, &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/map_loader.js#line230&quot; target=&quot;_blank&quot;&gt;and decremented on its callback&lt;/a&gt;.  This allows for the program to wait far all of the images to finish downloading &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/map_loader.js#line232&quot; target=&quot;_blank&quot;&gt;before drawing the tile boards&lt;/a&gt;.  &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line133&quot; target=&quot;_blank&quot;&gt;A similar technique&lt;/a&gt; is used with art assets for actors, &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line98&quot; target=&quot;_blank&quot;&gt;but this is unnecessary because the asset is displayed using css&lt;/a&gt;.  This is a throwback from when a third canvas element was used to draw the actors.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/graphics.js#line47&quot; target=&quot;_blank&quot;&gt;The redraw event is scheduled&lt;/a&gt; when the focused character&#39;s coordinates change (it might still be when any actor&#39;s coordinates change, which would be a throwback from when all actors were drawn on a canvas).  Because a bunch of functions may request a redraw at once (some might do this multiple times), the first request is honored and the rest are ignored. This simplifies things quite a bit, because the request itself is inexpensive, it can be used when-in-doubt without worrying about a significant performance cost.  I&#39;m thinking of generalizing this for another JavaScript game engine I am planning, where there are various engine functions that would make sense to schedule like this.  I&#39;m thinking in that version, I&#39;ll have the scheduling function be named &quot;please&quot;.  Eg, please(&quot;redraw scene&quot;), etc.&lt;/p&gt;
+&lt;h3&gt;PHYSICS ENGINE&lt;/h3&gt;
+&lt;p&gt;
+Physics information is stored on a 16x16 conceptual grid.  Originally, this was to be 32x32, but proved to be a mistake: in some cases, this would prevent the character from walking right up to the edge of something. Because many hours of work already spent building levels would be lost by making the whole engine use a 16x16 grid, I opted for a flimsy workaround.  Physics info for tiles is now one of A, N, NE, E, SE, S, SW, W, NW;  &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/map_loader.js#line100&quot; target=&quot;_blank&quot;&gt;which describes the wall coverage in a given graphical tile&#39;s conceptual subtiles&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+The physics grid is populated during level load.  &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/controls.js#line32&quot; target=&quot;_blank&quot;&gt;Several&lt;/a&gt; &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/controls.js#line42&quot; target=&quot;_blank&quot;&gt;helper&lt;/a&gt; &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/controls.js#line71&quot; target=&quot;_blank&quot;&gt;functions&lt;/a&gt; &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/controls.js#line82&quot; target=&quot;_blank&quot;&gt;exist&lt;/a&gt; to check if a given coordinate is blocked by a wall, an actor, or a warp point.&lt;/p&gt;
+&lt;p&gt;
+Actors that prototype AnimateKind (which also happens to be the actors which can be the focused player) have a &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line384&quot; target=&quot;_blank&quot;&gt;_move_to function&lt;/a&gt; that initiates &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line415&quot; target=&quot;_blank&quot;&gt;the walk cycle&lt;/a&gt;.  The walk cycle function is probably the most complex singular part of the game engine.  This is in part due to the fact that the character&#39;s coordinates are floating point values, not array indices.  &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line424&quot; target=&quot;_blank&quot;&gt;A good chunk of this code&lt;/a&gt; is used to make sure the character doesn&#39;t appear to be walking through walls when cutting around a corner;  this had the added side effect of the movement trajectory appearing to be adaptive to obstructions despite the lack of a real path finding algorithm.  Part of the complexity of this function also comes from the fact that it is possible &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line467&quot; target=&quot;_blank&quot;&gt;to call events on other actors when colliding into them&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+The player character is an actor.  Any actor that prototypes AnimateKind can be focused as the main character.  This is used in the demo a bit, allowing you to play as Alice (&lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/header.js#line147&quot; target=&quot;_blank&quot;&gt;by default&lt;/a&gt;), Bobby Tables, &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/dynamics/secret1.json.js&quot; target=&quot;_blank&quot;&gt;and a secret character&lt;/a&gt;.  Using a JavaScript debugger &lt;a href=&quot;http://pastebin.com/vGcsnRJY&quot; target=&quot;_blank&quot;&gt;and a little know-how&lt;/a&gt;, you can take control of many other actors; such as any of the students or any of the monsters.&lt;/p&gt;
+&lt;h3&gt;ACTOR MODEL&lt;/h3&gt;
+&lt;p&gt;
+Each entity in gameplay is represented by a javascript object that contains data describing the actor, and event handler functions.  Actor objects are stored in LPCD.ACTORS.registry, and there exists &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line580&quot; target=&quot;_blank&quot;&gt;several helper functions&lt;/a&gt; to be used to manage them.  If you use the api &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/api.js#line72&quot; target=&quot;_blank&quot;&gt;functions&lt;/a&gt; to &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/api.js#line97&quot; target=&quot;_blank&quot;&gt;create&lt;/a&gt; &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/api.js#line106&quot; target=&quot;_blank&quot;&gt;your&lt;/a&gt; &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/api.js#line115&quot; target=&quot;_blank&quot;&gt;actors&lt;/a&gt;, this process is entirely automatic.&lt;/p&gt;
+&lt;p&gt;
+There is an inheritance chain used in creating an actor, allowing different engine features to be implemented on the actors themselves while keeping the code isolated.  This means that the code for things like human characters, monsters, treasure boxes, and etc are all responsible for rendering themselves in the graphics engine.  These actor type constructors can be found on the header object in &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/header.js#line54&quot; target=&quot;_blank&quot;&gt;LPCD.ACTORS&lt;/a&gt;, and defined in the file &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js&quot; target=&quot;_blank&quot;&gt;actor_model.js&lt;/a&gt;.  For the most part, these constructors are fairly concise, with the exceptions of VisibleKind and AnimateKind.&lt;/p&gt;
+&lt;p&gt;
+All actors inherit from &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line31&quot; target=&quot;_blank&quot;&gt;AbstractKind&lt;/a&gt;.  The most important aspect of this actor is the variable &quot;_binding&quot;, which determines if an actor is cleared from memory or not when a new level is loaded.  This allows focused actors to travel from level to level.  There was going to be a feature for persistent actors, allowing for things like items and treasure, though this was never implemented.  Thus, &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line68&quot; target=&quot;_blank&quot;&gt;PersistentKind&lt;/a&gt; exists, though I don&#39;t believe anything actually uses it.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line80&quot; target=&quot;_blank&quot;&gt;VisibleKind&lt;/a&gt; inherits from AbstractKind and is used to provide a presence for the actor in the graphics engine &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line119&quot; target=&quot;_blank&quot;&gt;by creating a div element&lt;/a&gt; and &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line180&quot; target=&quot;_blank&quot;&gt;inserting it into the iframe&lt;/a&gt; used to display actors. This object also provides world coordinates (since they&#39;re needed for drawing) to the actor. This object does not make an actor responsive to collision detection.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line221&quot; target=&quot;_blank&quot;&gt;ObjectKind&lt;/a&gt; inherits from VisibleKind, and is used for inanimate objects.  It provides the &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line255&quot; target=&quot;_blank&quot;&gt;_blocking function&lt;/a&gt;, so that the actor can be used in the physics system.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line282&quot; target=&quot;_blank&quot;&gt;AnimateKind&lt;/a&gt; inherits from ObjectKind.  It provides the &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line303&quot; target=&quot;_blank&quot;&gt;_gain_input_focus&lt;/a&gt; function, &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line355&quot; target=&quot;_blank&quot;&gt;directional facing information&lt;/a&gt;, a &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line364&quot; target=&quot;_blank&quot;&gt;_look_at&lt;/a&gt; function, and the walk cycle via the &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line384&quot; target=&quot;_blank&quot;&gt;_move_to&lt;/a&gt; function. This does not implement any animation features, but is simply for animate objects.  &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line509&quot; target=&quot;_blank&quot;&gt;CritterKind&lt;/a&gt; and &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/actor_model.js#line553&quot; target=&quot;_blank&quot;&gt;HumonKind&lt;/a&gt; both inherit from AnimateKind and implement animation specific features.&lt;/p&gt;
+&lt;h3&gt;LEVEL SCRIPTING AND CHARACTER DEFINITIONS&lt;/h3&gt;
+&lt;p&gt;
+Level scripts are found in the &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/trees/code_freeze/source/static/demogame/dynamics&quot; target=&quot;_blank&quot;&gt;dynamics folder&lt;/a&gt;, and have the file name of the level they correspond to + &quot;.js&quot;.  So for example, the starting level&#39;s file name is &quot;start1.json&quot; (level data is found in the &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/trees/code_freeze/source/static/demogame/levels&quot; target=&quot;_blank&quot;&gt;levels folder&lt;/a&gt;.  I &lt;strong&gt;do not&lt;/strong&gt; recommend viewing it via web browser), the corresponding dynamics script is &quot;&lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/dynamics/start1.json.js&quot; target=&quot;_blank&quot;&gt;start1.json.js&lt;/a&gt;&quot;.  To make it easy to clean things up when the level changes; when the level is loaded, &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/map_loader.js#line155&quot; target=&quot;_blank&quot;&gt;an iframe is created and the level dynamics script is loaded within that iframe&lt;/a&gt;.  It is &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/map_loader.js#line167&quot; target=&quot;_blank&quot;&gt;given access to LPCD.API&lt;/a&gt; via a global variable named API; but is left blind to the rest of the engine.  This allows us to dispose of the script easily &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/graphics.js#line38&quot; target=&quot;_blank&quot;&gt;by deleting the iframe&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+An amusing side effect of this is if you define within a dynamics script an actor that inherits from AnimateKind, and change your input focus to this new actor and leave the level; the object for the actor remains, but none of its member functions may be called anymore.  However, anything in the prototype chain still works fine provided that it was defined in the engine itself.  Because of this, &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/characters.js&quot; target=&quot;_blank&quot;&gt;characters.js&lt;/a&gt; is used to define game-specific characters and useful objects outside of the levels and &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/dynamics/house1.json.js#line6&quot; target=&quot;_blank&quot;&gt;instance them from the level dynamics script&lt;/a&gt; via &lt;a href=&quot;https://gitorious.org/liberated-pixel-cup/lpc_styleguide/blobs/code_freeze/source/static/demogame/js/api.js#line72&quot; target=&quot;_blank&quot;&gt;the API.instance function&lt;/a&gt;.  Because the code was defined outside of the level, the object remains functional after the level has been flushed.&lt;/p&gt;
+&lt;p&gt;
+Conveniently, this behavior is consistent between Firefox and Chrome.  If this behavior for scripts in iframes is standardized, I imagine this was never an intended use case.&lt;/p&gt;
+&lt;h3&gt;CLOSING THOUGHTS&lt;/h3&gt;
+&lt;p&gt;
+Overall, I&#39;m quite pleased with how the demo turned out.  There are some rough spots where it isn&#39;t clear where things are happening (eg, flushing the level actors by changing the innerHTML property of a DOM element), which I had forgotten about prior to writing this article.  Despite that, I think the code is pretty usable as a game engine, and should still be fairly easy to extend.  Hopefully this article serves as a guide for others to tinker with the engine, to use the code in their own projects, or even to study in building something entirely new.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Jul 2012 19:10:53 -0400</pubDate>
+        <link>/2012/07/10/dissecting_lpcd.html</link>
+        <guid isPermaLink="true">/2012/07/10/dissecting_lpcd.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Setting kernel clocksource to HPET solves mysterious performance issues</title>
+        <description>&lt;p&gt;For quite a long time the server which runs this very site has had some performance issues.   This same server runs one or two instances of Mediawiki, and I have always just presumed that Mediawiki was the cause of the problems.  I really didn&#39;t give it too much more thought, since the issues weren&#39;t causing many horrible user-facing performance issues.  The server sort of hobbled along in the background, fairly loaded, but still managing to serve up pages decently.  However, the problem most seriously manifested itself for me personally when working in a remote shell.  Sometimes I&#39;d go to save a file and the operation would take 10 or 15 seconds to complete.  I ignored this, too, for some time, but it reached a point where I couldn&#39;t take it any longer.&lt;/p&gt;
+&lt;p&gt;I watched the output of top for a while, sorting on various metrics, and noticed that &lt;em&gt;flush&lt;/em&gt; and &lt;em&gt;kjournald&lt;/em&gt; were pegged at the top when sorted by process state, both being in a disk-wait (&quot;D&quot;) state.  This didn&#39;t make any sense to me, since the machine doesn&#39;t host any really busy sites and should have plenty of memory to handle what it has.  I decided to do a web search for &quot;&lt;em&gt;linux flush kswapd&lt;/em&gt;&quot; to see what it would turn up.  As it turns out, the very &lt;a href=&quot;http://old.nabble.com/Re%3A-kswapd-continuously-active-p27500336.html&quot;&gt;first article&lt;/a&gt; returned in the search ended up indirectly shedding light on this issue, even though it turned out to be mostly unrelated to my own problem.  However, what I did take away from it was learning of a utility that I didn&#39;t previous know about.  Namely, &lt;em&gt;&lt;a href=&quot;https://perf.wiki.kernel.org/&quot;&gt;perf&lt;/a&gt;&lt;/em&gt;, and specifically &lt;em&gt;&lt;a href=&quot;https://perf.wiki.kernel.org/articles/t/u/t/Tutorial.html#Live_analysis_with_perf_top&quot;&gt;perf top -a&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;What I discovered upon running this command was that the kernel was spending a huge amount of time (60% to 80%) running the function &lt;em&gt;acpi_pm_read&lt;/em&gt;.  A little investigation on this tracked it back to the kernel &lt;em&gt;clocksource&lt;/em&gt; being set to &lt;em&gt;acpi_pm&lt;/em&gt;.  The current, and available, clocksource(s) can be discovered by running the following, respectively:&lt;/p&gt;
+&lt;pre&gt;
+$ cat /sys/devices/system/clocksource/clocksource0/current_clocksource
+$ cat /sys/devices/system/clocksource/clocksource0/available_clocksource
+&lt;/pre&gt;
+&lt;p&gt;I then went to another machine, also running Mediawiki, but one not having any performance issues, and found its &lt;em&gt;clocksource&lt;/em&gt; to be &lt;em&gt;hpet&lt;/em&gt;.  After a little more research, some experiementing, and a few reboots, I found that adding the kernel parameter &lt;em&gt;hpet=force&lt;/em&gt; to the variable &lt;em&gt;GRUB_CMDLINE_LINUX_DEFAULT&lt;/em&gt; in &lt;em&gt;/etc/default/grub&lt;/em&gt; and then running &lt;em&gt;update-grub&lt;/em&gt; got the system using &lt;em&gt;hpet&lt;/em&gt; as the clocksource.  And this seems to have totally cleared up the issues on the machine.  Processor usage is way down, memory usage is way down, processes in the disk-wait state are down, and our Mediawiki site is returning pages much faster that it ever has.&lt;/p&gt;
+&lt;p&gt;For reference, here are a few machine specifications which might be useful for others investigating this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;OS: Debian Squeeze&lt;/li&gt;
+&lt;li&gt;Processors: 2 x AMD Opteron 246&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 10 Apr 2012 22:11:06 -0400</pubDate>
+        <link>/2012/04/10/setting-kernel-clocksource-to-hpet-solves-mysterious-performance-issues.html</link>
+        <guid isPermaLink="true">/2012/04/10/setting-kernel-clocksource-to-hpet-solves-mysterious-performance-issues.html</guid>
+        
+        <category>debian</category>
+        
+        <category>system administration</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Converting a remote, headless server to RAID1</title>
+        <description>&lt;p&gt;We have a particular server which has been running very well for the past few years, but I have had a certain amount of low-level anxiety that the hard disk in the machine might fail, causing the sites it hosts to go down.  We have backups, of course, but restoring a machine from backups would take hours, if for no other reason than transferring gigabytes of data to the restored disk.  So I had our hosting company add a second hard disk to the machine so that I could attempt to covert it to boot to a RAID1 array.  Playing around with how a system boots on a remote, headless machine to which you have no console access is a little nerve-racking, because it&#39;s very easy to make a small mistake and have the machine fail to boot.  You are then at the mercy of a data center technician, and the machine may be down for some time.&lt;/p&gt;
+&lt;p&gt;There are several documents on the Web to be found about how to go about doing this, but I found &lt;a href=&quot;http://www.howtoforge.com/software-raid1-grub-boot-debian-etch&quot;&gt;one in particular&lt;/a&gt; to be the most useful.  I pretty much followed the instructions in that document line for line, until it broke down because that person was on a Debian Etch system running GRUB version 1, but our system is running Debian Squeeze with GRUB 2 (1.98).  The steps I followed differ from those in that document starting on &lt;a href=&quot;http://www.howtoforge.com/software-raid1-grub-boot-debian-etch-p2&quot;&gt;page two&lt;/a&gt; around half way down where the person says &quot;&lt;em&gt;Now up to the GRUB boot loader.&lt;/em&gt;&quot;.  Here are the steps I used to configure GRUB 2:&lt;/p&gt;
+&lt;p&gt;The instructions below assume the following.  Things may be different on your system, so you will have to change device names to match those on your system:&lt;/p&gt;
+&lt;pre&gt;
+Current system:
+
+/dev/sda1 = /boot
+/dev/sd5 = swap
+/dev/sd6 = /
+
+New RAID1 arrays:
+
+/dev/md0 = /boot
+/dev/md1 = swap
+/dev/md2 = /
+&lt;/pre&gt;
+&lt;p&gt;Create a file called &lt;em&gt;/etc/grub.d/06_raid&lt;/em&gt; with the following contents.  Be sure to make the file executable:&lt;/p&gt;
+&lt;pre&gt;
+#!/bin/sh
+exec tail -n +3 $0
+# A custom file for CC to get system to boot to RAID1 array
+
+menuentry &quot;Debian GNU/Linux, with Linux 2.6.32-5-amd64, RAID1&quot;
+{
+        insmod raid
+        insmod mdraid
+        insmod ext2
+	set root=&#39;(md0)&#39;
+	search --no-floppy --fs-uuid --set 075a7fbf-eed4-4903-8988-983079658873
+	echo &#39;Loading Linux 2.6.32-5-amd64 with RAID1 ...&#39;
+	linux /vmlinuz-2.6.32-5-amd64 root=/dev/md2 ro quiet panic=5
+	echo &#39;Loading initial ramdisk ...&#39;
+	initrd  /initrd.img-2.6.32-5-amd64
+}
+&lt;/pre&gt;
+&lt;p&gt;Of course, you are going to need to change the UUID in the &lt;em&gt;search&lt;/em&gt; line, and also the kernel and initrd image names to match those on your system, and probably some other details.&lt;/p&gt;
+&lt;p&gt;We should tell GRUB to fall back on a known good boot scenario, just in case something doesn&#39;t work.  I will say up front that this &lt;strong&gt;completely saved my ass&lt;/strong&gt;, since it took me numerous reboots before I found a working configuration, and if it weren&#39;t for this fall-back mechanism the machine would have stuck on a failed boot screen in GRUB.  I found &lt;a href=&quot;http://translate.google.com/translate?sl=auto&amp;tl=en&amp;js=n&amp;prev=_t&amp;hl=en&amp;ie=UTF-8&amp;layout=2&amp;eotf=1&amp;u=http%3A%2F%2Fwiki.ubuntuusers.de%2FGRUB_2%2FSkripte%23Fallback-Skript&quot;&gt;some instructions&lt;/a&gt; about how to go about doing this in GRUB 2.  Create a file name &lt;em&gt;/etc/grub.d/01_fallback&lt;/em&gt; and add the following contents.  Be sure to make the file executable:&lt;/p&gt;
+&lt;pre&gt;
+#! /bin/sh -e
+
+if [ ! &quot;x${GRUB_DEFAULT}&quot; = &quot;xsaved&quot;  ] ; then
+  if [ &quot;x${GRUB_FALLBACK}&quot; = &quot;x&quot; ] ; then 
+      export  GRUB_FALLBACK = &quot;&quot;
+     GRUB_FALLBACK = $( ls /boot | grep -c &#39;initrd.img&#39; )
+     [ ${ GRUB_DISABLE_LINUX_RECOVERY } ] || GRUB_FALLBACK = $(( ${ GRUB_FALLBACK } * 2 ))
+  fi
+   echo &quot;fallback set to menuentry=${GRUB_FALLBACK}&quot;  &gt;&amp;2
+
+  cat &lt;&lt; EOF
+  set fallback=&quot;${GRUB_FALLBACK}&quot;
+EOF
+
+fi
+&lt;/pre&gt;
+&lt;p&gt;Then add the following line to &lt;em&gt;/etc/default/grub&lt;/em&gt;:&lt;/p&gt;
+&lt;pre&gt;export GRUB_FALLBACK=&quot;1&quot;&lt;/pre&gt;
+&lt;p&gt;And while you are in there, also uncomment or add the following line, unless you plan to be using UUIDs everywhere.  I&#39;m not sure if this is necessary, but since I was mostly using device names (e.g. &lt;em&gt;/dev/md0&lt;/em&gt;) everywhere, I figured it couldn&#39;t hurt.&lt;/p&gt;
+&lt;pre&gt;GRUB_DISABLE_LINUX_UUID=true&lt;/pre&gt;
+&lt;p&gt;Update the GRUB configuration by executing the following command:&lt;/p&gt;
+&lt;pre&gt;# update-grub&lt;/pre&gt;
+&lt;p&gt;Make sure GRUB is installed and configured in the MBR of each of our disks:&lt;/p&gt;
+&lt;pre&gt;
+# grub-install /dev/sda
+# grub-install /dev/sdb
+&lt;/pre&gt;
+&lt;p&gt;Now we need to update the initramfs image so that it knows about our RAID set up.  You could do this by simply running &lt;em&gt;update-initramfs -u&lt;/em&gt;, but I found that running the following command did this for me, and perhaps some other relevant things(?), and also it verified that my mdadm settings were where they needed to be:&lt;/p&gt;
+&lt;pre&gt;# dpkg-reconfigure mdadm&lt;/pre&gt;
+&lt;p&gt;I used &lt;em&gt;rsync&lt;/em&gt;, instead of &lt;em&gt;cp&lt;/em&gt;, to move the data from the running system to the degraded arrays like so:&lt;/p&gt;
+&lt;pre&gt;
+# rsync -ax /boot/ /mnt/md0
+# rsync -ax / /mnt/md2
+&lt;/pre&gt;
+&lt;p&gt;When rsync finishes moving &lt;em&gt;/&lt;/em&gt; to &lt;em&gt;/mnt/md2&lt;/em&gt;, then edit the following files, chaning any references to the current disk to our new mdX devices:&lt;/p&gt;
+&lt;pre&gt;
+# vi /mnt/md2/etc/fstab
+# vi /mnt/md2/etc/mtab
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;: do not edit &lt;em&gt;/etc/fstab&lt;/em&gt; and &lt;em&gt;/etc/mtab&lt;/em&gt; on the currently running system, as the howtoforge.com instructions would seem to indicate, else if the new RAID configuration fails and the machine has to fall back to the current system, then it won&#39;t be able to boot that either.&lt;/p&gt;
+&lt;p&gt;I believe that was it, though it&#39;s possible I may have forgot to add a step here.  Don&#39;t run the following command unless you can afford to possibly have the machine down for a while. This is a good time to also make sure you have good backups. But if you&#39;re ready, then run:&lt;/p&gt;
+&lt;pre&gt;# shutdown -rf now&lt;/pre&gt;
+&lt;p&gt;Now cross your fingers and hope the system comes back up on the RAID1 arrays, or at all.&lt;/p&gt;
+&lt;p&gt;If the machine comes back up on the RAID1 arrays, then you can now add the original disk to the new arrays with commands like the following:&lt;/p&gt;
+&lt;pre&gt;
+# mdadm --manage /dev/md0 --add /dev/sda1
+# mdadm --manage /dev/md1 --add /dev/sda5
+# mdadm --manage /dev/md2 --add /dev/sda6
+&lt;/pre&gt;
+&lt;p&gt;The arrays will automatically rebuild themselves, and you can check the status by running:&lt;/p&gt;
+&lt;pre&gt;#cat /proc/mdstat&lt;/pre&gt;
+</description>
+        <pubDate>Fri, 06 Apr 2012 17:36:33 -0400</pubDate>
+        <link>/2012/04/06/converting-a-remote-headless-server-to-raid1.html</link>
+        <guid isPermaLink="true">/2012/04/06/converting-a-remote-headless-server-to-raid1.html</guid>
+        
+        <category>debian</category>
+        
+        <category>system administration</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>cc.legaleratta: errata annotations without republishing licenses</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://labs.creativecommons.org/files/2012/02/errata_highlighted1.png&quot;&gt;&lt;img class=&quot;alignnone size-full wp-image-1726&quot; src=&quot;img/errata_highlighted1.png&quot; alt=&quot;Screenshot of the errata tool.&quot; width=&quot;796&quot; height=&quot;461&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The html for the legalcode pages cannot be changed once they are published.  The reason for this is because we provide sha1 hashes of them so that they may be redistributed.  It also is a reason of credibility; that the license you&#39;ve applied to your work today will still be the same one tomorrow.  However, sometimes there are errors.  They need to be accessible, yet they usually are too small to merit releasing a new version of the license.&lt;/p&gt;
+&lt;p&gt;The solution to this problem so far has been an errata page on our wiki.  But, that isn&#39;t apparent from just looking at the license; and the errata page is disorganized and confusing to read.&lt;/p&gt;
+&lt;p&gt;I&#39;m proud to say that we&#39;re currently testing a tool I wrote last week that will fix this problem: cc.legalerrata.  This was originally intended to be implemented with the upcoming 4.0 licenses, but it turns out the 3.0 licenses have a hook for a tool like this already in place.  The 3.0 licenses include a script at the address &lt;a href=&quot;http://creativecommons.org/includes/errata.js&quot;&gt;http://creativecommons.org/includes/errata.js&lt;/a&gt;, which was blank until a few days ago.  Now the script is used to bootstrap an application in the page.  Once bootstrapped, the tool queries the server for appropriate errata; if errata is returned, a toolbar appears and the user is presented with the option to apply the errata to the text of the page.  Additionally, the changes made can be highlighted via the toolbar.&lt;/p&gt;
+&lt;p&gt;Currently, this tool is disabled on the live site while we verify that the machine readable errata is actually correct.  You can however try out the tool while we test it, via our staging site.  For example, you can try our &lt;a href=&quot;http://staging.creativecommons.org/licenses/by-sa/3.0/legalcode&quot;&gt;BY-SA legalcode on staging here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you&#39;re interested, you can read &lt;a href=&quot;http://wiki.creativecommons.org/4.0_License_Errata_Annotation_Tool&quot;&gt;the original proposal for the tool&lt;/a&gt;. There are two versions of the tool described there, and some pretty ui diagrams that I drew of both versions.  Here is one of my diagrams:&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignnone&quot; src=&quot;img/Errata_tool_alternate.jpg&quot; alt=&quot;UI mockup for the errata tool.&quot; width=&quot;834&quot; height=&quot;978&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The actual implementation of the tool ended up being much simpler than the proposed one.  Json is still used for storing the machine readable errata, but rather than a convoluted scheme of managing text diffs, machine readable errata is a collection of entries that contain a css selector, attribute overrides (optional), and html fragments.  The css selectors are used by jquery to select an element in the dom; the element&#39;s innerHTML attribute is then written over by the html fragment. The html fragment itself is the original innerHTML of the node, but with subtractions noted by &amp;lt;del&amp;gt;&amp;lt;/del&amp;gt; tags, and additions noted by &amp;lt;ins&amp;gt;&amp;lt;/ins&amp;gt; tags.  These files are maintained by hand at this current time, with no plans of writing a frontend for it.  The errata tool takes a snapshot of the page&#39;s html before and after overriding it, so that you can efficiently toggle between view modes.  CSS in both errata modes to either make the text look clean (subtractions hidden) or to accomplish highlighting.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 22 Feb 2012 17:26:06 -0500</pubDate>
+        <link>/2012/02/22/cc-legaleratta-errata-annotations-without-republishing-licenses.html</link>
+        <guid isPermaLink="true">/2012/02/22/cc-legaleratta-errata-annotations-without-republishing-licenses.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>See also roundup</title>
+        <description>&lt;p&gt;The Learning Resource Metadata Initiative specification (which Creative Commons is coordinating) has entered its &lt;a href=&quot;https://creativecommons.org/weblog/entry/31422&quot;&gt;final public commenting period&lt;/a&gt;. Please look if you&#39;re at all interested in education metadata and/or how efforts spurred by schema.org (which LRMI is) will shape up.&lt;/p&gt;
+&lt;p&gt;The W3C published drafts recently that ought be of great interest to the Creative Commons technology community: a &lt;a href=&quot;http://www.w3.org/blog/SW/2012/01/11/feedback-welcome-an-overview-of-the-provenance-prov-family-of-specs/&quot;&gt;family of documents regarding provenance&lt;/a&gt; and a &lt;a href=&quot;http://www.w3.org/blog/SW/2012/01/12/drafts-published-by-the-w3c-html-data-task-force-html-data-guide-and-microdata-to-rdf-transform/&quot;&gt;guide to using microdata, microformats, and RDFa in HTML&lt;/a&gt;. I mentioned these on my personal blog &lt;a href=&quot;http://gondwanaland.com/mlog/2012/01/12/penumbra-of-provenance/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://gondwanaland.com/mlog/2012/01/12/html-data-guide/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Speaking of things mentioned on my personal blog, a couple days ago I posted &lt;a href=&quot;http://gondwanaland.com/mlog/2012/01/23/attribution-crawl/&quot;&gt;some analysis of how people are deploying CC related metadata&lt;/a&gt; based on a structured data extracted by the &lt;a href=&quot;http://page.mi.fu-berlin.de/muehleis/ccrdf/&quot;&gt;Web Data Commons&lt;/a&gt; project from a sample of the &lt;a href=&quot;http://commoncrawl.org/&quot;&gt;Common Crawl&lt;/a&gt; corpus. Earlier this month I posted a marginally technical &lt;a href=&quot;http://gondwanaland.com/mlog/2012/01/08/css-text-overlay-attribution/&quot;&gt;explanation of using CSS text overlays to provide attribution&lt;/a&gt; and a &lt;a href=&quot;http://gondwanaland.com/mlog/2012/01/10/open-hardware-licenses-history/&quot;&gt;brief historical overview of &#39;open hardware licensing&#39;&lt;/a&gt;, something which the CC technology team hasn&#39;t been involved in, but is vaguely labs-ish, and needs deep technical attention.&lt;/p&gt;
+&lt;p&gt;Other things needing deep technical attention: &lt;a href=&quot;http://wiki.creativecommons.org/4.0/Technical_protection_measures&quot;&gt;how CC addresses Digital Restrictions Management in version 4.0 of its licenses&lt;/a&gt; is being discussed. We don&#39;t know enough about the technical details of &lt;a href=&quot;http://lists.ibiblio.org/pipermail/cc-licenses/2012-January/006663.html&quot;&gt;various restricted systems&lt;/a&gt; (see last sentence) that CC licensed works are being distributed on/to/with every day, and ought to. Another needs-technical-attention issue is &lt;a href=&quot;http://wiki.creativecommons.org/4.0/Games_3d_printing_and_functional_content&quot;&gt;&#39;functional content&#39;&lt;/a&gt; for example in games and &lt;a href=&quot;http://creativecommons.org/weblog/entry/30605&quot;&gt;3D printing&lt;/a&gt;. And we&#39;re still &lt;a href=&quot;https://creativecommons.org/weblog/entry/31227&quot;&gt;looking for a new CTO&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Finally, Jonathan Rees just posted on &lt;a href=&quot;https://odontomachus.wordpress.com/2012/01/25/how-to-apply-a-cc0-waiver-to-an-ontology/&quot;&gt;how to apply CC0 to an ontology&lt;/a&gt;. You should &lt;a href=&quot;https://odontomachus.wordpress.com/&quot;&gt;subscribe to Jonathan&#39;s blog&lt;/a&gt; as almost every post is of great interest if you&#39;ve read this far.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Addendum:&lt;/b&gt; It seems remiss to not mention SOPA, so I&#39;m adding it. &lt;b&gt;Thanks to the technology community&lt;/b&gt; for rising up against this bad policy. CC promoted the campaign on its main website through banners and a number &lt;a href=&quot;https://creativecommons.org/weblog/entry/30375&quot;&gt;of&lt;/a&gt; &lt;a href=&quot;http://creativecommons.org/weblog/entry/30836&quot;&gt;blog&lt;/a&gt; &lt;a href=&quot;http://creativecommons.org/weblog/entry/31286&quot;&gt;posts&lt;/a&gt;. Don&#39;t forget that SOPA/PIPA may well rise again, the so-called &lt;a href=&quot;https://creativecommons.org/weblog/entry/31184&quot;&gt;Research Works Act&lt;/a&gt; is very different but is motivated by the same thinking, and ACTA threatens globally. Keep it up! In the long term, is not building a healthy commons (and thus technology needed to facilitate building a healthy commons) a big part of the solution? On that, see &lt;a href=&quot;http://gondwanaland.com/mlog/2011/12/12/anti-sopa-commons/&quot;&gt;yet another post on my personal blog...&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 25 Jan 2012 17:26:51 -0500</pubDate>
+        <link>/drm/lrmi/metadata/microformats/people/provenance/rdfa/schema.org/2012/01/25/see-also-roundup.html</link>
+        <guid isPermaLink="true">/drm/lrmi/metadata/microformats/people/provenance/rdfa/schema.org/2012/01/25/see-also-roundup.html</guid>
+        
+        
+        <category>drm</category>
+        
+        <category>lrmi</category>
+        
+        <category>metadata</category>
+        
+        <category>microformats</category>
+        
+        <category>people</category>
+        
+        <category>provenance</category>
+        
+        <category>rdfa</category>
+        
+        <category>schema.org</category>
+        
+      </item>
+    
+      <item>
+        <title>Creative Commons: Using Provenance in the Context of Sharing Creative Works</title>
+        <description>&lt;p&gt;I provided a brief non-technical writeup on Creative Commons and provenance for the &lt;a href=&quot;http://www.w3.org/2011/prov/wiki/Main_Page&quot;&gt;W3C Provenance Working Group&lt;/a&gt;&#39;s Connection Task Force documenting &quot;Communities Addressing Important Issues in Provenance&quot;.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&quot;http://www.w3.org/2011/prov/wiki/Connection_Task_Force_Informal_Report#Creative_Commons:_Using_Provenance_in_the_Context_of_Sharing_Creative_Works_.28.2A.2A.2A.2A.29&quot;&gt;writeup on the Provenance WG wiki&lt;/a&gt; (please suggest edits in comments below), current version follows.&lt;/p&gt;
+&lt;hr /&gt;
+Creative Commons Creative Commons (CC) provides licenses and public domain tools that can be used for any kind of creative works like texts, images, websites, or other media, as well as databases. CC tools are well known and used, especially in online publications. Each CC license and public domain tool is identified by a unique URL, allowing proper identification and reference of these as part of a work&#39;s provenance information.&lt;/p&gt;
+&lt;p&gt;Additionally, Creative Commons provides a vocabulary to describe its tools and works licensed or marked with those tools in a machine interpretable way: The Creative Commons Rights Expression Language (CC REL). CC REL can be expressed in RDF.&lt;/p&gt;
+&lt;p&gt;The provenance of assertions about a work&#39;s license or public domain status is of great important for licensors, licensees, curators, and future potential users. All CC licenses legally require certain information (attribution and license notice) be retained; even in the case of its public domain tools, retaining such information is a service to readers and in accordance with research and other norms. To the extent license and related information is not retained or cannot be trusted, users ability to find and rely upon freedoms to use such works is degraded. In many cases, the original publication location of a work will disappear (linkrot) or rights information will be removed, either unintentionally (eg template changes) or intentionally (here especially, provenance is important; CC licenses are irrevocable). In the degenerate case, a once CC-licensed work becomes just another orphan work.&lt;/p&gt;
+&lt;p&gt;The core statements needed are who licensed, dedicated to the public domain, or marked as being in the public domain, which work, and when? Each of these statements have sub-statements, eg the relationship of &quot;who&quot; to rights in the work or knowledge about the work, and exactly what work and at what granularity?&lt;/p&gt;
+&lt;p&gt;Provenance information is also necessary for discovering the uses of shared works and building new metrics of cultural relevance, scientific contribution, etc, that do not strictly require on centralized intermediaries.&lt;/p&gt;
+&lt;p&gt;Finally, in CC&#39;s broader context, an emphasis on machine-assisted provenance aligns with renewed interest in copyright formalities (eg work registries), puts a work&#39;s relationship to society&#39;s conception of knowledge in a different light (compare intellectual provenance and intellectual property), and is in contrast with technical restrictions which aim to make works less useful to users rather than more.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 03 Oct 2011 16:09:49 -0400</pubDate>
+        <link>/provenance/registry/w3c/2011/10/03/provenance.html</link>
+        <guid isPermaLink="true">/provenance/registry/w3c/2011/10/03/provenance.html</guid>
+        
+        
+        <category>provenance</category>
+        
+        <category>registry</category>
+        
+        <category>w3c</category>
+        
+      </item>
+    
+      <item>
+        <title>Converting cc.engine from ZPT to Jinja2 and i18n logical keys to english keys</title>
+        <description>&lt;h2&gt;Some CC-specfic background&lt;/h2&gt;
+&lt;p&gt;Right now I&#39;m in the middle of retooling of our translation infrastructure.  &lt;a href=&quot;http://code.creativecommons.org/viewgit/cc.engine.git/&quot;&gt;cc.engine&lt;/a&gt; and &lt;a href=&quot;http://labs.creativecommons.org/2009/12/18/understanding-the-state-of-sanity-via-whiteboards-and-ascii-art/&quot;&gt;related tools&lt;/a&gt; have a long, complex history (dating back, as I understand, to &lt;a href=&quot;http://en.wikipedia.org/wiki/Tcl&quot;&gt;TCL&lt;/a&gt; scripts running on &lt;a href=&quot;http://www.aolserver.com/&quot;&gt;AOL server&lt;/a&gt; software).  The short of it is, CC&#39;s tools have evolved a lot over the years, and sometimes we&#39;re left with systems and tools that require a lot of organization-specific knowledge for historical reasons.&lt;/p&gt;
+&lt;p&gt;This has been the case with CC&#39;s translation tools.  Most of the world these days uses english-key translations.  CC used logical key translations.  This means that if you marked up a bit of text for translation, instead of the key being the actual text being translated (such as &quot;About The Licenses&quot;), the key would be an identifier code which mapped to said english string, like &quot;util.View_Legal_Code&quot;.  What&#39;s the problem with this?  Actually, there are a number of benefits that I&#39;ll miss and that I won&#39;t get into here, but the real problem is that the rest of the translation world mostly doesn&#39;t work this way.  We use &lt;a href=&quot;http://transifex.net&quot;&gt;Transifex&lt;/a&gt; (and previously used &lt;a href=&quot;http://translate.sourceforge.net/wiki/pootle/index?redirect=1&quot;&gt;Pootle&lt;/a&gt;) as a tool for our translators managing our translations.  Since these tools don&#39;t expect logical keys we had to write tools to convert from logical keys to english keys on upload and english keys to logical keys back and a whole bunch of other crazy custom tooling.&lt;/p&gt;
+&lt;p&gt;Another time suck has been that we&#39;d love to be able to just dynamically extract all translations from our python code and templates, but this also turns out to be impossible with our current setup.  A strange edge-case in ZPT means that certain situations with dynamic attributes in ZPT-translated-HTML means that we have to edit certain translations after they&#39;re extracted, meaning we can&#39;t rely on an auto-extracted set of translations.&lt;/p&gt;
+&lt;p&gt;So we&#39;d like to move to a future with no or very few custom translation tools (which means we need English keys) and auto-extraction of translations (which means because of that edge case, no ZPT).  Since we need to move to a new templating engine, I decided that we should go with my personal favorite templating engine, &lt;a href=&quot;http://jinja.pocoo.org/&quot;&gt;Jinja2&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;ZPT vs Jinja2&lt;/h2&gt;
+&lt;p&gt;Aside from the issue I&#39;ve described above, briefly I&#39;d like to describe the differences between ZPT and Jinja2, as they&#39;re actually my two favorite templating languages.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://zpt.sourceforge.net/&quot;&gt;ZPT&lt;/a&gt; (Zope Page Templates) is an XML-based templating system where your tags and elements actually become part of the templating logic and structure.  For example, here&#39;s an example of us looping over a list of license versions on our &quot;helpful&quot; 404 pages for when you type in the wrong license URL (like at &lt;a href=&quot;http://creativecommons.org/by/2.33333/&quot;&gt;http://creativecommons.org/by/2.33333/&lt;/a&gt;):&lt;/p&gt;
+&lt;pre&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;h4&amp;gt;Were you looking for:&amp;lt;/h4&amp;gt;
+
+&amp;nbsp;&amp;nbsp;&amp;lt;ul class=&quot;archives&quot; id=&quot;suggested_licenses&quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;li tal:repeat=&quot;license license_versions&quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;a tal:attributes=&quot;href license/uri&quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;b tal:content=&quot;python: license.title(target_lang)&quot;&amp;gt;&amp;lt;/b&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/a&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/li&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;/ul&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;As you can see, the for loop, the attributes, and the content are actually elements of the (X)HTML tree.  The neat thing about this is that you can be mostly sure that you won&#39;t end up with &lt;a href=&quot;http://en.wikipedia.org/wiki/Tag_soup&quot;&gt;tag soup&lt;/a&gt;.  It&#39;s also pretty neat conceptually.&lt;/p&gt;
+&lt;p&gt;Now, let&#39;s look at the same segment of code in Jinja2:&lt;/p&gt;
+&lt;pre&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;h4&amp;gt;Were you looking for:&amp;lt;/h4&amp;gt;
+
+&amp;nbsp;&amp;nbsp;&amp;lt;ul class=&quot;archives&quot; id=&quot;suggested_licenses&quot;&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+&amp;nbsp;&amp;nbsp;&amp;lt;/ul&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;If you&#39;ve used &lt;a href=&quot;https://docs.djangoproject.com/en/dev/topics/templates/&quot;&gt;Django&#39;s templating system&lt;/a&gt; before, this should look very familiar, because that&#39;s the primary source of inspiration for Jinja2.  There are a few things I like about Jinja2 though that Django&#39;s templating system doesn&#39;t have, but the biggest and clearest of these things is the ability to pass arguments into functions, as you can see that we&#39;re doing here with license.title(target_lang).  Anyway, it massively beats making a template tag every time you want to pass an argument into a function.&lt;/p&gt;
+&lt;h2&gt;The conversion process&lt;/h2&gt;
+&lt;p&gt;Not too much to say about converting from ZPT to Jinja2.  It&#39;s really just a lot of manual work, combing through everything and moving it around.&lt;/p&gt;
+&lt;p&gt;More interestingly might be our translation conversion process.  Simply throwing out old translations and re-extracting with new ones is not an option... it&#39;s a lot of effort for translators to go through and translate things and asking them to do it all over again is simply too much to ask and just not going to happen.  Pass 1 was to simply get the templates moved over rather than try to both convert templates and the logical-&amp;gt;english key system all at once (this move away from logical keys has been tried and fizzled before, probably because there are simply too many moving parts across our codebase... so we wanted to take this incrementally, and this seemed like the best place to go first).  We&#39;re simply doing stuff like this:&lt;/p&gt;
+&lt;pre&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;h3&amp;gt;&amp;lt;/h3&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;Where cctrans is a simple logical key translation function.  Next steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a script that converts all our .po files to eliminate the logical keys and move them to English-only.&lt;/li&gt;
+&lt;li&gt;Write a script to auto-interpolate  calls in templates to { % trans % }{ % endtrans % } Jinja2 tags.&lt;/li&gt;
+&lt;li&gt;Do all the many manual changes to all our python codebases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At that point, we should be able to wrap this all up.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 02 Sep 2011 22:16:56 -0400</pubDate>
+        <link>/2011/09/02/converting-cc-engine-from-zpt-to-jinja2-and-i18n-logical-keys-to-english-keys.html</link>
+        <guid isPermaLink="true">/2011/09/02/converting-cc-engine-from-zpt-to-jinja2-and-i18n-logical-keys-to-english-keys.html</guid>
+        
+        <category>cc.engine</category>
+        
+        <category>jinja2</category>
+        
+        <category>python</category>
+        
+        <category>templates</category>
+        
+        <category>translations</category>
+        
+        <category>zpt</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Summary of current licensing tools</title>
+        <description>&lt;p&gt;I&#39;ve been considering license integration into a &lt;a href=&quot;http://mediagoblin.org&quot;&gt;personal project&lt;/a&gt; of mine and thoughts of that have spilled over into work.  And so we&#39;ve been talking at Creative Commons recently about the current methods for licensing content managed by applications and what the future might be.  The purpose of this post is to document the present state of licensing options.  (A post on the future of licensing tools may come shortly afterward.)&lt;/p&gt;
+&lt;h2&gt;Present, CC supported tools&lt;/h2&gt;
+&lt;p&gt;To begin with, there are these three CC-hosted options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;&lt;a href=&quot;http://api.creativecommons.org/docs/&quot;&gt;CC licensing web API&lt;/a&gt;&lt;/b&gt; -- A mostly-RESTful interface for accessing CC licensing information.  Some language-specific abstraction layers are provided.  Supported and kept up to date.  Lacking a JSON layer, which people seem to want.  Making a request for every licensing action in your application may be a bit heavy.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;a href=&quot;http://wiki.creativecommons.org/Partner_Interface&quot;&gt;Partner interface&lt;/a&gt;&lt;/b&gt; -- Oldest thing we support, part of the license engine.  Typical case is that you get a popup and when the popup closes the posting webpage can access the info that&#39;s chosen.  Still gets you your chooser based interface but on your own site.  Internet Archive uses it, among others.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;a href=&quot;http://wiki.creativecommons.org/JsWidget&quot;&gt;LicenseChooser.js&lt;/a&gt;&lt;/b&gt; -- Allows you to get a local chooser user interface by dumping some javascript into your application, and has the advantage of not requiring making any web requests to Creative Commons&#39; servers.  Works, though not recently updated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All of these have the problem that the chooser of CC licenses is only useful if you want exactly the choices we offer (and specifically the most current version of the licenses we provide).  You need to track those changes in the database anyway, which means you either are not keeping track of version used or you are and when we change you might be in for a surprise.&lt;/p&gt;
+&lt;h2&gt;Going it alone&lt;/h2&gt;
+&lt;p&gt;So instead there are these other routes that sites take:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;Don&#39;t use any tools and store license choices locally&lt;/b&gt; -- What Flickr and every other major option does: reproduce everything yourself.  In the case of Flickr, the six core licenses at version 2.0.  In YouTube, just one license (CC BY 3.0).  That works when you have one service, when you know what you want, and what you want your users to use.  It doesn&#39;t work well when you want people to install a local copy and you don&#39;t know what they want to use.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Let any license you want as long as it fits site policy&lt;/b&gt; -- and you don&#39;t facilitate it, and it gets kind of outside the workflow of the main CMS you&#39;re using&amp;hellip; wiki sites are an example of this, but usually have a mechanism for adding a license to footer of media uploaded.  The licenses are handled by wiki templates, anyone can make a template for any license they choose.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;None of those are really useful for software you expect other people to install where you want to provide some assistance to either administrators of the software who are installing it to be used or where you want the administrator to give the user some choice or choices relevant to that particular site.&lt;/p&gt;
+&lt;h2&gt;The liblicense experiment&lt;/h2&gt;
+&lt;p&gt;This brings us to another solution that CC has persued:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;&lt;a href=&quot;http://wiki.creativecommons.org/Liblicense&quot;&gt;liblicense&lt;/a&gt;&lt;/b&gt; -- Packages all licenses we provide, give an api for users to get info and metadata about them.  Allows for web-request-free access to the cc licenses.  It doesn&#39;t address non-CC licenses, however, and is mostly unmaintained.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, these are the present options that application developers have at their disposal for doing licensing of application-managed content.  There&#39;s a tradeoff with each one of them though: either you have to rely on web requests to CC for each licensing decision you make, you go it alone, or you use something unmaintained which is CC-licensing-specific anyway.  Nonetheless, cc.api and the partner interface are supported if you want something from CC, and people do tend to make by with doing things offline.  But none of the tools we have are so flexible, so what can software like MediaGoblin or an extension for WordPress or etc do?&lt;/p&gt;
+&lt;p&gt;There&#39;s one more option, one that too my knowledge hasn&#39;t really been explored, and would be extremely flexible but also well structured.&lt;/p&gt;
+&lt;h2&gt;The semantic web / linked data option?&lt;/h2&gt;
+&lt;p&gt;It goes like this: let either users or admins specify licenses by their URL.  Assuming that page self-describes itself via some metadata (be it RDFa, providing a rel=&quot;alternate&quot; RDF page in your headers, or microdata), information about that license could be extracted directly from the URL and stored in the database.  (This information could of course then be cached / recorded in the database.)  This provides a flexible way of adding new licenses, is language-agnostic, and allows for a canonical set of information about said licenses.  Libraries could be written to make the exctraction of said information easier, could even cache metadata for common licenses (and for common licenses which don&#39;t provide any metadata at their canonical URLs...).&lt;/p&gt;
+&lt;p&gt;I&#39;m hoping that in the near future I&#39;ll have a post up here demonstrating how this could work with a prototypical tool and use case.&lt;/p&gt;
+&lt;p&gt;Thanks to Mike Linksvayer, for most of this post was just transforming a braindump of his into a readable blogpost.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 31 Aug 2011 17:50:22 -0400</pubDate>
+        <link>/2011/08/31/summary-of-current-licensing-tools.html</link>
+        <guid isPermaLink="true">/2011/08/31/summary-of-current-licensing-tools.html</guid>
+        
+        <category>api</category>
+        
+        <category>ccrel</category>
+        
+        <category>licence tools</category>
+        
+        <category>metadata</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

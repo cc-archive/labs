@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="home">
+
+  <div class="col-md-8">
+
+    <p>Welcome to the new look CC labs website. Our previous site
+    hadn't been updated in about two years, so I'm back with some
+    regular updates on what we're doing at CC.</p>
+
+    <p>The plan is to update the blog three times a week &mdash; Monday will give an update on what we're working on. Wednesday will give an update on our infrastructure work, hopefully sharing some useful tips, and on Friday I'd like to set a potential idea for a weekend hack project.</p>
+
+    <p>Plus, somewhere along the way I'll share other things, like neat pieces of free software I come across or things related to our work.</p>
+
+    <p>This site is in Jekyll, and <a href="https://github.com/creativecommons/labs">you can fork it on GitHub</a>, or send improvements and fixes.</p>
+
+    <p>Matt Lee,<br />Technical Lead<br />Creative Commons</p>
+
+    <p><a href="/contact">Follow me on GNU social or Twitter</a>.</p>
+
+    <hr />
+
+    
+      <h2><a class="post-link" href="/infrastructure/2014/12/10/how-creativecommons-dot-org-is-built.html">How creativecommons.org is built</a></h2>
+
+      <p>On Tuesday, December 9th 2014 you may have noticed a bit of downtime on creativecommons.org.</p>
+
+<p>This is both an outage report, but also a little insight into how the Creative Commons website is built. I was happily assisted in this work by former technical lead at Creative Commons, Christopher Allen Webber who you may know as one of the developers of GNU MediaGoblin, where he drew me <a href="http://mediagoblin.com/u/cwebber/m/machalus-duke-of-time/">as a time-travelling goblin</a>.</p>
+
+<p>In short, CC’s website was down for two reasons:</p>
+
+<ul>
+  <li>An outdated dependency on RDQL, not SPARQL.</li>
+  <li>An update to Ubuntu 14.04 LTS installed a version of a Zope library we use.</li>
+</ul>
+
+<p>The Creative Commons website is a mixture of WordPress and several
+Python applications. In the near future, we plan to replace the
+WordPress portion with Jekyll.</p>
+
+<p>The Python applications are vast, well engineered and easy to find
+your way around, even if you’re not the best Python programmer (like
+me) – they are: cc.engine, cc.license, i18n and license.rdf.</p>
+
+<p><strong>cc.engine</strong></p>
+
+<p>This is the code that handles the license chooser and the display of
+licenses on the site. As such, it’s pretty important. Chris was able
+to see that the program loaded at all by accessing its hidden start-up
+message “This is the root” – <a href="https://github.com/creativecommons/creativecommons.org/blob/master/python_env/src/cc.engine/cc/engine/views.py">you’ll see that here in the views.py file</a>.</p>
+
+<p><strong>cc.license</strong></p>
+
+<p>This is the code that takes the RDF description of the license (from
+license.rdf) and returns it to the chooser or to the license
+display. Here’s where the code was updated to reflect a change from
+RDQL to SPARQL, which are both RDF query
+languages. <a href="https://github.com/creativecommons/cc.license/pull/1">As noted in the pull request</a>
+– “one obscure query language is enough” – as
+<a href="https://github.com/creativecommons/cc.license/blob/master/cc/license/_lib/functions.py">you can see from the source code file</a>,
+SPARQL was already in use.</p>
+
+<h3 id="future-goals">Future goals</h3>
+
+<p>One goal is to make the CC website very easy to people to hack on and make improvements to it. And yes, we’re a little way off on that today, but thanks to Chris, I have a better understanding of the site myself now, and I hope to pass that knowledge along with future updates to the site, especially once we move to Jekyll in the new year.</p>
+
+<p>You can check out the <a href="http://github.com/creativecommons.org">CC website code</a> for more info on how to recreate the CC website locally. Please help us out by filing any/all bugs/feature requests at <a href="http://github.com/creativecommons.org/issues">the GitHub repo</a>. If you have questions, you can ask them on <a href="https://wiki.creativecommons.org/IRC">our dedicated development IRC channel</a>.</p>
+
+
+
+    
+
+  </div>
+
+  <div class="col-md-4 well">
+
+  <h1 class="page-heading"><a href="/blog">Previously...</a></h1>
+
+  <ul class="post-list">
+
+    
+      <li>
+          <a class="post-link" href="/2012/07/11/liberated-pixel-cup-and-distributed-free-culture-projects.html">Liberated Pixel Cup and distributed free culture projects</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/2012/07/10/dissecting_lpcd.html">Dissecting the Liberated Pixel Cup Demo</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/2012/04/10/setting-kernel-clocksource-to-hpet-solves-mysterious-performance-issues.html">Setting kernel clocksource to HPET solves mysterious performance issues</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/2012/04/06/converting-a-remote-headless-server-to-raid1.html">Converting a remote, headless server to RAID1</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/2012/02/22/cc-legaleratta-errata-annotations-without-republishing-licenses.html">cc.legaleratta: errata annotations without republishing licenses</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/drm/lrmi/metadata/microformats/people/provenance/rdfa/schema.org/2012/01/25/see-also-roundup.html">See also roundup</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/provenance/registry/w3c/2011/10/03/provenance.html">Creative Commons: Using Provenance in the Context of Sharing Creative Works</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/2011/09/02/converting-cc-engine-from-zpt-to-jinja2-and-i18n-logical-keys-to-english-keys.html">Converting cc.engine from ZPT to Jinja2 and i18n logical keys to english keys</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/2011/08/31/summary-of-current-licensing-tools.html">Summary of current licensing tools</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/metrics/2011/08/12/cc-latam-analysis.html">CC license use in Latin America brief analysis</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/2011/07/29/not-panicking-switching-to-virtualenv-for-deployment.html">Not Panicking: switching to Virtualenv for deployment</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/lrmi/metadata/schema.org/search/2011/07/18/lrmi-tech-wg-cfp.html">LRMI tech WG CFP</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/internal/people/2011/07/12/cto.html">CTO</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/rdf/rdfa/wordpress/2011/07/09/rdface-rdfa-enhanced-tinymce-rich-editor.html">RDFaCE: an RDFa-enhanced TinyMCE rich editor</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/2011/07/05/libre-graphics-magazine-interview-at-libre-graphics-meeting.html">Libre Graphics Magazine interview at Libre Graphics Meeting</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/metrics/2011/06/27/powerofopen-metrics.html">Notes on CC adoption metrics from The Power of Open</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/2011/05/27/fsf-recommends-cc0-for-code-snippets-in-documentation.html">FSF recommends CC0 for code snippets in documentation</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/2011/04/30/using-wget-to-login-to-mediawiki.html">Using wget to login to Mediawiki</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/describing%20oer/discovered/2011/04/11/the-future-of-discovered.html">The Future of DiscoverEd</a>
+      </li>
+    
+      <li>
+          <a class="post-link" href="/gsoc/2011/03/25/good-advice-for-gsoc-students.html">A post with good advice for GSOC students</a>
+      </li>
+    
+  </ul>
+
+  <p class="rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></p>
+
+  </div>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>GSoC CC Wordpress Plugin: Weekly Report #3&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">GSoC CC Wordpress Plugin: Weekly Report #3</h1>
+    <p class="post-meta">Jun 16, 2010 by erlehmann</p>
+  </header>
+
+  <article class="post-content">
+    <p>
+This week, development on the <a href="http://labs.creativecommons.org/2010/05/24/gsoc-project-introduction-cc-wordpress-plugin/">plugin</a> proceeded at a faster pace. Shortly after I posted the <a href="http://labs.creativecommons.org/2010/06/08/gsoc-cc-wordpress-plugin-weekly-report-2/">last report</a>, Nathan Kinkade pointed out the fix to the bug that prevented saving, a simple type error. On the next day, I implemented stylesheet support, hereby adapting three styles I originally made for my defunct <a href="http://github.com/erlehmann/cc-figure">microdata plugin</a>, and an admin interface to switch between them (<a href="http://daten.dieweltistgarnichtso.net/pics/screenshots/web/wordpress-cc-plugin/admin-interface-stylesheets.png">screenshot</a>). Additional more or less notable changes are:</p>
+<ul>
+<li>metadata is not only saved now, but will also be retrieved to populate form fields</li>
+<li>multiple <abbr title="Resource Document Framework in Attributes">RDFa</abbr> fixes, machine-readable data should be correct now</li>
+<li>the plugin has a directory structure, earlier versions were just a single file</li>
+<li>there is now a sample file for stylesheet development</li>
+<li>metadata is also saved when the media item is inserted into the post</li>
+<li>the plugin now uses the <a href="http://api.creativecommons.org/docs/index.html">Creative Commons <abbr title="Application Programming Interface">API</abbr></a> to get the current license version</li>
+</ul>
+<p>
+The current output of the plugin can be seen at my <a href="http://gsoc2010.dieweltistgarnichtso.net/?p=1"><abbr title="Google Summer of Code">GSoC</abbr> test blog</a> and checked using the <abbr title="World Wide Web Consortium">W3C</abbr>s <a href="http://www.w3.org/2007/08/pyRdfa/"><abbr title="Resource Document Framework in Attributes">RDFa</abbr> distiller and parser</a>.</p>
+<p>
+On a less technical note, I have met three people relevant to plugin development: When I explained to <i>Julia Seeliger</i> that I was implementing her <a href="http://julia-seeliger.de/wunschzettel-creative-commons-plugin-fur-wordpress/">plugin idea</a>, she was <a href="http://twitter.com/zeitrafferin/status/16031917904">delighted</a>. <i>Max Winde</i>, creator of the inspiring <a href="http://spreeblick.com"><i>Spreeblick</i></a> plugin, suggested including an easy option for re-embedding the relevant content, possibly using Javascript. Last but not least, <i>Moritz Metz</i>, a radio journalist and blogger at <a href="http://breitband.dradio.de/"><i>Breitband</i></a>, intending to use the plugin when it is finished, told me about his use of <a href="http://codex.wordpress.org/Determining_Plugin_and_Content_Directories">alternate content and plugin directories</a> and urged me to consider supporting not only inline content, but also <a href="http://markjaquith.wordpress.com/2009/12/23/new-in-wordpress-2-9-post-thumbnail-images/">post thumbnail images</a>.</p>
+<p>
+I consider this version of the plugin not finished, but functional enough for testers, who are encouraged to check out the <a href="http://code.creativecommons.org/viewgit/wordpress-cc-plugin.git/">Git repository</a>. For the coming week, I will look into the issue surrounding alternate content and plugin directories and proceed to polish the existing features.</p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

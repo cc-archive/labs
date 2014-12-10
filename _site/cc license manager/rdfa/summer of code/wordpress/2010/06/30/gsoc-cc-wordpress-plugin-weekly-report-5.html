@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Creative Commons">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml">
+      <title>GSoC CC Wordpress Plugin: Weekly Report #5&mdash;Creative Commons Labs</title>
+   </head>
+   
+   <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Creative Commons Labs</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Read our blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+
+      <div class="starter-template">
+
+	<h1><a href="/">Creative Commons Labs</a></h1>
+
+	<p><small>Website of the Creative Commons tech team.
+</small>
+	</p>
+
+      </div>
+
+      <div class="row">
+
+	<div class="col-md-12">
+
+  	<div class="post">
+
+  
+  <div class="bg-danger text-center" id="old-posts">
+    <p>Please note, this is an old blog post from several years ago. It may contain out of date information. If you spot anything broken or missing, <a target="_blank" href="https://github.com/creativecommons/labs/issues">please file a bug</a>.</p>
+  </div>
+  
+
+  <header class="post-header">
+    <h1 class="post-title">GSoC CC Wordpress Plugin: Weekly Report #5</h1>
+    <p class="post-meta">Jun 30, 2010 by erlehmann</p>
+  </header>
+
+  <article class="post-content">
+    <p>
+Another delayed report, late by a day. This time, however, I can <em>deliver</em>; the current version of the <a href="http://labs.creativecommons.org/2010/05/24/gsoc-project-introduction-cc-wordpress-plugin/">plugin</a> sports the filter system I <a href="http://labs.creativecommons.org/2010/06/25/gsoc-cc-wordpress-plugin-weekly-report-4/">unsuccessfully tried to implement</a> the week before: While previous versions of the plugin inserted <abbr title="Hypertext Markup Language">HTML</abbr> directly into the post (<a href="http://daten.dieweltistgarnichtso.net/pics/screenshots/web/wordpress-cc-plugin/generated-markup-rdfa.png">example screenshot</a>), the new iteration only inserts a <em>shortcode</em> containing the attachment ID and a caption (e.g. <code>[[cc:18|some caption]]</code>). The actual markup is then generated when the page is requested. This satisfies use cases in which a blogger wishes to modify media metadata later on, like changing license or alt text.</p>
+<p>
+Less visible for the user, I was able to unify the two saving functions triggered on saving and inserting media and adding a metadata field which holds the exact license <abbr title="Uniform Resource Identifier">URI</abbr> for every attachment (determined using the <a href="http://api.creativecommons.org/docs/index.html">Creative Commons <abbr title="Application Programming Interface">API</abbr></a>). I recommend checking out the <a href="http://code.creativecommons.org/viewgit/wordpress-cc-plugin.git">repository</a>.</p>
+<p>
+For the coming week, I will look into <a href="http://markjaquith.wordpress.com/2009/12/23/new-in-wordpress-2-9-post-thumbnail-images/">post thumbnails</a>, which require no inline markup for purely decorative pictures, like those used at <a href="http://www.spreeblick.com/"><i>Spreeblick</i></a> and <a href="http://breitband.dradio.de/"><i>Breitband</i></a>. I will also explore alternate content and plugin directories again, as my last attempt regarding that issue was a complete failure.</p>
+
+  </article>
+
+</div>
+
+
+	</div>
+
+      </div>
+      
+
+    <footer>
+
+    <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a></p>
+
+    <p>Except where otherwise noted, content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+    </footer>
+
+    </div><!-- /.container -->
+
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
