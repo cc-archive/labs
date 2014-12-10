@@ -1,0 +1,22 @@
+.doctable {
+  width: 100%;
+  cellpadding: 0px;
+  background: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.doccolumn {
+  width:32%;
+  border:1px solid #ddd;
+  padding:10px;
+  margin:0px;
+  height:100%;
+  background: #fff;
+}
+.docheading {
+  background: #ddd;
+  border:1px solid;
+  padding:5px;
+  width:32%;
+  margin:0px;
+}

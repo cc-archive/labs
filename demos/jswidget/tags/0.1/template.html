@@ -1,0 +1,59 @@
+<div id="lic-menu" class="block">
+  <h2>1. Choose the options below for your personalized Creative Commons license.</h2>
+    <div id="required">
+      
+      <p>
+	
+      <p>
+        <span class="infobox" onmouseover="on_tooltip_html(event,'&lt;p&gt;&lt;strong&gt;Share&lt;/strong&gt; The licensor permits others to copy, distribute, display, and perform the work.&lt;/p&gt;');" onmouseout="hide_tip()"><img src="http://api.creativecommons.org/jswidget/tags/0.1/images/information.png" alt="info" class="info" /></span><input type="checkbox" name="share" value="" id="share" checked disabled />
+        <label for="share" class="question" onmouseover="on_tooltip_html(event,'&lt;p&gt;&lt;strong&gt;Share&lt;/strong&gt; The licensor permits others to copy, distribute, display, and perform the work.&lt;/p&gt;');" onmouseout="hide_tip()" id="share-label"><strong>Allow Sharing</strong></label> 
+      </p>
+      <input name="share" value="1" id="share" checked="checked" type="hidden">
+      
+      
+      </p><p><span class="infobox" onmouseover="on_tooltip_html(event,'<p><strong>Remix</strong> Licensor permits others to make derivative works.</p>');" onmouseout="hide_tip()"><img src="http://api.creativecommons.org/jswidget/tags/0.1/images/information.png" alt="info" class="info"></span><input onchange="modify(this);" name="remix" value="" id="remix" type="checkbox">
+	
+        
+        <label style="color: black;" for="remix" class="question" onmouseover="on_tooltip_html(event,'<p><strong>Remix</strong> Licensor permits others to make derivative works.</p>');" onmouseout="hide_tip()" id="remix-label"><strong>Allow Remixing</strong></label> 
+      </p>
+      
+      
+      <p> <span class="infobox" onmouseover="on_tooltip_html(event,'<p><img src=&quot;http://creativecommons.org/icon/nc/standard.gif&quot; alt=&quot;nc&quot; class=&quot;icon&quot; /><strong>Noncommercial</strong> The licensor permits others to copy, distribute, display, and perform the work. In return, licensees may not use the work for commercial purposes &mdash; unless they get the permission of the licensor.</p>');" onmouseout="hide_tip()"><img src="http://api.creativecommons.org/jswidget/tags/0.1/images/information.png" alt="info" class="info"></span><input onchange="modify(this);" name="nc" value="" id="nc" type="checkbox">
+        
+        <label style="color: black;" for="nc" class="question" onmouseover="on_tooltip_html(event,'<p><img src=&quot;http://creativecommons.org/icon/nc/standard.gif&quot; alt=&quot;nc&quot; class=&quot;icon&quot; /><strong>Noncommercial</strong> The licensor permits others to copy, distribute, display, and perform the work. In return, licensees may not use the work for commercial purposes &mdash; unless they get the permission of the licensor.</p>');" onmouseout="hide_tip()" id="nc-label"><strong>Prohibit Commercial Use</strong></label> 
+      </p>
+      <div id="nc-ad">
+        <label><input onchange="modify(this);" name="nc-ad" checked="checked" value="1" id="nc-ad-allow" type="radio"> <strong>Ok on ad-supported sites</strong></label><br>
+	
+        <label><input onchange="modify(this);" name="nc-ad" value="0" id="nc-ad-prohibit" type="radio"> <strong>Not ok on ad-supported sites</strong></label>
+      </div>
+      <p>                     <span class="infobox" onmouseover="on_tooltip_html(event,'<p><img src=&quot;http://creativecommons.org/icon/sa/standard.gif&quot; alt=&quot;sa&quot; class=&quot;icon&quot; /><strong>Share Alike</strong> The licensor permits others to distribute derivative works only under a license identical to the one that governs the work of the licensor.</p>');" onmouseout="hide_tip()"><img src="http://api.creativecommons.org/jswidget/tags/0.1/images/information.png" alt="info" class="info"></span><input onchange="modify(this);" name="sa" value="" id="sa" type="checkbox">
+        
+        <label style="color: black;" for="sa" id="sa-label" class="question" onmouseover="on_tooltip_html(event,'<p><img src=&quot;http://creativecommons.org/icon/sa/standard.gif&quot; alt=&quot;sa&quot; class=&quot;icon&quot; /><strong>Share Alike</strong> The licensor permits others to distribute derivative works only under a license identical to the one that governs the work of the licensor.</p>');" onmouseout="hide_tip()"><strong>Require Share-Alike</strong></label>
+      </p>
+      
+      
+      <br>
+      
+      
+      
+    </div>
+    
+    <div id="jurisdiction_box">
+      <span class="infobox" onmouseover="on_tooltip_html(event,'<p><strong>Jurisdiction</strong> If you desire a license governed by the Copyright Law of a specific jurisdiction, please select the appropriate jurisdiction.</p>');" onmouseout="hide_tip()"><img src="http://api.creativecommons.org/jswidget/tags/0.1/images/information.png" alt="info" class="info"></span>
+      
+      <p><strong class="question" onmouseover="on_tooltip_html(event,'<p><strong>Jurisdiction</strong> If you desire a license governed by the Copyright Law of a specific jurisdiction, please select the appropriate jurisdiction.</p>');" onmouseout="hide_tip()">Jurisdiction of your license</strong>  </p>
+      <select name="jurisdiction" id="jurisdiction" onchange="modify(this);">
+
+	<option id="generic" value="generic">Unported</option>
+	<option tal:repeat="jurisdiction jurisdictions" tal:attributes="id jurisdiction/id; value jurisdiction/id" tal:content="jurisdiction/name">Sample jurisdiction</option>
+      </select>
+    </div>
+
+    <div id="license_selected">
+      <div id="license_example"></div>
+    </div>
+
+    
+    <div id="tip_cloak" style="position:absolute; visibility:hidden; z-index:100">hidden tip</div> 
+</div>

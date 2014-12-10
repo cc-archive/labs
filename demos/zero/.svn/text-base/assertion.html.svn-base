@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://creativecommons.org/ns#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <head>
+    <title>CC0 Assertion</title>
+  </head>
+  <body>
+    <h2>Night of the Living Dead</h2>
+
+<p xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        about="http://archive.org/details/night_of_the_living_dead" rel="cc:licenseOffer">
+  <a rel="license"
+     href="http://labs.creativecommons.org/licenses/zero-assert/1.0/us/" style="text-decoration:none;">
+     <img src="http://labs.creativecommons.org/zero/images/88x31/cc-zero.png" border="0" alt="" />
+  </a>
+  <br/><a rel="cc:assertedBy" href="http://labs.creativecommons.org">
+<span about="http://labs.creativecommons.org" property="dc:title">CC Labs</span></a> asserts <a href="http://archive.org/details/night_of_the_living_dead"><span about="http://archive.org/details/night_of_the_living_dead" property="dc:title">Night of the Living Dead</span></a>  is <a rel="license"
+    href="http://labs.creativecommons.org/licenses/zero-assert/1.0/us/">free
+    of any copyrights</a>; <span property="cc:assertionBasis">a copyright notice was not displayed, as required by U.S. law at the time.</span></p>
+
+  </body>
+</html>

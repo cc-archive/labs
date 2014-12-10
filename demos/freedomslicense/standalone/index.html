@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Freedoms License Generator</title>
+  
+    <style type="text/css" media="screen">
+      @import url("style.css");
+    </style>
+    <!--[if IE]> <link rel="stylesheet" type="text/css" media="screen" href="/style-ie.css"/><![endif]-->
+    
+    <script type="text/javascript" language="javascript" src="prototype.js"></script>    
+    <script type="text/javascript" language="javascript" src="cc-license.js"></script>
+    <script type="text/javascript" language="javascript" src="cc-lib-freedoms.js"></script>
+    <script type="text/javascript" language="javascript" src="chooser.js"></script>
+    
+    <script type="text/javascript" language="javascript">
+        <!--
+        /*
+         * Creative Commons - Freedoms License Chooser
+         * 2007, Creative Commons
+         *
+         *
+         */
+         
+        var freedoms;
+        var share = false;
+        var remix = false;
+        var sa_cond = false;
+        var nc_cond = false;
+        var sa_on = false;
+        var nc_on = false;
+        
+        var init_freedoms = function()
+        {
+            freedoms = new CCLibFreedoms(); // in cc-lib-freedoms.js
+            // the next two are in cc-license.js
+            init(); 
+            modify(this);
+
+            //init_tip();
+
+            // init the chooser
+        	  FreedomsChooser = new FreedomsChooserClass("Freedoms_");
+        	  FreedomsChooser.selectLicense("by");
+        	  FreedomsChooser.setupEventListeners();
+
+        }
+
+        function freedoms_update (license) {
+
+        	license["share"] ? share = 1 : share = 0;
+        	license["remix"] ? remix = 1 : remix = 0;
+        	license["nc"] ? nc = 1 : nc = 0;
+        	license["sa"] ? sa = 1 : sa = 0;
+
+        	update_hack( license.data[2], license.data[0], license.data[1] );
+
+        }
+        // -->
+    </script>
+  </head>
+
+  <body id="index" onload="init_freedoms();">
+    <div id="nc-ad"></div>
+    
+    <div id="flg-container">
+      <div id="Freedoms_container" style="">
+  	    <img src="images/sa-shadow.png" id="Freedoms_image_sa-shadow" alt="" style="display: none;">
+  	    <img src="images/share-shadow.png" id="Freedoms_image_share-shadow" alt="" style="display: none;">
+  	    <img src="images/nc-shadow.png" id="Freedoms_image_nc-shadow" alt="" style="display: none;">
+  	    <img src="images/remix-shadow.png" id="Freedoms_image_remix-shadow" alt="" style="display: none;">
+
+  	    <img src="images/nc-piece.png" id="Freedoms_image_nc-piece-normal" alt="" style="position: absolute; left: 0px; top: 172px; display: none;">
+  	    <img src="images/sa-piece.png" id="Freedoms_image_sa-piece-normal" alt="" style="position: absolute; left: 172px; top: 238px; display: none;">
+  	    <img src="images/share-piece.png" id="Freedoms_image_share-piece-normal" alt="" style="position: absolute; left: 0px; top: 0px;">
+  	    <img src="images/remix-piece.png" id="Freedoms_image_remix-piece-normal" alt="" style="position: absolute; left: 239px; top: 0px;">
+
+  	    <img src="images/sa-piece-grey.png" id="Freedoms_image_sa-piece-grey" alt="" style="position: absolute; left: 172px; top: 238px;">
+  	    <img src="images/nc-piece-grey.png" id="Freedoms_image_nc-piece-grey" alt="" style="position: absolute; left: 0px; top: 172px;">
+
+  	    <img src="images/off-x.png" id="Freedoms_image_nc-off-x" alt="" style="position: absolute; left: 9px; top: 372px;">
+  	    <img src="images/off-x.png" id="Freedoms_image_sa-off-x" alt="" style="position: absolute; left: 388px; top: 372px;">
+
+  	    <!-- img src="images/button-shadow-clean.png" id="Freedoms_image_button-shadow-clean" alt="" style="position: absolute; left: 163px; top: 182px;" -->
+  	    <div id="Freedoms_image_button-shadow-clean"></div>
+
+  	    <div style="position: absolute; left: 175px; top: 102px;" id="Freedoms_centerLicense"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

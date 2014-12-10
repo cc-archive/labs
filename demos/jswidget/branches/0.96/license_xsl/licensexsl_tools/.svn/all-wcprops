@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/!svn/ver/8781/license_xsl/trunk/licensexsl_tools
+END
+makerdf.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/5589/license_xsl/trunk/licensexsl_tools/makerdf.py
+END
+convert_zpt.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/!svn/ver/7019/license_xsl/trunk/licensexsl_tools/convert_zpt.py
+END
+translate.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/!svn/ver/7581/license_xsl/trunk/licensexsl_tools/translate.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/5589/license_xsl/trunk/licensexsl_tools/__init__.py
+END
+convert.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/!svn/ver/8781/license_xsl/trunk/licensexsl_tools/convert.py
+END
+licenses.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/!svn/ver/5589/license_xsl/trunk/licensexsl_tools/licenses.py
+END

@@ -1,0 +1,305 @@
+h1 {
+	padding-top: 35px;
+	font-size: 2em;
+}
+#license_selected
+{
+    border:         1px solid #c2e0cf;
+    text-align:     center;
+    padding:        3%;
+    margin-bottom: 2.7%;
+		width: 85%;
+}
+
+#jurisdiction_box
+{
+    /* border: 1px solid black; */
+    padding: 0.5% 2% 1% 2%;
+    margin-bottom: 1%;
+}
+
+#lic-menu h2
+{
+    /* text-decoration: underline; */
+    /* border-bottom: 1px solid black; */
+    padding: 3% 0 1% 0;
+    border: none;
+}
+
+#lic-result
+{
+    padding: 0;
+    margin: 0;
+		font-weight: bold;
+}
+    
+select#jurisdiction
+{
+    margin-bottom: 2%;
+}
+
+textarea#result
+{
+    width: 91%;
+    border: 1px solid #ccc;
+    color: gray;
+}
+
+a img
+{
+    border: none;
+    text-decoration: none;
+}
+
+#more_info
+{
+    padding: 0.5% 2% 1% 2%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+		width: 87%;
+}
+#more_info table
+{
+    width: 65%;
+}
+
+#more_info .header
+{
+    width: 35%;
+}
+
+#more_info input
+{
+    width: 100%;
+    border: 1px solid #ccc;
+		padding: 2px;
+}
+
+#more_info #location input {
+	width: auto;
+}
+
+#required
+{
+ /*   border: 1px solid #ccc;
+*/    padding: 0.5% 2% 1% 2%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    /* background: #efefef; */
+/*    background: #eef6e6;
+*/		width: 87%;
+}
+
+#work_title
+{
+    font-style: italic;
+}
+
+
+#location
+{
+    padding: 0.5% 2% 1% 2%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+		width: 100%;
+}
+
+.alert
+{
+    color: red;
+}
+
+.cc-button
+{
+    padding-bottom: 1%;
+}
+
+.header
+{
+}
+
+.info
+{
+    vertical-align: middle;
+}
+
+img.info {
+	float: right;
+}
+
+#lic-menu p, #jurisdiction_box {
+/*	width: 18em;*/
+	padding: 3px 0 5px 0;
+}
+
+.note
+{
+    float:          right;
+    font-size:      80%;
+    padding:        1% 1% 0 0;
+    margin:         0;
+}
+
+.tooltip
+{
+    background:     white;
+    border:         2px solid gray;
+    padding:        3px 10px 3px 10px;
+    width:          300px;
+    text-align:     left;
+}
+
+.tooltip .icon
+{
+    float:          left; 
+    padding-right:  4%;
+    padding-bottom: 20%;
+}
+
+.tooltipimage
+{
+    border:         2px solid gray;
+}
+
+.questionbox
+{
+
+    background: #bad7ff;
+    padding: 0 0.5% 0 0.5%;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5%;
+    cursor:         help;
+}
+
+.infobox
+{
+    cursor:         help;
+}
+
+.question
+{
+    cursor:         help;
+    color:          #00b;
+}
+
+#lic-menu p {
+	margin: 0 0 5px 0;
+}
+
+#nc-ad {
+	display: none;
+}
+
+.options {
+	margin-top: 10px;
+	padding: 5px 10px;
+	border: 1px solid #999;
+	width: 80%;
+	background-color: #f4f4f4;
+}
+
+.options img, .options input {
+	margin-bottom: -5px;
+}
+
+#nc-ad label {
+	margin-right: 15px;
+}
+
+.choose {
+	clear: both;
+	padding-top: 30px;
+}
+.choose-btn {
+	position: relative;
+	float: left;
+	width: 20px;
+}
+.choose-btn input {
+	position: absolute;
+	top: 15px;
+}
+
+.choose-icon {
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 50px;
+	padding: 0 5px;
+	margin-left: 23px;
+}
+
+.choose-icon img {
+	position: absolute;
+	top: -2px;
+}
+
+.choose-txt {
+	position: relative;
+/*	float: left;
+	width: 70%;*/
+	margin-left: 90px;
+	margin-top: 3px;
+}
+
+.choose-txt label, .choose-txt strong {
+	font-size: 107%;
+}
+
+.choose-txt .option_on {
+	color: #333;
+}
+
+.choose-txt .option_off {
+	color: #999;
+}
+
+
+.choose label:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.choose label.toggle_off:hover {
+	background-color: #fff;
+	cursor: text;
+}
+
+.choose-jurisdiction {
+	float: left;
+	width:  10.75em;
+	margin-right: 20px;
+	padding-bottom: 35px;
+}
+.choose-jurisdiction select {
+	width: 10.75em;
+}
+
+
+/* migrate me to general css file */
+#more_info .optional {
+	margin-top: 15px;
+	padding: 15px;
+	border-top: 1px solid #ddd;
+	clear: both;
+}
+
+#more_info .first {
+	border-top: none;
+	margin-top: 0;
+}
+
+#more_info .optional-name {
+	float: left;
+	width: 17em;
+	font-weight: bold;
+	font-size: 107%;
+	margin-bottom: 15px;
+}
+
+#more_info .optional-content {
+	float: left;
+	width: 60%;
+	padding-bottom: 15px;
+}

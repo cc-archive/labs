@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svnroot/!svn/ver/9632/license_xsl/trunk
+END
+licenses.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/9559/license_xsl/trunk/licenses.xml
+END
+licenselocale.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/9632/license_xsl/trunk/licenselocale.xsl
+END
+questions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/9632/license_xsl/trunk/questions.xml
+END

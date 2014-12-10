@@ -1,0 +1,2129 @@
+
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2008-04-17 16:08-0700\n"
+"PO-Revision-Date: 2008-04-17 16:08-0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: bg <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.2\n"
+
+msgid "country.nz"
+msgstr "Нова Зеландия"
+
+msgid "country.gr"
+msgstr "Гърция"
+
+#: c/engine/chooser_pages/index.pt:104
+msgid "Allow Derivative Works"
+msgstr "Позволява производни произведения"
+
+#: c/engine/chooser_pages/index.pt:107
+msgid ""
+"The licensor permits others to copy, distribute, display and perform the "
+"work, as well as make derivative works based on it."
+msgstr ""
+"Носителят на правата позволява копиране, разпространяване, публично "
+"изпълнение и представяне на произведението, както и създаване на "
+"производни произведения."
+
+#: c/engine/chooser_pages/index.pt:56
+msgid "Commercial Use"
+msgstr "Комерсиално използване"
+
+#: c/engine/chooser_pages/index.pt:59
+msgid ""
+"The licensor permits others to copy, distribute, display, and perform the"
+" work, including for commercial purposes."
+msgstr ""
+"Носителят на правата позволява копиране, разпространяване, публично "
+"изпълнение и представяне на произведението, включително и с комерсиални "
+"цели."
+
+#: c/engine/chooser_pages/index.pt:70
+msgid ""
+"The licensor permits others to copy, distribute, display, and perform the"
+" work for non-commercial purposes only."
+msgstr ""
+"Носителят на правата позволява копиране, разпространяване, публично "
+"изпълнение и представяне на произведението само с некомерсиални цели."
+
+#: c/engine/chooser_pages/index.pt:88
+msgid "Yes, as long as others share alike"
+msgstr "Да, до колкото и останалите споделят"
+
+#: c/engine/licenses/sampling_templates/deed.pt:31
+msgid "deed.free_copy_distribute_noncommercial"
+msgstr ""
+"Да изпълнявате, представяте и разпространявате копия на произведението в "
+"неговата цялост за некомерсиални цели (например споделяне или "
+"некомерсиално излъчване)."
+
+#: c/engine/pd/templates/publicdomain-waiting-email-verification.pt:37
+msgid "license.pd_awaiting_confirmation"
+msgstr ""
+"<h1>Отдаване на права като обществена собственост &mdash; потвърждение по"
+" електронна поща</h1>\n"
+"\n"
+"<p>\n"
+"Изпратено ви е съобщение на <b>${email}</b>. Трябва да го получите "
+"доняколко минути.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Съобщението съдържа потвърждение за това, че отдавате правата си като "
+"обществена собственост. То трябва да съдържа наименованието на вашето "
+"произведение („<b>${title}</b>“), и името на носителят на правата върху "
+"произведението („<b>${copyright_holder}</b>“).\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Съобщението съдържа също и препратка с прикрепен към нея код за "
+"потвърждение. Този код ни позволява да се уверим, че вие наистина сте "
+"чоека, за който е предназначено съобщението, изпратено на "
+"<b>${email}</b>. Натискайки препратката за потвърждение, предприемате "
+"„открит акт на отсъпване“ с което в действителност отстъпвате правата си "
+"като обществената собственост.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"<b>Докато не натиснете препратката с потвърждението, вашето произведение "
+"няма да бъде отдадено като обществена собственост.</b>\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Ако по някаква причина не получите съобщение в пощата си до  30-45 "
+"минути, моля <a href=\"mailto:pd@creativecommons.org\">уведомете ни</a>."
+"\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"След приключване на процедурата по потвърждаването, ще разберете как да "
+"маркирате произведението си като обществена собственост и да го "
+"публикувате.\n"
+"</p>"
+
+msgid "country.bg"
+msgstr "България"
+
+#: c/engine/pd/templates/publicdomain-4.pt:32
+msgid "license.mark_web"
+msgstr ""
+"Маркирайте съдържанието на уебстраница - HTML кодът, показващ вашия бутон"
+" е както следва; уверете се, че <a href=\"/technology/web\">следвате "
+"инструкциите от тук</a>:"
+
+msgid "util.copyright_date"
+msgstr "дата на влизане в сила на авторското право"
+
+#: c/engine/chooser_pages/index.pt:168
+#: c/engine/chooser_pages/sampling.pt:104
+msgid "util.Jurisdiction"
+msgstr "Юрисдикция"
+
+#: c/engine/chooser_pages/sampling.pt:80
+#: c/engine/chooser_pages/sampling.pt:92
+msgid "country.br"
+msgstr "Бразилия"
+
+msgid "util.Creative_Commons_License"
+msgstr "Криейтив Комънс договор"
+
+#: c/engine/chooser_pages/sampling.pt:41
+#: c/engine/macros_templates/support.pt:145
+#: c/engine/macros_templates/support.pt:152
+#: c/engine/macros_templates/support.pt:154
+#: c/engine/pd/templates/publicdomain-4.pt:25
+msgid "license.mark_content"
+msgstr "Маркирайте съдържание"
+
+#: c/engine/chooser_pages/sampling.pt:41
+#: c/engine/macros_templates/support.pt:145
+#: c/engine/macros_templates/support.pt:152
+#: c/engine/macros_templates/support.pt:154
+#: c/engine/pd/templates/publicdomain-4.pt:25
+msgid "license.Mark_Content"
+msgstr "Маркирайте съдържание"
+
+#: c/engine/licenses/fsf_templates/deed.pt:48
+msgid "deed.gpl_under_conditions"
+msgstr ""
+"Можете да упражнявате дадените ви свободи, съгласявайки се с изричните "
+"условия на договора. Основните условия са:"
+
+msgid "country.be"
+msgstr "Белгия"
+
+msgid "license.work_type_dedicated"
+msgstr ""
+"Това ${work_type} е отдадено като \n"
+"<a rel=\"license\" "
+"href=\"http://creativecommons.org/licenses/publicdomain/\">Обществена "
+"Собственост</a>."
+
+#: c/engine/chooser_pages/index.pt:77
+msgid "api.derivatives"
+msgstr "Позволявате ли другите да променят вашето произведение?"
+
+msgid "deed.fair_use.jp"
+msgstr ""
+"Горепосоченото по никакъв начин не засяга правото ви да използвате "
+"произведението съгласно клаузите, отнасящи се до авторското право и "
+"сродните му права."
+
+msgid "deed.back_to_cc"
+msgstr "Обратно към <a href=\"/\">Криейтив Комънс</a>"
+
+#: c/engine/chooser_pages/gpl.pt:63
+#: c/engine/chooser_pages/lgpl.pt:66
+msgid "license.fsf_how_it_works"
+msgstr ""
+"Ето как действа договора CC-GNU ${license_code}: Потребителят, щраквайки "
+"върху иконката на Криейтив Комънс, достъпва CC-GNU ${license_code} във "
+"вид на „<a href=\"/licenses/${license_code}/${version_title}/\">съкратена"
+" справка</a>“ — резюмирано обяснение на договора. От там може да се "
+"достъпне „<a href=\"http://www.gnu.org/licenses/old-"
+"licenses/${license_name_lower}.html\">Договорът</a>“ — пълния официален "
+"текст на GNU ${license_code}, на английски и <a "
+"href=\"/licenses/${license_code}/${version_title}/legalcode.pt\">португалски</a>."
+" Скрит в тага се намира „машинен код“ — метаданни — който ще позволи на "
+"другите да намират вашия софтуер."
+
+#: c/engine/licenses/mitbsd_templates/deed.pt:46
+msgid "deed.bsd_notice"
+msgstr ""
+"В изходния код на всяка дистрибуция трябва да запазите всички условия на "
+"договора и всички бележки за авторските права, както и да ги приложите в "
+"документацията."
+
+msgid "licenses.pretty_nd"
+msgstr "Без производни"
+
+msgid "jswidget.Updated_license_version_generic"
+msgstr ""
+"Актуализирахме версията на лиценза, който ползвате до последната "
+"официално достъпна."
+
+#: c/engine/chooser_pages/index.pt:67
+msgid "licenses.pretty_nc"
+msgstr "Некомерсиално"
+
+#: c/engine/macros_templates/deed.pt:103
+msgid "lang.ca"
+msgstr "каталунски"
+
+#: c/engine/chooser_pages/gpl.pt:66
+#: c/engine/chooser_pages/lgpl.pt:69
+msgid "license.fsf_mark_software"
+msgstr ""
+"<h1>Маркиране на софтуер</h1>\n"
+"\n"
+"<p>Поставете иконата на всеки уебсайт, от който може да се свали вашият "
+"софтуер, използвайки следния маркер:</p>"
+
+msgid "license.work_type_licensed"
+msgstr ""
+"Произведението ${work_type} ползва условията на <a rel=\"license\" "
+"href=\"${license_url}\">Криейтив Комънс договор</a>."
+
+msgid "license.rdfa_licensed_no_title"
+msgstr ""
+"Произведението ${work_type} с автор ${work_author} е лицензирано под <a "
+"rel=\"license\" href=\"${license_url}\">Криейтив Комънс ${license_name} "
+"договор</a>."
+
+#: c/engine/chooser_pages/gpl.pt:46
+#: c/engine/chooser_pages/lgpl.pt:47
+msgid "license.human-readable_commons_deed"
+msgstr ""
+"Съкратена справка <br />\n"
+"за договора"
+
+#: c/engine/macros_templates/support.pt:93
+#: c/engine/macros_templates/support.pt:97
+#: c/engine/pd/templates/publicdomain-partner.pt:22
+msgid "license.confirm_choice"
+msgstr "потвърдете избора си"
+
+#: c/engine/macros_templates/support.pt:93
+#: c/engine/macros_templates/support.pt:97
+#: c/engine/pd/templates/publicdomain-partner.pt:22
+msgid "license.Confirm_Choice"
+msgstr "потвърдете избора си"
+
+#: c/engine/chooser_pages/sampling.pt:54
+msgid "license.sampling_explain"
+msgstr ""
+"<div style=\"float:right;width:175px;border:1px solid "
+"#ccc;padding:8px;margin:0px 14px 10px 14px;background:#eee;\">Искате ли "
+"да <a href=\"/about/sampling\">научите повече за договорите за "
+"семплиране</a> и как Negativland ни помогнаха да ги създадем? Или да "
+"видите обяснение под формата на <a "
+"href=\"/about/licenses/sampling\">комикс</a>?</div>\n"
+"\n"
+"<p>Договорите за семплиране ви позволяват да дадете възможност на другите"
+" да използват части от вашето произведение и да създават нови "
+"произведения от тях.</p>\n"
+"\n"
+"<p>Например:</p>\n"
+"\n"
+"<ul>\n"
+"<li>Да вземат семпъл от ваша песен и да го включат в своя.</li>\n"
+"<li>Да вземат клип от вашия филм.</li>\n"
+"<li>Да вземат част от ваша фотография и да я включат в колаж.</li>\n"
+"</ul>\n"
+"\n"
+"<p>Приемете това като начин, по който  възнаграждавате хората за това, че"
+" са превърнали вашето произведение в нещо ново.</p>\n"
+"\n"
+"<p>Това е така, при някои условия. Има две разновидности на договора за "
+"семплиране. Изберете тази, която смятате за най-подходяща за вас:</p>"
+
+msgid "license.pd_dedication_email"
+msgstr ""
+"Това е характеристика на отказването от права в полза на Обществената "
+"собственост.\n"
+"\n"
+"На ${sysdate}, ${copyright_holder} отдаде като Обществена собственост "
+"произведението „${title}.“ Преди фактическия акт на отдаване, "
+"${copyright_holder} потвърди, че ${copyright_holder} притежава всички "
+"авторски права върху произведението. Чрез самото отдаване на правата, "
+"${copyright_holder} направи открит акт на отстъпване за вечни времена на "
+"всички съществуващи и бъдещи авторски права съгласно закона, независимо "
+"дали са неотменни или условни за „${title}.“ ${copyright_holder} разбира,"
+" че такова преотстъпване на всички права включва преотстъпването на "
+"всички приложими права (от съдебен състав или друг орган) за авторските "
+"права върху произведението. ${copyright_holder} приема, че веднъж "
+"поставено в обществената собственост, „${title}“ може свободно да бъде "
+"възпроизвеждано, разпространявано, препращано, използвано, променяно, "
+"надграждано, или използвано по всякакъв друг начин за всякакви цели без "
+"ограничения от всеки, включително и по начини, които не са изобретени или"
+" измислени още. За повече информация, моля прегледайте "
+"http://creativecommons.org/licenses/publicdomain/."
+
+msgid "lang.bg"
+msgstr "български"
+
+#: c/engine/chooser_pages/gpl.pt:37
+#: c/engine/chooser_pages/gpl.pt:79
+#: c/engine/chooser_pages/lgpl.pt:38
+#: c/engine/chooser_pages/lgpl.pt:82
+msgid "license.fsf_software_licensed"
+msgstr ""
+"Този софтуер е лицензиран под <a href=\"${license_url}\">CC-GNU "
+"${license_code}</a>."
+
+#: c/engine/pd/templates/publicdomain-2.pt:34
+#: c/engine/macros_templates/metadata.pt:46
+msgid "util.title_of_work"
+msgstr "наименование на произведението"
+
+#: c/engine/licenses/fsf_templates/deed.pt:61
+msgid "deed.gpl_sharealike"
+msgstr ""
+"Ако промените своето копие или копия на програмата или на част от нея, "
+"или разработите друга програма, базирана на нея, имате право да "
+"разпространявате полученото производно произведение под договор "
+"${license_name_full}. Всякакви преводи на договора ${license_name_full} "
+"трябва да бъдат придружени от ${license_name_full}."
+
+msgid "country.ie"
+msgstr "Ирландия"
+
+#: c/engine/macros_templates/engine.pt:111
+msgid "license.License_Your_Work"
+msgstr "Лицензирайте своето произведение"
+
+msgid "licenses.pretty_by-nc"
+msgstr "Признание-Некомерсиално"
+
+msgid "licenses.pretty_by-nd"
+msgstr "Признание-Без производни"
+
+msgid "lang.es_PE"
+msgstr "испански (Перу)"
+
+#: c/engine/licenses/sampling_templates/deed.pt:29
+msgid "deed.free_sample"
+msgstr ""
+"Да семплирате, смесвате или трансформирате творчески това произведение за"
+" комерсиални или некомерсиални цели."
+
+msgid "country.il"
+msgstr "Израел"
+
+msgid "license.more_perms_available"
+msgstr ""
+"За разрешения извън обсега на този договор, проверете на  "
+"${more_perms_link}."
+
+msgid "country.in"
+msgstr "Индия"
+
+msgid "lang.mk"
+msgstr "македонски"
+
+msgid "license.how_it_works"
+msgstr ""
+"Ето как се случва това: Потребителят, щракващ върху иконката на Криейтив "
+"Комънс вижда вашето „<a href=\"${license_url}\">Комънс резюме</a>“ "
+"&mdash; съкратената справка за избрания от вас договор. От там може да се"
+" намери препратка към  „<a href=\"${license_url}legalcode\">Договора</a>“"
+" &mdash;  пълния текст  на договора, под който предлагате съдържанието на"
+" произведението си.\n"
+"Скрит в тага се намира „<a href=\"/license/work-html-popup?${url_vars}\" "
+"onclick=\"window.open('work-html-popup?${url_vars}', 'html_help', "
+"'width=400,height=350,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\">машинен код</a>“ &mdash; метаданни &mdash; позволяващи на "
+"другите да намират произведението ви. <a "
+"href=\"/learn/licenses/how1\">Илюстративно, този процес</a> е представен "
+"в нашия комикс."
+
+msgid "country.it"
+msgstr "Италия"
+
+msgid "country.pl"
+msgstr "Полша"
+
+msgid "lang.ms"
+msgstr "малайски"
+
+msgid "country.ph"
+msgstr "Филипини"
+
+#: c/engine/licenses/sampling_templates/deed.pt:42
+msgid "char.na_brief"
+msgstr ""
+"Това произведение не може да бъде използвано за реклама или промоция на "
+"каквото и да е друго, освен на  създаденото на негова основа производно "
+"произведение."
+
+msgid "country.pe"
+msgstr "Перу"
+
+msgid "deed.permission.jp"
+msgstr ""
+"Всяко едно от тези условия може да бъде пренебрегнато, ако получите за "
+"това изричното разрешение от носителите на правата върху това "
+"произведение."
+
+msgid "util.Sampling"
+msgstr "Семплиране"
+
+msgid "licenses.pretty_sampling"
+msgstr "Семплиране"
+
+#: c/engine/macros_templates/support.pt:30
+#: c/engine/macros_templates/support.pt:56
+msgid "util.page_other_languages"
+msgstr "Тази страница е достъпна на следните езици:"
+
+#: c/engine/macros_templates/support.pt:30
+#: c/engine/macros_templates/support.pt:56
+msgid "deed.view_in"
+msgstr "Тази страница е достъпна на следните езици:"
+
+msgid "lang.en_GB"
+msgstr "британски английски"
+
+#: c/engine/licenses/standard_templates/deed.pt:69
+msgid "deed.moralrights-remix.us"
+msgstr ""
+"С изключение на правото да ремиксирате произведението, ползващо този "
+"договор, нищо в него не накърнява или ограничава неимуществените права на"
+" автора на произведението. <br /><br />\n"
+"\n"
+"Неимуществените права включват правото на автора да иска да му бъде "
+"признавано и обозначавано авторството, да  променя или запазва целостта "
+"на произведението, да иска запазване на целостта на произведението и да "
+"се противопоставя на всякакви промени в него, както и на всяко друго "
+"действие, което би могло да наруши законните му интереси или личното му "
+"достойнство."
+
+msgid "lang.pl"
+msgstr "полски"
+
+#: c/engine/pd/templates/publicdomain-3.pt:87
+msgid "util.confirm"
+msgstr "потвърждаване"
+
+msgid "util.Do_you_want_to"
+msgstr "Искате ли да:"
+
+msgid "util.year_of_copyright"
+msgstr ""
+"<a href=\"/jargon/copyright_date\" class=\"jargon\" "
+"onClick=\"window.open('/jargon/copyright_date', 'jargon_term_lookup', "
+"'width=300,height=400,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');"
+" return false;\">дата на влизане в сила на авторското право</a>"
+
+#: c/engine/chooser_pages/index.pt:29
+#: c/engine/chooser_pages/sampling.pt:32
+#: c/engine/macros_templates/support.pt:82
+#: c/engine/macros_templates/support.pt:86
+msgid "license.Choose_License"
+msgstr "изберете договор"
+
+#: c/engine/chooser_pages/index.pt:29
+#: c/engine/chooser_pages/sampling.pt:32
+#: c/engine/macros_templates/support.pt:82
+#: c/engine/macros_templates/support.pt:86
+msgid "license.choose_license"
+msgstr "изберете договор"
+
+#: c/engine/licenses/fsf_templates/deed.pt:38
+msgid "deed.gpl_free_redistribute"
+msgstr ""
+"Свободата да разпространявате копия, като по този начин се подпомагат "
+"хората."
+
+#: c/engine/pd/templates/publicdomain-4.pt:47
+msgid "license.mark_mp3"
+msgstr ""
+"За маркиране на mp3, <a href=\"/technology/mp3\">следвайте "
+"инструкциите</a>."
+
+#: c/engine/licenses/devnations_templates/deed.pt:40
+#: c/engine/licenses/mitbsd_templates/deed.pt:33
+#: c/engine/licenses/sampling_templates/deed.pt:39
+#: c/engine/licenses/standard_templates/deed.pt:45
+msgid "deed.under_conditions"
+msgstr "Съгласно следните условия:"
+
+#: c/engine/chooser_pages/gpl.pt:48
+#: c/engine/chooser_pages/lgpl.pt:49
+msgid "license.machine-readable_digital_code"
+msgstr "машинен код"
+
+msgid "util.copyright_holders_name"
+msgstr ""
+"<a href=\"/jargon/copyright\" class=\"jargon\" "
+"onClick=\"window.open('/jargon/copyright', 'jargon_term_lookup', "
+"'width=300,height=400,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');"
+" return false;\">авторските права</a> принадлежат на"
+
+#: c/engine/macros_templates/metadata.pt:58
+msgid "util.attribute_to_url"
+msgstr "Отдаване на признание към интернет страница"
+
+#: c/engine/chooser_pages/index.pt:195
+msgid "license.view_explanation"
+msgstr "Вижте обяснения за всички наши договори"
+
+msgid "jargon.copyright_description"
+msgstr ""
+"Авторски права. Набор от определен брой изключителни права върху "
+"произведение, предоставени с цел да се окуражава създаването на нови "
+"произведения. Авторското право включва изключителните права за копиране, "
+"разпространяване, възпроизвеждане, публично представяне (включително "
+"безжично излъчване), извличане на печалба, промяна и създаване на "
+"производни произведения. Тези права могат да бъдат прехвърляни на трети "
+"лица и подлежат на защита чрез съдебно производство. Авторските права не "
+"се прилагат за факти от действителността и идеи, а върху първото "
+"материално изражение на тези факти и идеи."
+
+#: c/engine/licenses/fsf_templates/deed.pt:50
+msgid "deed.lgpl_under_conditions"
+msgstr ""
+"Можете да упражнявате дадените ви свободи, съгласявайки се с изричните "
+"условия на този договор. Договорът LGPL  е предназначен по-скоро за "
+"софтуерни библиотеки, отколкото за изпълними програми. Основните му "
+"условия са:"
+
+msgid "license.mark_license"
+msgstr ""
+"С избирането на Криейтив Комънс договор, трябва да маркирате  вашето "
+"произведение по съответния начин."
+
+msgid "country.lu"
+msgstr "Люксембург"
+
+#: c/engine/macros_templates/metadata.pt:23
+msgid "license.tell_format"
+msgstr "В какъв формат е вашето произведение:"
+
+msgid "country.cl"
+msgstr "Чили"
+
+msgid "lang.nso"
+msgstr "северно сото"
+
+#: c/engine/chooser_pages/index.pt:222
+msgid "util.CC_GNU_LGPL"
+msgstr "CC-GNU LGPL"
+
+msgid "license.sampling_a_sampling"
+msgstr ""
+"<strong>Семплиране</strong>: Позволява на другите да вземат и променят "
+"<strong>части</strong> от вашето произведение за всякакви цели, различни "
+"от реклама. Копирането и разпространението на произведението, в неговата "
+"<strong>цялост</strong> също е забранено."
+
+#: c/engine/chooser_pages/results.pt:98
+msgid "license.publish_audio_ia"
+msgstr "Публикуване на лицензирана музика в Internet Archive"
+
+#: c/engine/chooser_pages/results.pt:92
+msgid "license.no_web_site"
+msgstr "Нямате уеб страница?"
+
+msgid "country.rs"
+msgstr "Сърбия"
+
+msgid "country.kr"
+msgstr "Корея"
+
+#: c/engine/chooser_pages/partner/index.pt:69
+msgid "license.a6"
+msgstr ""
+"Да, до колкото и другите споделят произведението си по същия начин (<a "
+"href=\"/characteristic/sa?lang=${lang}\" "
+"onclick=\"window.open('/characteristic/sa?lang=${lang}', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\">Повече информация</a> <a "
+"href=\"/characteristic/sa?lang=${lang}\" "
+"onclick=\"window.open('/characteristic/sa?lang=${lang}', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\"><img src=\"/images/popup.gif\" width=\"15\" height=\"13\" "
+"alt=\"more information\" border=\"0\" /></a>)"
+
+msgid "lang.ko"
+msgstr "корейски"
+
+msgid "deed.gpl_disclaimer"
+msgstr ""
+"<div align=\"center\"><a href=\"/licenses/disclaimer-popup\" "
+"onclick=\"window.open('/licenses/disclaimer-popup', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\">Отказ от  отговорност</a> <a href=\"/licenses/disclaimer-"
+"popup\" onclick=\"window.open('/licenses/disclaimer-popup', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\"><img src=\"/images/popup.gif\" width=\"15\" height=\"13\" "
+"alt=\"Disclaimer\" border=\"0\"></a></div>"
+
+msgid "license.no_license"
+msgstr "Няма договор, който да съдържа вашите изисквания."
+
+msgid "lang.it"
+msgstr "италиански"
+
+msgid "country.ro"
+msgstr "Румъния"
+
+#: c/engine/chooser_pages/index.pt:191
+msgid "license.what_you"
+msgstr "Какво можете да направите тук"
+
+msgid "jargon.copyright_date_description"
+msgstr ""
+"Ако не сте регистрирали официално авторските права върху вашето "
+"произведение, по подразбиране се приема датата на създаване или "
+"завършване на произведението."
+
+msgid "licenses.pretty_by-nd-nc"
+msgstr "Признание-Без производни-Некомерсиално"
+
+#: c/engine/macros_templates/deed.pt:110
+msgid "lang.gl"
+msgstr "галисийски"
+
+msgid "license.proceed_pd"
+msgstr ""
+"От тук можете да <a href=\"publicdomain-2?${url_vars}\">продължите и да "
+"допринесете за обогатяването на обществената собственост с вашето "
+"произведение</a>."
+
+#: c/engine/pd/templates/publicdomain-2.pt:29
+msgid "util.your_email"
+msgstr "вашата електронна поща"
+
+#: c/engine/chooser_pages/index.pt:46
+#: c/engine/chooser_pages/index.pt:81
+#: c/engine/chooser_pages/partner/index.pt:54
+#: c/engine/chooser_pages/partner/index.pt:65
+msgid "util.Yes"
+msgstr "Да"
+
+msgid "deed.free_copy_distribute.jp"
+msgstr ""
+"да разпространявате копия или презаписи, да представяте или изпълнявате "
+"публично, включително под формата на рецитал произведението, както и да "
+"го излъчвате."
+
+#: c/engine/pd/templates/publicdomain-partner.pt:24
+msgid "license.pd_choice"
+msgstr ""
+"<p>Вашият избор предполага, че искате да преотстъпите правата си върху "
+"произведението като обществена собственост. Обществената собственост е "
+"хранилище на информация и творчество, в която нищо не е собственост на "
+"никого и всякакво ползване е позволено.</p>\n"
+"\n"
+"\n"
+"        <p>Отдаването на правата като обществена собственост не е "
+"договор. Избирайки това, вие не само премахвате изключителните си права; "
+"вие отдавате изцяло правата си на обществото, без никакви условия. Това "
+"отдаване е неизменно и необратимо.</p>"
+
+#: c/engine/macros_templates/metadata.pt:30
+msgid "util.Audio"
+msgstr "Аудио"
+
+#: c/engine/macros_templates/deed.pt:92
+msgid "deed.fair_use"
+msgstr ""
+"Горепосоченото по никакъв начин не засяга правото ви на свободно "
+"договаряне или някакви други права."
+
+msgid "country.nl"
+msgstr "Холандия"
+
+#: c/engine/pd/templates/publicdomain-4.pt:29
+msgid "license.in_order_to"
+msgstr "За да:"
+
+#: c/engine/licenses/fsf_templates/deed.pt:67
+msgid "deed.gpl_source"
+msgstr ""
+"Ако копирате или разпространявате програмата, това трябва да е придружено"
+" съответно с пълния й програмен код, или с писмено предложение за "
+"предоставяне на програмния код, валидно най-малко три години."
+
+#: c/engine/macros_templates/partner.pt:29
+msgid "util.Creative_Commons"
+msgstr "Криейтив Комънс"
+
+msgid "country.uk"
+msgstr "Обединено кралство: Англия и Уелс"
+
+msgid "country.ng"
+msgstr "Нигерия"
+
+msgid "jswidget.Licensor_permits_others_to_make_derivative_works"
+msgstr "Носителят на правата позволява създаването на производни произведения"
+
+msgid "country.us"
+msgstr "САЩ"
+
+#: c/engine/chooser_pages/results.pt:70
+msgid "license.select_text"
+msgstr ""
+"Изберете съдържанието от кутийката по-горе и го копирайте. Или, го "
+"изпратете на вашата <a href=\"/license/work-html-popup?${url_vars}\" "
+"onclick=\"window.open('work-html-popup?${url_vars}', 'html_help', "
+"'width=400,height=350,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\">електронна поща.</a>"
+
+msgid "license.q1"
+msgstr ""
+"<strong>Изисквате ли признание за авторството си?</strong> (<a "
+"href=\"/characteristic/by?lang=${lang}\" "
+"onclick=\"window.open('/characteristic/by?lang=${lang}', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\">Повече информация</a> <a "
+"href=\"/characteristic/by?lang=${lang}\" "
+"onclick=\"window.open('/characteristic/by?lang=${lang}', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\"><img src=\"/images/popup.gif\" width=\"15\" height=\"13\" "
+"alt=\"more information\" border=\"0\" /></a>)"
+
+#: c/engine/chooser_pages/partner/index.pt:50
+msgid "license.q2"
+msgstr ""
+"<strong>Позволявате ли произведението ви да се използва за комерсиални "
+"цели?</strong> (<a href=\"/characteristic/nc?lang=${lang}\" "
+"onclick=\"window.open('/characteristic/nc?lang=${lang}', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\">Повече информация</a> <a "
+"href=\"/characteristic/nc?lang=${lang}\" "
+"onclick=\"window.open('/characteristic/nc?lang=${lang}', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\"><img src=\"/images/popup.gif\" width=\"15\" height=\"13\" "
+"alt=\"more information\" border=\"0\" /></a>)"
+
+#: c/engine/chooser_pages/partner/index.pt:61
+msgid "license.q3"
+msgstr ""
+"<strong>Позволявате ли другите да променят вашето произведение?</strong> "
+"(<a href=\"/characteristic/nd?lang=${lang}\" "
+"onclick=\"window.open('/characteristic/nd?lang=${lang}', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\">Повече информация</a> <a "
+"href=\"/characteristic/nd?lang=${lang}\" "
+"onclick=\"window.open('/characteristic/nd?lang=${lang}', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\"><img src=\"/images/popup.gif\" width=\"15\" height=\"13\" "
+"alt=\"more information\" border=\"0\" /></a>)"
+
+#: c/engine/chooser_pages/htmlpopup.pt:24
+msgid "license.html_directions"
+msgstr ""
+"Копирайте текста, и го включете в уеб документите, съдържащи информация "
+"за вашите произведения. <a href=\"/learn/technology/usingmarkup\" "
+"target=\"_blank\">Повече информация за добавянето на HTML към вашите "
+"документи има тук</a>."
+
+#: c/engine/chooser_pages/index.pt:178
+#: c/engine/chooser_pages/partner/index.pt:114
+msgid "license.Select_a_License"
+msgstr "Генериране на договор"
+
+msgid "license.rdfa_licensed"
+msgstr ""
+"Произведението ${work_title} създадено от ${work_author} ползва <a "
+"rel=\"license\" href=\"${license_url}\">Криейтив Комънс ${license_name} "
+"договор</a>."
+
+msgid "util.description"
+msgstr "описание"
+
+#: c/engine/chooser_pages/results.pt:114
+msgid "license.publish_video_ia"
+msgstr "Публикуване на лицензирано видео в Internet Archive"
+
+#: c/engine/chooser_pages/partner/results.pt:29
+msgid "license.partner_selected"
+msgstr ""
+"Вие избрахте <a target=\"cc_other\" "
+"href=\"${license_deed_url}\"><b>${license_pretty_name} "
+"договор</b></a>.<br>\n"
+"Той се намира на адрес<br>\n"
+"<b><tt>${license_url}</tt></b>."
+
+#: c/engine/licenses/sampling_templates/deed.pt:45
+msgid "deed.notice_withoutdistribution"
+msgstr ""
+"За всяко повторно използване, вие трябва ясно за останалите да посочите "
+"договорните условия за ползване на произведението."
+
+#: c/engine/macros_templates/deed.pt:124
+msgid "lang.nl"
+msgstr "холандски"
+
+#: c/engine/chooser_pages/results.pt:101
+msgid "license.publish_soundclick"
+msgstr "Публикуване на вашата лицензирана музика в Soundclick"
+
+msgid "util.weblog"
+msgstr "блог"
+
+msgid "country.es"
+msgstr "Испания"
+
+#: c/engine/pd/templates/publicdomain-4.pt:49
+#: c/engine/chooser_pages/results.pt:127
+msgid "license.mark_nonweb"
+msgstr ""
+"За да маркирате документ извън Интернет, <a href=\"non-web-"
+"popup?${url_vars}\" onclick=\"window.open('non-web-popup?${url_vars}', "
+"'html_help', "
+"'width=400,height=350,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\">добавете този текст</a> към вашето произведение."
+
+msgid "char.nc_description"
+msgstr ""
+"Носителят на правата позволява на другите да създават копия, да "
+"разпространяват и предават на разстояние произведението. В замяна на това"
+" произведението не може да се ползва за комерсиални цели, освен с изрично"
+" разрешение от носителя на правата."
+
+msgid "lang.es_MX"
+msgstr "испански (Мексико)"
+
+msgid "util.publish"
+msgstr "публикуване"
+
+#: c/engine/macros_templates/deed.pt:153
+msgid "deed.human_summary"
+msgstr ""
+"Това е опростено резюме на <a href=\"legalcode\" "
+"class=\"fulltext\">Договора</a>."
+
+#: c/engine/pd/templates/publicdomain-2.pt:46
+msgid "util.proceed"
+msgstr "продължете"
+
+msgid "license.LGPL_name_full"
+msgstr "GNU Lesser General Public License"
+
+msgid "util.more"
+msgstr "повече"
+
+msgid "lang.en_US"
+msgstr "американски английски"
+
+#: c/engine/macros_templates/metadata.pt:52
+msgid "util.attribute_to_name"
+msgstr "Кредит към името"
+
+msgid "api.sampling_flavor_help"
+msgstr ""
+"Разновидностите на договора Семплиране определят какви свободи дава той. "
+"Семплиране позволява използването само на части от произведението и "
+"забранява цялостното му споделяне. Договорите Семплиране плюс позволяват "
+"както използване и модифициране на части от творбата, така и споделянето "
+"й в нейната цялост за некомерсиални цели. Договорът Некомерсиално "
+"Семплиране плюс допълнително ограничава Семплиране плюс, като  позволява "
+"единствено създаването на производни произведения за некомерсиални цели с"
+" използването на части от вашата творба."
+
+#: c/engine/macros_templates/deed.pt:117
+msgid "lang.en"
+msgstr "английски"
+
+msgid "lang.eo"
+msgstr "есперанто"
+
+msgid "licenses.draft_notice"
+msgstr ""
+"Това е проекто-договор, публикуван за обществен преглед. Моля да не го "
+"използвате, докато това предупреждение не бъде премахнато. \n"
+"Коментари по повод проекто-договора изпращайте на  "
+"christiane@creativecommons.org."
+
+#: c/engine/chooser_pages/index.pt:170
+#: c/engine/chooser_pages/sampling.pt:106
+msgid "license.jurisdiction_help"
+msgstr ""
+"Ако желаете да използвате договор, регулиран от Закона за авторското "
+"право на специфична юрисдикция, моля изберете съответната държава."
+
+#: c/engine/licenses/fsf_templates/deed.pt:34
+msgid "deed.gpl_free_run"
+msgstr "Правото на свободно използване на програмата за всякакви цели."
+
+#: c/engine/chooser_pages/index.pt:128
+#: c/engine/chooser_pages/sampling.pt:72
+#: c/engine/chooser_pages/partner/index.pt:79
+msgid "license.jurisdiction_question"
+msgstr "Юрисдикция на избрания договор"
+
+#: c/engine/pd/templates/publicdomain-2.pt:39
+msgid "util.copyright_holder"
+msgstr "носителя на авторските права"
+
+#: c/engine/chooser_pages/sampling.pt:118
+#, python-format
+msgid "license.sampling_alternatives"
+msgstr ""
+"<p>При условие че <strong>искате</strong> другите да използват вашето "
+"произведение с <strong>комерсиална</strong> цел, независимо дали е "
+"променено или не &mdash; трябва да използвате или договор <a "
+"href=\"/license/results-one?license%5fcode=by%2dsa\">Признание-Споделяне "
+"на споделеното</a>, или <a href=\"/license/results-"
+"one?license%5fcode=by\">Признание</a>.</p>"
+
+msgid "lang.sv"
+msgstr "шведски"
+
+#: c/engine/chooser_pages/htmlpopup.pt:15
+msgid "license.html_display"
+msgstr "HTML кодът за показване на избрания бутон е както следва:"
+
+#: c/engine/macros_templates/deed.pt:109
+msgid "lang.eu"
+msgstr "баски"
+
+msgid "lang.en_CA"
+msgstr "английски (Канада)"
+
+#: c/engine/macros_templates/deed.pt:104
+msgid "lang.es"
+msgstr "испански"
+
+#: c/engine/templates/by.pt:8
+#: c/engine/templates/by.pt:23
+#: c/engine/licenses/devnations_templates/deed.pt:47
+msgid "char.by_title"
+msgstr "Признание"
+
+#: c/engine/templates/by.pt:8
+#: c/engine/templates/by.pt:23
+#: c/engine/licenses/devnations_templates/deed.pt:47
+msgid "licenses.pretty_by"
+msgstr "Признание"
+
+#: c/engine/chooser_pages/sampling.pt:65
+msgid "license.sampling_a_nc-sampling+"
+msgstr ""
+"<strong>Некомерсиално Семплиране Плюс</strong>: Другите могат да взимат и"
+" променят <strong>части</strong> от вашето произведение само за "
+"<strong>некомерсиални</strong> цели. <strong>Некомерсиалното</strong> "
+"копиране и разпространяване (като споделяне на файлове) на <strong>цялото"
+" произведение</strong> също е позволено."
+
+#: c/engine/chooser_pages/results.pt:21
+msgid "license.selected"
+msgstr ""
+"Вие избрахте условията на Криейтив Комънс договор ${license_pretty_name} "
+"License${country_name}. <a href=\"${license_url}\">Вижте как ще виждат "
+"избраният от вас договор</a> посетителите на страницата ви."
+
+#: c/engine/macros_templates/metadata.pt:32
+msgid "util.Video"
+msgstr "Видео"
+
+msgid "license.rdfa_licensed_no_attrib"
+msgstr ""
+"Произведението ${work_title} ползва <a rel=\"license\" "
+"href=\"${license_url}\">Криейтив Комънс ${license_name} договор</a>."
+
+msgid "country.hu"
+msgstr "Унгария"
+
+msgid "country.hr"
+msgstr "Хърватска"
+
+#: c/engine/chooser_pages/gpl.pt:118
+#: c/engine/chooser_pages/lgpl.pt:121
+msgid "license.fsf_more_info"
+msgstr ""
+"Повече информация за Фондацията за свободен софтуер можете да намерите на"
+" тяхната <a href=\"http://www.fsf.org\">интернет страница</a>."
+
+#: c/engine/chooser_pages/sampling.pt:111
+msgid "license.sampling_get"
+msgstr "Вземете своя договор Семплиране"
+
+#: c/engine/licenses/fsf_templates/deed.pt:16
+msgid "deed.gpl_title"
+msgstr ""
+"${license_name_full}, <a href=\"http://www.gnu.org/\">Фондация за "
+"Свободен Софтуер</a>"
+
+msgid "license.devnations_licensed"
+msgstr ""
+"Това произведение е лицензирано под <a href=\"${license_url}\">Криейтив "
+"Комънс договор Развиващи се нации</a>."
+
+#: c/engine/chooser_pages/index.pt:32
+msgid "license.what"
+msgstr ""
+"Избирайки договор на Криейтив Комънс, вие <strong>запазвате авторските си"
+" права</strong> върху произведението,  но позволявате на другите да го <a"
+" href=\"/learn/licenses/fullrights\">копират и разпространяват</a>, <a "
+"href=\"/characteristic/by?lang=${lang}\" "
+"onclick=\"window.open('/characteristic/by?lang=${lang}', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\">посочвайки вашето име</a> и само съгласно условията, които сте "
+"определили тук.  Ако не сте запознати с идеята, която стои зад тези "
+"договори, сме приготвили <a href=\"/about/think\">набор от обяснителни "
+"материали</a>.Ако желаете да предоставите произведението си без никакви "
+"условия, изберете <a href=\"publicdomain-2\">обществена собственост</a>."
+
+msgid "char.by_brief.jp"
+msgstr ""
+"Трябва да посочите авторството - името (псевдонима) на автора и името "
+"(псевдонима) на изпълнителя."
+
+#: c/engine/chooser_pages/results.pt:94
+msgid "license.learn_host"
+msgstr ""
+"Вижте някои места, на които можете да хоствате своите лицензирани "
+"файлове. Посочените сайтове работят с вашия Криейтив Комънс договор."
+
+msgid "lang.es_CO"
+msgstr "испански (Колумбия)"
+
+#: c/engine/pd/templates/publicdomain-4.pt:42
+#: c/engine/chooser_pages/gpl.pt:110
+#: c/engine/chooser_pages/lgpl.pt:113
+msgid "license.get_html_email"
+msgstr "Вземете HTML кода и си го изпратете по електронната поща"
+
+#: c/engine/macros_templates/metadata.pt:38
+msgid "util.Interactive"
+msgstr "Интерактивно"
+
+#: c/engine/chooser_pages/htmlpopup.pt:27
+msgid "license.html_email"
+msgstr ""
+"За да получите този HTML код по електронна поща, въведете вашия "
+"електронен адрес."
+
+msgid "util.Next_step"
+msgstr "Следваща стъпка:"
+
+#: c/engine/chooser_pages/index.pt:198
+msgid "license.or_choose"
+msgstr "Или изберете:"
+
+msgid "licenses.pretty_by-nc-nd"
+msgstr "Признание-Некомерсиално-Без производни"
+
+#: c/engine/licenses/catalog_pages/disclaimer-popup.pt:19
+msgid "deed.disclaimer"
+msgstr ""
+"<p>\n"
+"Този документ не е Криейтив Комънс Договор. Това е съкратена справка, "
+"създадена за да помогне за по-добро разбиране на същинския Договор — тя "
+"съдържа обяснения на основните термини. Може да се разглежда като "
+"ориентиран към потребителите интерфейс към Договора по-долу. Сам по себе "
+"си, този документ няма юридическа стойност и неговото съдържание липсва в"
+" същинския Договор.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Криейтив Комънс не е адвокатско дружество и не предоставя правни услуги. "
+"Използването, разпространението или поставянето на препратка към този "
+"документ не води до установяване на отношения между адвокат и клиент. \n"
+"</p>"
+
+#: c/engine/chooser_pages/results.pt:15
+msgid "license.here_chosen"
+msgstr "Това е договорът, който си избрахте"
+
+#: c/engine/macros_templates/deed.pt:161
+msgid "deed.learn"
+msgstr ""
+"Научете как да разпространявате своето произведение, използвайки "
+"настоящия договор"
+
+#: c/engine/chooser_pages/htmlpopup.pt:41
+msgid "util.Send"
+msgstr "Изпращане"
+
+#: c/engine/licenses/fsf_templates/deed.pt:40
+msgid "deed.gpl_free_improve"
+msgstr ""
+"Свободата да доусъвършенствате дадената програма и да предоставяте своите"
+" подобрения, така че да може да се облагодетелства цялата общност."
+
+msgid "lang.zh_TW"
+msgstr "китайски (Тайван)"
+
+#: c/engine/macros_templates/metadata.pt:84
+msgid "jargon.source_work_description"
+msgstr "произведение, на чиято база е създадено производно."
+
+msgid "lang.zu"
+msgstr "зулу"
+
+msgid "license.pd_confirmation_email"
+msgstr ""
+"Информирани сме<http://creativecommons.org>, че вие избрахте да посветите"
+" своето произведение, „${title}“, като обществена собственост. Изпращаме "
+"това писмо за да се уверим, че наистина желаете това.\n"
+"\n"
+"Ако не е така, можете просто да игнорирате това писмо или да го "
+"препратите към pd@creativecommons.org за да знаем, че някой злоупотребява"
+" със системата ни.\n"
+"\n"
+"В случай, че вашето желание е да посветите творбата си на обществото, "
+"моля последвайте дадената по-долу връзка. Когато това се случи, ще видите"
+" екран с резюмирана информация и последно потвърждаване на отказа от "
+"права в полза на обществената собственост:\n"
+"\n"
+"${clickthrough_url}\n"
+"\n"
+"\n"
+"Ако имате някакви въпроси или коментари, уведомете ни на електронна поща "
+"pd@creativecommons.org.\n"
+"\n"
+"\n"
+"Благодарим ви, че използвхте Криейтив Комънс!"
+
+#: c/engine/chooser_pages/gpl.pt:25
+#: c/engine/chooser_pages/lgpl.pt:26
+msgid "license.fsf_explain"
+msgstr ""
+"<h1>Криейтив Комънс GNU ${license_code}</h1>\n"
+"\n"
+"<p>CC-GNU ${license_code} добавя метаданни за Криейтив комънс и за "
+"съкратените справки в договора на Фондацията за Свободен Софтуер "
+"${license_name_full}. Договорът е официален FSF ${license_code}, и "
+"съдържа превод на португалски.</p>\n"
+"\n"
+"<p>За да покажете на другите, че използвате Криейтив Комънс договор, "
+"можете да използвате логото на Криейтив Комънс, което реферира към CC-GNU"
+" ${license_code}. Резултатът от това, ще изглежда по този начин:</p>"
+
+#: c/engine/chooser_pages/index.pt:124
+msgid "char.sa_description"
+msgstr ""
+"Носителят на правата позволява на другите да разпространяват производни "
+"произведения само съгласно условията на договор, съвместим с този, под "
+"който се разпространява самото произведение."
+
+#: c/engine/macros_templates/metadata.pt:34
+msgid "util.Image"
+msgstr "Изображение"
+
+#: c/engine/macros_templates/metadata.pt:28
+msgid "util.Other"
+msgstr "Друг"
+
+#: c/engine/pd/templates/publicdomain-partner.pt:31
+#: c/engine/chooser_pages/partner/results.pt:35
+msgid "license.you_may_proceed"
+msgstr "Можете да <a href=\"${processed_exit_url}\">продължите</a>"
+
+msgid "char.nc_title"
+msgstr "Некомерсиално"
+
+#: c/engine/chooser_pages/index.pt:204
+msgid "licenses.pretty_publicdomain"
+msgstr "Обществена Собственост"
+
+#: c/engine/chooser_pages/index.pt:204
+msgid "util.Public_Domain"
+msgstr "Обществена Собственост"
+
+msgid "lang.zh"
+msgstr "китайски"
+
+msgid "lang.zh_CN"
+msgstr "китайски"
+
+#: c/engine/chooser_pages/results.pt:59
+msgid "license.have_your_own_website"
+msgstr "Имате собствена интернет страница?"
+
+msgid "license.review_choice_directions"
+msgstr ""
+"<h1>Прегледайте избора си</h1>\n"
+"\n"
+"<p>Поздравления, вие избрахте Криейтив Комънс <a "
+"href=\"${license_url}\">${license_pretty_name} "
+"License${country_name}</a>. </p>\n"
+"\n"
+"<p>За да покажете, че използвате договор на Криейтив Комънс, можете да "
+"използвате логото на Криейтив Комънс. Резултатът ще изглежда така:</p>"
+
+msgid "lang.ja"
+msgstr "японски"
+
+#: c/engine/chooser_pages/sampling.pt:53
+msgid "license.sampling_title"
+msgstr "Изберете опциите за вашия договор за семплиране"
+
+msgid "country.jp"
+msgstr "Япония"
+
+msgid "deed.free_commercial"
+msgstr "да използвате произведението с комерсиална цел"
+
+#: c/engine/chooser_pages/index.pt:47
+#: c/engine/chooser_pages/index.pt:50
+#: c/engine/chooser_pages/index.pt:82
+#: c/engine/chooser_pages/index.pt:89
+#: c/engine/chooser_pages/index.pt:97
+#: c/engine/chooser_pages/index.pt:130
+#: c/engine/chooser_pages/sampling.pt:74
+msgid "util.more_info"
+msgstr "повече информация"
+
+msgid "nav.select_a_jurisdiction"
+msgstr "Изберете специфична юрисдикция"
+
+#: c/engine/chooser_pages/sampling.pt:61
+msgid "license.sampling_a_sampling+"
+msgstr ""
+"<strong>Семплиране плюс</strong>: Позволява на другите да вземат и "
+"променят <strong>части</strong> от вашето произведение за всякакви цели, "
+"различни от реклама. <strong>Некомерсиалното</strong> копиране и "
+"разпространяване  (като споделяне на файлове) на <strong>цялото "
+"произведение</strong> също е позволено. Оттук произтича "
+"„<strong>плюс</strong>“."
+
+#: c/engine/macros_templates/deed.pt:98
+msgid "deed.human_summary_multilanguage"
+msgstr "Това е опростено резюме на Договора, достъпно на следните езици:"
+
+msgid "country.jo"
+msgstr "Йордания"
+
+msgid "country.es-ca"
+msgstr "Каталония"
+
+#: c/engine/pd/templates/publicdomain-4.pt:41
+#: c/engine/chooser_pages/gpl.pt:107
+#: c/engine/chooser_pages/lgpl.pt:110
+#: c/engine/chooser_pages/nonweb_popup.pt:31
+#: c/engine/chooser_pages/htmlpopup.pt:20
+msgid "util.Highlight_Text"
+msgstr "Маркирайте текста за копиране"
+
+msgid "char.nd_brief"
+msgstr "Произведението не може да бъде променяно, преработвано или надграждано."
+
+#: c/engine/chooser_pages/sampling.pt:78
+#: c/engine/chooser_pages/sampling.pt:90
+#: c/engine/chooser_pages/partner/index.pt:83
+#: c/engine/chooser_pages/partner/index.pt:86
+msgid "util.Generic"
+msgstr "Неадаптиран"
+
+msgid "lang.es_AR"
+msgstr "испански (Аржентина)"
+
+#: c/engine/macros_templates/metadata.pt:66
+#: c/engine/macros_templates/metadata.pt:82
+msgid "util.source_work"
+msgstr "произведение първоизточник"
+
+#: c/engine/chooser_pages/sampling.pt:115
+msgid "license.sampling_note"
+msgstr ""
+"Забележка: Семлиране е договор, който може да се използва не само за "
+"музика. Той може да се приложи за всички видове произведения с авторски "
+"права: изображения, филми и т.н."
+
+msgid "country.au"
+msgstr "Австралия"
+
+msgid "country.at"
+msgstr "Австрия"
+
+#: c/engine/chooser_pages/nonweb_popup.pt:19
+msgid "license.non_web_pd"
+msgstr ""
+"Това произведение се разпространява като Обществена собственост. За да "
+"видите копие от отказването от права в ползва на обществената "
+"собственост, посетете http://creativecommons.org/licenses/publicdomain/ "
+"или ни изпратете писмо на адрес: Creative Commons, 171 Second Street, "
+"Suite 300, San Francisco, California, 94105, USA."
+
+msgid "country.ar"
+msgstr "Аржентина"
+
+#: c/engine/licenses/standard_templates/deed.pt:77
+msgid "deed.superseded"
+msgstr ""
+"Има <a href=\"${current_version_url}\">нова версия</a> на този договор. "
+"Можете да я използвате за новите си произведения или да прелицензирате "
+"съществуващите си такива. Произведенията не се лицензират "
+"<em>автоматично</em> под новата версия на договора."
+
+#: c/engine/chooser_pages/index.pt:209
+msgid "licenses.pretty_sampling+"
+msgstr "Семплиране плюс"
+
+#: c/engine/chooser_pages/index.pt:42
+msgid "api.commercial"
+msgstr "Позволявате ли произведението ви да се използва за комерсиални цели?"
+
+#: c/engine/macros_templates/support.pt:103
+#: c/engine/macros_templates/support.pt:107
+msgid "license.enter_information"
+msgstr "въведете информация"
+
+msgid "jswidget.Allow_Remixing"
+msgstr "Позволява ремиксиране"
+
+#: c/engine/macros_templates/metadata.pt:16
+msgid "license.hide_optional_fields"
+msgstr "Скрий полетата (полета не са задължителни)"
+
+msgid "country.pt"
+msgstr "Португалия"
+
+msgid "license.GPL_name_full"
+msgstr "GNU General Public License"
+
+#: c/engine/licenses/fsf_templates/deed.pt:36
+msgid "deed.gpl_free_study"
+msgstr ""
+"Свободата да изучавате как работи програмата и да я адаптирате към "
+"собствените си специфични нужди"
+
+msgid "lang.af"
+msgstr "африкански"
+
+#: c/engine/licenses/mitbsd_templates/deed.pt:54
+msgid "deed.mit_notice"
+msgstr ""
+"уведомление за авторските права и договорът трябва да бъдат включени във "
+"всички копия и/или значителни части от софтуера"
+
+msgid "jswidget.Remix"
+msgstr "Ремикс"
+
+msgid "char.nc_brief"
+msgstr "Произведението не може да бъде използвано за комерсиални цели."
+
+#: c/engine/macros_templates/metadata.pt:72
+msgid "util.more_permissions_url"
+msgstr "уеб адрес за повече разрешения"
+
+#: c/engine/licenses/standard_templates/deed.pt:64
+msgid "deed.moralrights"
+msgstr ""
+"Нищо в този договор не накърнява или ограничава неимуществените права на "
+"автора на произведението."
+
+msgid "country.sk"
+msgstr "Словакия"
+
+#: c/engine/chooser_pages/results.pt:61
+msgid "license.copy_text"
+msgstr ""
+"Копирайте текста по-долу и го сложете на уеб-страницата си, за да знаят "
+"посетителите какъв договор използвате за вашите произведения."
+
+msgid "lang.he"
+msgstr "иврит"
+
+msgid "license.learn_mark"
+msgstr "научете как да маркирате съдържанието на вашето произведение"
+
+msgid "country.sg"
+msgstr "Сингапур"
+
+msgid "country.se"
+msgstr "Швеция"
+
+#: c/engine/chooser_pages/sampling.pt:82
+#: c/engine/chooser_pages/sampling.pt:94
+msgid "country.de"
+msgstr "Германия"
+
+msgid "lang.hu"
+msgstr "унгарски"
+
+msgid "country.dk"
+msgstr "Дания"
+
+#: c/engine/chooser_pages/nonweb_popup.pt:37
+#: c/engine/chooser_pages/htmlpopup.pt:46
+#: c/engine/chooser_templates/emailhtml.pt:19
+#: c/engine/templates/by.pt:31
+#: c/engine/licenses/catalog_pages/disclaimer-popup.pt:21
+msgid "util.Close_window"
+msgstr "Затваряне на прозореца"
+
+msgid "country.si"
+msgstr "Словения"
+
+msgid "lang.hr"
+msgstr "хърватски"
+
+msgid "country.scotland"
+msgstr "Обединено кралство: Шотландия"
+
+msgid "country.ua"
+msgstr "Украйна"
+
+#: c/engine/licenses/fsf_templates/deed.pt:24
+#: c/engine/licenses/devnations_templates/deed.pt:25
+#: c/engine/licenses/sampling_templates/deed.pt:23
+#: c/engine/licenses/standard_templates/deed.pt:31
+msgid "deed.retired"
+msgstr ""
+"Този договор <a href=\"/retiredlicenses\">вече не се поддържа</a>. Моля, "
+"не го използвайте."
+
+msgid "country.ca"
+msgstr "Канада"
+
+msgid "country.co"
+msgstr "Колумбия"
+
+msgid "country.cn"
+msgstr "Китай (континентален)"
+
+msgid "licenses.pretty_GPL"
+msgstr "GPL"
+
+#: c/engine/macros_templates/deed.pt:76
+msgid "deed.disclaimer.jp"
+msgstr ""
+"<p>\n"
+"Този документ не е Криейтив Комънс Договор. Това е съкратена справка, "
+"създадена за да помогне за по-добро разбиране на същинския Договор — тя "
+"съдържа обяснение на основните термини. Сам по себе си, този документ "
+"няма юридическа стойност и неговото съдържание липсва в същинския "
+"Договор. Същинските условия са изложени по-нататък в самия Договор. <a "
+"href=\"legalcode\" class=\"fulltext\">Натиснете тук, за да прочетете "
+"пълния текст на договора</a>.  \n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Криейтив Комънс и Криейтив Комънс Япония не са адвокатски дружества и "
+"използването, разпространението или поставянето на препратка към този "
+"документ не е предпоставка за предоставяне на юридическа помощ или "
+"някакви други правни услуги. Криейтив Комънс и Криейтив Комънс Япония не "
+"са страна по Договора, намиращ се в основата на този документ и не носят "
+"отговорност за вреди, произтичащи от ползването на съкратената справка и "
+"на договора. \n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Произведението, лицензирано под Договора на Криейтив Комънс е "
+"предоставено от лицето, приложило договора. Криейтив Комънс и Криейтив "
+"Комънс Япония не дават никакви гаранции за името на носителя на правата. "
+"За повече информация, отнасяща се до приложението на Договорите и за "
+"използването на произведения, лицензирани под Криейтив Комънс Договор,  "
+"прочетете <a href=\"http://creativecommons.jp/faq/\">тук</a>.\n"
+"</p>"
+
+msgid "country.ch"
+msgstr "Швейцария"
+
+#: c/engine/chooser_pages/results.pt:105
+msgid "license.publish_flickr"
+msgstr "Публикуване вашите лицензирани изображения в Flickr"
+
+msgid "jswidget.Updated_license_jurisdiction"
+msgstr ""
+"Вашият лиценз е актуализиран до последната официално публикувана версия "
+"за вашата юрисдикция"
+
+msgid "country.cz"
+msgstr "Чехия"
+
+msgid "licenses.pretty_nd-nc"
+msgstr "Без производни-Некомерсиално"
+
+msgid "licenses.pretty_by-nc-sa"
+msgstr "Признание-Некомерсиално-Споделяне на споделеното"
+
+msgid "country.fr"
+msgstr "Франция"
+
+msgid "util.creators_name"
+msgstr "име на създателя"
+
+msgid "country.za"
+msgstr "Южна Африка"
+
+msgid "lang.sr"
+msgstr "сръбски"
+
+msgid "lang.st"
+msgstr "сото"
+
+msgid "util.source_work_url"
+msgstr ""
+"URL на <a href=\"/jargon/source_work\" class=\"jargon\" "
+"onClick=\"window.open('/jargon/source_work', 'jargon_term_lookup', "
+"'width=300,height=400,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');"
+" return false;\">произведението първоизточник</a>"
+
+msgid "license.Final_step"
+msgstr "Последна стъпка:"
+
+#: c/engine/licenses/fsf_templates/deed.pt:55
+msgid "deed.gpl_notice"
+msgstr ""
+"Върху всяко разпространявано копие, вие сте длъжен на видно място и по "
+"подходящ начин да сложите съответната забележка, отнасяща се до "
+"авторските права и ограничената отговорност. Вие сте длъжен също да "
+"запазите в цялост всички бележки, които се отнасят до този договор и до "
+"ограничаване на отговорността по него; както и да предоставите на всички "
+"реципиенти на програмата копие от договора ${license_name_full} заедно "
+"със самата програма. Всеки превод на договора ${license_name_full} трябва"
+" да бъде придружен от ${license_name_full}."
+
+#: c/engine/licenses/devnations_templates/deed.pt:30
+#: c/engine/licenses/mitbsd_templates/deed.pt:25
+#: c/engine/licenses/standard_templates/deed.pt:38
+msgid "deed.free_copy_distribute"
+msgstr ""
+"<strong>да споделяте</strong> — да копирате, разпространявате и излъчвате"
+" произведението"
+
+#: c/engine/chooser_pages/index.pt:115
+msgid "char.nd_title"
+msgstr "Без производни произведения"
+
+#: c/engine/licenses/devnations_templates/deed.pt:50
+#: c/engine/licenses/sampling_templates/deed.pt:43
+#: c/engine/licenses/standard_templates/deed.pt:56
+msgid "deed.notice"
+msgstr ""
+"За всяко повторно използване или дистрибуция, вие трябва ясно за "
+"останалите да посочите договорните условия за ползване на произведението."
+" Най-добрия начин да направите това е, като сложите линк към тази "
+"страница."
+
+msgid "lang.sl"
+msgstr "словенски"
+
+msgid "util.copyright"
+msgstr "авторско право"
+
+#: c/engine/chooser_pages/nonweb_popup.pt:27
+msgid "license.non_web_statement"
+msgstr ""
+"Това произведение е лицензирано под Криейтив Комънс ${license_name} "
+"договор. За да видите копие на договора, посетете ${license_url} или "
+"изпратете писмо до Криейтив Комънс на адрес: Creative Commons, 171 Second"
+" Street, Suite 300, San Francisco, California, 94105, USA."
+
+#: c/engine/licenses/mitbsd_templates/deed.pt:40
+msgid "deed.no_endorsement"
+msgstr ""
+"<strong>Забрана за реклама</strong>. Името на автора не може да бъде "
+"използвано за популяризиране или реклама на продукти, създадени на базата"
+" на този софтуер, без предварителното изрично писмено разрешение за това."
+
+msgid "jswidget.Prohibit_Commercial_Use"
+msgstr "Забранява използването за комерсиални цели"
+
+#: c/engine/chooser_pages/results.pt:56
+msgid "license.what_to_do_next"
+msgstr "Какво следва по-нататък"
+
+#: c/engine/pd/templates/publicdomain-4.pt:52
+msgid "license.mark_rss"
+msgstr ""
+"Добавете информация за вашия договор в RSS feed, като използвате <a "
+"href=\"http://web.resource.org/rss/1.0/modules/cc/\"> RSS 1.0 module</a>,"
+" или <a href=\"http://backend.userland.com/creativeCommonsRssModule\"> "
+"RSS 2.0 module</a>."
+
+msgid "lang.es_CL"
+msgstr "испански (Чили)"
+
+#: c/engine/chooser_pages/sampling.pt:36
+#: c/engine/macros_templates/support.pt:127
+#: c/engine/macros_templates/support.pt:134
+#: c/engine/macros_templates/support.pt:136
+msgid "license.review_choice"
+msgstr "преглед на избора"
+
+msgid "deed.lgpl_sharealike"
+msgstr ""
+"Ако промените вашето копие или копия на библиотеката, или на някаква част"
+" от нея, имате право да разпространявате така получената библиотека под "
+"договор GNU Lesser General Public License.  Въпреки това, програми, "
+"използващи тази библиотека могат да бъдат лицензирани с условия по ваш "
+"избор, до толкова, до колкото самата библиотека е възможно да бъде "
+"променяна. Всякакви преводи на GNU Lesser General Public License  трябва "
+"да бъдат придружени с оригиналния GNU Lesser General Public договор."
+
+msgid "util.Share_Music"
+msgstr "Споделете музика"
+
+#: c/engine/chooser_pages/index.pt:122
+msgid "char.sa_title"
+msgstr "Споделяне на споделеното"
+
+#: c/engine/chooser_pages/index.pt:193
+msgid "license.explain"
+msgstr ""
+"Криейтив Комънс ви помага публикувайки своето произведение онлайн, ясно "
+"да определите какво другите могат или не могат да правят с него. Веднъж "
+"избрали договор, ние ви предоставяме както нужните инструменти за да "
+"добавите информацията за договора на своята собствена уеб-страница, или "
+"на някой от обединените под Криейтив Комънс безплатни хостинг сървъри, "
+"така и ръководство как да направите това."
+
+#: c/engine/pd/templates/publicdomain-4.pt:27
+msgid "license.mark_pd"
+msgstr ""
+"Тъй като избрахте да отдадете произведението си на обществената "
+"собственост, трябва да го маркирате по съответния начин."
+
+msgid "util.Try_again"
+msgstr "Опитайте отново!"
+
+#: c/engine/chooser_pages/index.pt:214
+msgid "util.Founders_Copyright"
+msgstr "Авторско право на създателя"
+
+msgid "licenses.pretty_nc-sa"
+msgstr "Некомерсиално-Споделяне на споделеното"
+
+#: c/engine/pd/templates/publicdomain-3.pt:40
+msgid "license.pd_confirm"
+msgstr ""
+"<h1>Потвърждаване на отдаване на Обществена Собственост</h1>\n"
+"\n"
+"        <p>\n"
+"Вие потвърдихте успешно вашата електронна поща (<b>${email}</b>) за "
+"отдаване на произведението <b>${title}</b>, с притежател на авторските "
+"права <b>${copyright_holder}</b>, като обществена собственост. За да "
+"финализирате процеса, моля натиснете бутона по-долу.\n"
+"</p>\n"
+"\n"
+"        <div class=\"licensebox\">\n"
+"${pd_deed_text}\n"
+"        </div>"
+
+#: c/engine/chooser_pages/results.pt:78
+msgid "license.after_support_cc"
+msgstr ""
+"След като направите публичен избрания от вас договор, моля обърнете "
+"внимание и на кампанията <a "
+"href=\"http://creativecommons.org/support/\">подкрепа за Creative "
+"Commons</a>."
+
+#: c/engine/pd/templates/publicdomain-3.pt:93
+#: c/engine/pd/templates/publicdomain-waiting-email-verification.pt:59
+msgid "license.pd_bad_confirmation"
+msgstr ""
+"<h1>Отдаване на произведение като обществената собственост &mdash; Грешка"
+" при потвърждението</h1>\n"
+"\n"
+"<p>\n"
+"Изглежда се опитвате да потвърдите желанието си, да отдадете произведение"
+" като обществена собственост, използвайки грешен код за потвърждение.</p>"
+"\n"
+"\n"
+"<p>\n"
+"Това най-вероятно се случва, защото не успявате да използвате "
+"препратката, изпратена ви по електронната поща, заради което вие копирате"
+" и вмъквате URL-то в браузъра си неправилно. Уверете се, че сте включили "
+"<b>всички знаци</b> от изпратеното ви URL.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Ако причината не е в препратката и ако продължавате да имате затруднения "
+"с потвърждаването, моля <a\n"
+"href=\"mailto:pd@creativecommons.org\">уведомете ни</a>.\n"
+"</p>"
+
+#: c/engine/templates/by.pt:25
+msgid "char.by_description"
+msgstr ""
+"Трябва да посочите авторството по начин, определен от автора или носителя"
+" на правата."
+
+#: c/engine/macros_templates/metadata.pt:36
+msgid "util.Text"
+msgstr "Текст"
+
+#: c/engine/licenses/devnations_templates/deed.pt:48
+#: c/engine/licenses/sampling_templates/deed.pt:41
+msgid "char.by_brief"
+msgstr ""
+"Трябва да посочите авторството на творбата по начина, определен от самия "
+"автор или носителя на правата върху произведението (но не и по начин, "
+"оставящ впечатлението, че същият/същите подкрепят вас или използването по"
+" някакъв начин на творбата от вас)."
+
+#: c/engine/chooser_pages/results.pt:117
+msgid "license.publish_morpheus"
+msgstr "Публикуване на вашата лицензирана музика в мрежата Morpheus P2P"
+
+#: c/engine/chooser_pages/results.pt:108
+msgid "license.publish_buzznet"
+msgstr "Публикуване на вашите лицензирани изображения в Buzznet"
+
+msgid "deed.lgpl_source"
+msgstr ""
+"В случай, че копирате или разпространявате библиотеката, това трябва да е"
+" придружено с пълния й сорс код или с писмено предложение за предоставяне"
+" на нейния сорс код, валидно най-малко три години. Вие обаче не сте "
+"задължен/а да предоставяте и сорс кода на други програми, ползващи "
+"библиотеката."
+
+#: c/engine/chooser_pages/results.pt:76
+msgid "license.read_tutorial"
+msgstr ""
+"Имате нужда от допълнителна помощ? <a href=\"/education/publish-"
+"website\">Вижте ръководството</a>."
+
+msgid "country.fi"
+msgstr "Финландия"
+
+#: c/engine/chooser_pages/partner/index.pt:25
+msgid "license.partner_what"
+msgstr ""
+"<p>Създали сте произведение, с което се гордеете. Можете да изберете как "
+"да го направите достъпно за другите.</p>\n"
+"\n"
+"<p>Договорите на Криейтив Комънс дават възможност да споделите вашето "
+"произведение с другите, като в същото време си запазвате авторските "
+"права. Другите могат да копират и разпространяват произведението, което "
+"сте предоставили, <a href=\"/characteristic/by?lang=en\" "
+"onclick=\"window.open('/characteristic/by?lang=en', "
+"'characteristic_help', "
+"'width=375,height=300,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=yes,menubar=no,status=yes');return"
+" false;\">посочвайки ви като автор</a> и само при условията, които сам "
+"определите. Тази страница ще ви помогне да изберете тези условия. Ако "
+"желаете да предоставите произведението си без никакви условия, изберете "
+"<a href=\"${results_pd_url}\">обществена собственост</a>.</p>"
+
+#: c/engine/chooser_pages/index.pt:49
+#: c/engine/chooser_pages/index.pt:96
+#: c/engine/chooser_pages/partner/index.pt:56
+#: c/engine/chooser_pages/partner/index.pt:73
+msgid "util.No"
+msgstr "Не"
+
+msgid "util.find"
+msgstr "намери"
+
+msgid "api.sampling_flavor"
+msgstr "Кой вариант на договора Семплиране?"
+
+msgid "jswidget.no_license_chosen"
+msgstr "Не сте избрали никакъв лиценз"
+
+msgid "lang.fi"
+msgstr "финландски"
+
+msgid "jswidget.short"
+msgstr ""
+"Когато използвате Криейтив Комънс лицензи, вие запазвате правата си на "
+"автор, като същевременно давате възможност на другите да копират и "
+"разпространяват вашето лицензирано произведение, давайки ви кредит за "
+"вашето авторство и само съгласно поставените от вас условия. ', ' Ако "
+"искате да ползвате лиценз, който е под закона за авторските права на "
+"специична юрисдикция, моля изберете съответно.."
+
+#: c/engine/macros_templates/metadata.pt:15
+msgid "license.include_more"
+msgstr "Въведете повече информация за вашето произведение."
+
+#: c/engine/chooser_templates/emailhtml.pt:16
+msgid "license.link_emailed"
+msgstr ""
+"<p>\n"
+"Информацията, относно вашия избор ви беше изпратена на адрес "
+"<strong>${email}</strong>.\n"
+"</p>\n"
+"\n"
+"<p>Поставете препратката или HTML кода във вашата страница, до "
+"произведението, което възнамерявате да лицензирате.  </p>"
+
+#: c/engine/macros_templates/deed.pt:118
+#: c/engine/macros_templates/deed.pt:123
+msgid "lang.fr"
+msgstr "френски"
+
+#: c/engine/chooser_pages/index.pt:218
+msgid "util.CC_GNU_GPL"
+msgstr "CC-GNU GPL"
+
+msgid "license.or_return"
+msgstr ""
+"Или, можете да се върнете <a href=\"./\">обратно към секцията с "
+"въпроси</a>."
+
+msgid "char.sa_bysa30_brief"
+msgstr ""
+"В случай, че промените, видоизмените или използвайки като основа "
+"произведението, го надградите, то полученото производно произведение може"
+" да се разпространява само съгласно условията на същия, на подобен на "
+"този или на съвместим договор."
+
+msgid "country.mk"
+msgstr "Македония"
+
+msgid "licenses.pretty_sa"
+msgstr "Споделяне на споделеното"
+
+#: c/engine/chooser_pages/results.pt:111
+msgid "license.publish_blog"
+msgstr ""
+"Добавяне на Криейтив Комънс договора във вашия блог (Blogger, Movable "
+"Type, и Typepad)"
+
+msgid "lang.pt"
+msgstr "португалски"
+
+msgid "lang.pt_BR"
+msgstr "португалски"
+
+#: c/engine/licenses/fsf_templates/deed.pt:75
+#: c/engine/licenses/devnations_templates/deed.pt:51
+#: c/engine/licenses/mitbsd_templates/deed.pt:60
+#: c/engine/licenses/standard_templates/deed.pt:60
+msgid "deed.permission"
+msgstr ""
+"Всяко едно от тези условия може да бъде отхвърлено, ако получите "
+"разрешение за това от носителя на правата."
+
+msgid "country.my"
+msgstr "Малайзия"
+
+msgid "country.mx"
+msgstr "Мексико"
+
+#: c/engine/chooser_pages/sampling.pt:84
+#: c/engine/chooser_pages/sampling.pt:96
+msgid "country.tw"
+msgstr "Тайван"
+
+#: c/engine/macros_templates/deed.pt:81
+#: c/engine/licenses/catalog_pages/disclaimer-popup.pt:15
+msgid "util.Disclaimer"
+msgstr "Отказ от отговорност"
+
+msgid "licenses.pretty_by-sa"
+msgstr "Признание-Споделяне на споделеното"
+
+msgid "license.back_to_licenses"
+msgstr "обратно към видовете договори"
+
+msgid "country.mt"
+msgstr "Малта"
+
+msgid "util.work"
+msgstr "произведение"
+
+#: c/engine/licenses/fsf_templates/deed.pt:29
+msgid "deed.gpl_freedoms"
+msgstr ""
+"Договорът ${license_name_full} е за <a "
+"href=\"http://www.gnu.org/philosophy/free-sw.html\">Свободен Софтуер</a>."
+" Подобно на всички останали договори за свободен софтуер, той ви дава "
+"следните четири свободи:"
+
+#: c/engine/chooser_pages/index.pt:117
+msgid "char.nd_description"
+msgstr ""
+"Носителят на правата позволява на другите да копират, разпространяват и "
+"излъчват произведението само в неговата\n"
+"непроменена цялост - без създадените от него производни\n"
+"произведения."
+
+msgid "license.learn_publicize"
+msgstr "Научете как да публикувате и споделите вашето произведение"
+
+#: c/engine/macros_templates/deed.pt:135
+msgid "deed.lgpl_human_summary"
+msgstr ""
+"Това е съкратено резюме на Договора (Пълен текст на <a "
+"href=\"http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html\">GNU "
+"Lesser General Public License</a>). <a href=\"legalcode.pt\">Превод на "
+"португалски език</a> също е достъпен."
+
+#: c/engine/macros_templates/deed.pt:145
+msgid "deed.gpl_human_summary"
+msgstr ""
+"Това е съкратена справка за Договора (Пълен текст на <a "
+"href=\"http://www.gnu.org/licenses/old-licenses/gpl-2.0.html\">GNU "
+"General Public License</a>). Превод на <a "
+"href=\"legalcode.pt\">португалски език</a> също е достъпен."
+
+#: c/engine/chooser_pages/partner/index.pt:117
+msgid "license.partner_note"
+msgstr ""
+"<p>\n"
+"<em>Забележка:</em> За да лицензирате дадено произведение, вие трябва да "
+"сте носител на правата върху него, или да сте упълномощен изрично за това"
+" от носителят на правата.</p>\n"
+"\n"
+"<p>\n"
+"Криейтив Комънс не предоставя правни услуги или съвети. Ние предлагаме "
+"типови формуляри, а останалото е резултат от вашите желания. \n"
+"\n"
+"</p>"
+
+msgid "util.Developing_Nations"
+msgstr "Развиващи се нации"
+
+#: c/engine/pd/templates/publicdomain-4.pt:54
+#: c/engine/chooser_pages/results.pt:122
+msgid "license.mark_xmp"
+msgstr ""
+"За да маркирате PDF или друг XMP-поддържан файл, <a "
+"href=\"xmp?${url_vars}\">запазете този шаблон</a> съгласно следните <a "
+"href=\"/technology/xmp-help\">инструкции</a>."
+
+msgid "licenses.pretty_nc-sampling+"
+msgstr "Некомерсиално Семплиране плюс"
+
+#: c/engine/licenses/sampling_templates/deed.pt:47
+msgid "char.no_brief"
+msgstr ""
+"Не можете да изпълнявате, представяте или разпространявате копия от "
+"произведението в неговата цялост за никакви цели."
+
+#: c/engine/chooser_pages/index.pt:232
+msgid "util.Wiki"
+msgstr "Уики"
+
+msgid "lang.da"
+msgstr "датски"
+
+msgid "util.Unported"
+msgstr "Нелокализиран"
+
+msgid "license.work_based_on"
+msgstr "Базирано на следната творба:${source_link}."
+
+#: c/engine/macros_templates/deed.pt:129
+msgid "lang.de"
+msgstr "немски"
+
+#: c/engine/chooser_pages/sampling.pt:31
+#: c/engine/chooser_pages/sampling.pt:35
+#: c/engine/chooser_pages/sampling.pt:40
+#: c/engine/chooser_pages/sampling.pt:45
+#: c/engine/macros_templates/support.pt:81
+#: c/engine/macros_templates/support.pt:85
+#: c/engine/macros_templates/support.pt:92
+#: c/engine/macros_templates/support.pt:96
+#: c/engine/macros_templates/support.pt:102
+#: c/engine/macros_templates/support.pt:106
+#: c/engine/macros_templates/support.pt:112
+#: c/engine/macros_templates/support.pt:116
+#: c/engine/macros_templates/support.pt:126
+#: c/engine/macros_templates/support.pt:130
+#: c/engine/macros_templates/support.pt:144
+#: c/engine/macros_templates/support.pt:148
+#: c/engine/macros_templates/support.pt:160
+#: c/engine/macros_templates/support.pt:164
+msgid "util.step"
+msgstr "стъпка"
+
+#: c/engine/licenses/devnations_templates/deed.pt:27
+#: c/engine/licenses/mitbsd_templates/deed.pt:23
+#: c/engine/licenses/sampling_templates/deed.pt:25
+#: c/engine/licenses/standard_templates/deed.pt:34
+msgid "deed.You_are_free"
+msgstr "Можете свободно:"
+
+msgid "char.sa_brief"
+msgstr ""
+"В случай, че промените, видоизмените или използвайки като основа "
+"произведението, го надградите, то полученото производно произведение може"
+" да се разпространява само съгласно условията на същия или на подобен на "
+"този договор."
+
+#: c/engine/chooser_pages/index.pt:236
+msgid "util.Music_Sharing"
+msgstr "Споделяне на музика"
+
+msgid "licenses.pretty_LGPL"
+msgstr "LGPL"
+
+msgid "lang.fr_CA"
+msgstr "френски (Канада)"
+
+#: c/engine/chooser_pages/gpl.pt:47
+#: c/engine/chooser_pages/lgpl.pt:48
+msgid "license.lawyer-readable_legal_code"
+msgstr ""
+"Криейтив Комънс Договорът<br/>\n"
+"за юристи"
+
+msgid "jswidget.Require_Share-Alike"
+msgstr "Изисква Споделяне на споделеното"
+
+#: c/engine/licenses/devnations_templates/deed.pt:34
+#: c/engine/licenses/mitbsd_templates/deed.pt:26
+#: c/engine/licenses/standard_templates/deed.pt:39
+msgid "deed.free_derivative"
+msgstr "<strong> да ремиксирате</strong> — да адаптирате произведението"
+
+msgid "nav.find_title"
+msgstr "Намерете музика, фотографии и други"
+
+msgid "country.ve"
+msgstr "Венецуела"
+
+#: c/engine/chooser_pages/sampling.pt:46
+#: c/engine/macros_templates/support.pt:161
+#: c/engine/macros_templates/support.pt:165
+msgid "license.publicize"
+msgstr "публикуване"
+
+#: c/engine/pd/templates/publicdomain-3.pt:41
+#: c/engine/licenses/publicdomain_templates/deed.pt:19
+msgid "deed.pd"
+msgstr ""
+"<p align=\"center\"><em>Отстъпване само на авторските права (базирано на "
+"Американския закон) или сертифициране към Обществения домейн</em></p>\n"
+"\n"
+"        <p>Лицето или лицата, които притежават права върху произведение, "
+"което се разпространява под условията на този документ (наричани от тук "
+"нататък „прехвърлител“ или „заявител“): (a) заявява, че доколкото му е "
+"известно, произведението е обществено притежание в страната, където е "
+"публикувано или (b) прехвърля в обществено притежание правата, които "
+"притежава върху творбата (наричана по-надолу „произведението“). "
+"Заявителят, от своя страна, прехвърля правата си на автор и поради това е"
+" наричан от тук нататък прехвърлител.</p>\n"
+"\n"
+"        <p> Заявителят следва да предприеме необходимите действия, за "
+"гарантира правния статус на произведението. Заявителят разбира, че "
+"неговите действия не го освобождават от отговорност в случай, че "
+"въпросното произведение не е обществена собственост.</p>\n"
+"\n"
+"        <p>Прехвърлителят прехвърля правата в полза на обществото като "
+"цяло като лишава от тях своите правоприемници. Прехвърлянето е публичен "
+"акт на отказ от настоящи и бъдещи права на автор, произтичащи от закон "
+"или договор, върху произведението, включително и отказ от правото на да "
+"търси удовлетворение по съдебен или друг ред.</p>\n"
+"\n"
+"        <p>Прехвърлителят съзнава, че веднъж направено обществена "
+"собственост, произведението може да се разпространява, предава, променя и"
+" използва по всякакъв начин от всеки, включително с цел извличане на "
+"печалба и по начин, който не е все още открит.</p>"
+
+#: c/engine/pd/templates/publicdomain-2.pt:24
+msgid "license.pd_enter_info"
+msgstr ""
+"<h1>Въведете информация</h1>\n"
+"\n"
+"        <p>Вие избрахте да отдадете правата си като <a "
+"href=\"/licenses/publicdomain/\">Обществена собственост</a>. Имайте "
+"предвид, че отдаването като Обществена собственост е възможно да няма "
+"законова сила извън САЩ.\n"
+"\n"
+"        <p>За тази цел, моля попълнете информацията по-долу. Криейтив "
+"Комънс ще използва тази информация, за да изпрати до вас и до себе си "
+"разписка за отдаването на права по този начин.</p>\n"
+"\n"
+"        <p>Дори и след попълването на формата, все още имате възможност "
+"да преосмислите решението си, преди отказването от права върху "
+"произведението да се превърне във факт.</p>\n"
+"\n"
+"        <p><strong>Информация за вашето произведение</strong></p>\n"
+"\n"
+"        <p>всички полета са задължителни</p>"
+
+#: c/engine/licenses/sampling_templates/deed.pt:27
+msgid "deed.free_sample_nc"
+msgstr ""
+"Да семплирате, смесвате или трансформирате творчески това произведение за"
+" некомерсиални цели."
+
+#: c/engine/chooser_pages/sampling.pt:116
+msgid "license.sampling_before"
+msgstr ""
+"Преди да приложите договор за семплиране, уверете се, че вие сте в "
+"правото да договаряте всички включващи се в произведението права. \n"
+"Музикалните произведения например, често съдържат множество права - "
+"композиция, звукозапис, текст."
+
+msgid "api.jurisdiction"
+msgstr "Юрисдикция на вашия договор:"
+
+msgid "util.home"
+msgstr "домашна страница"
+
+#: c/engine/pd/templates/publicdomain-2.pt:53
+msgid "license.proceed_email_note"
+msgstr ""
+"<b>ЗАБЕЛЕЖКА:</b> натискането на „продължете“ ще изпрати искане за "
+"потвърждение на електронната поща, която сте въвели. Уверете се, че това "
+"е правилният адрес!"
+
+msgid "lang.sr_LATN"
+msgstr "Сръбски (латиница)"
+
+msgid "country.pr"
+msgstr "Пуерто Рико"
+
+msgid "lang.el"
+msgstr "гръцки"
+
+msgid "lang.ro"
+msgstr "румънски"
+
+msgid "lang.es_EC"
+msgstr "Spanish (Ecuador)"
+

@@ -1,0 +1,13 @@
+K 13
+svn:externals
+V 71
+license_xsl http://code.creativecommons.org/svnroot/license_xsl/trunk/
+
+K 10
+svn:ignore
+V 36
+template.*js*
+cc-translations.*js*
+
+
+END

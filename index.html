@@ -4,20 +4,48 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="col-md-8">
+
+    <p>Welcome to the new look CC labs website. Our previous site
+    hadn't been updated in about two years, so I'm back with some
+    regular updates on what we're doing at CC.</p>
+
+    <p>The plan is to update the blog three times a week &mdash; Monday will give an update on what we're working on. Wednesday will give an update on our infrastructure work, hopefully sharing some useful tips, and on Friday I'd like to set a potential idea for a weekend hack project.</p>
+
+    <p>Plus, somewhere along the way I'll share other things, like neat pieces of free software I come across or things related to our work.</p>
+
+    <p>This site is in Jekyll, and you can fork it on GitHub, or send improvements and fixes.</p>
+
+    <p>Matt Lee,<br />Technical Lead<br />Creative Commons</p>
+
+    <p><a href="/contact">Follow me on GNU social or Twitter</a>.</p>
+
+    <hr />
+
+    {% for post in site.posts limit:1 %}
+      <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+
+      {{ post.content }}
+
+    {% endfor %}
+
+  </div>
+
+  <div class="col-md-4 well">
+
+  <h1 class="page-heading"><a href="/blog">Previously...</a></h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
+    {% for post in site.posts offset:1 limit:20 %}
+      <li>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  </div>
 
 </div>

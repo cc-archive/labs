@@ -1,0 +1,174 @@
+/* Freedoms License Generator - 1 */
+
+#flg-container {
+	text-align: center;
+	margin: 0 auto;
+	width: 550px;
+	position: relative;
+	top: 0; left: 0;
+}
+
+h4.freedoms {
+	margin: 5px;
+	color: #6C9D31;
+}
+h4.conditions {
+	margin: 5px;
+	color: #C0272D;
+}
+
+#flg-ui {
+	position: relative;
+	top: 0; left: 0;
+	width: 415px;
+	padding: 20px;
+	margin: 0 auto;
+	
+	border-top: 2px solid #CADB2A;
+	border-bottom: 2px solid #F26522;
+}
+
+#flg-ui img {
+	border: none;
+}
+
+#flg-ui a:link {
+	text-decoration: none;
+}
+
+#flg-freedoms {
+	clear: both;
+}
+
+#flg-freedoms #flg-f-share {
+	float: left;
+}
+
+#flg-freedoms #flg-f-remix {
+	float: right;
+}
+
+#flg-left {
+	clear: both;
+	width: 203px;
+	float: left;
+	margin:  15px 0;
+}
+#flg-mid {
+	position: absolute;
+	top: 220px;
+	left: 151px;
+/*	background: url(../images/fuzzy.png);*/
+}
+#flg-right {
+	width: 203px;
+	float: right;
+	margin:  15px 0;
+}
+
+#flg-connect-share {
+	float: left;
+}
+
+#flg-connect-remix {
+	float: right;
+}
+
+#flg-connect-nc {
+	clear: both;
+	margin-top: 10px;
+	float: left;
+}
+
+#flg-connect-sa {
+	clear: both;
+	margin-top: 10px;
+	float: right;
+}
+
+#flg-connect-share.flg-pipe-off {
+	background: url(3images/share-off.png) no-repeat top left;
+}
+#flg-connect-remix.flg-pipe-off {
+	background: url(3images/remix-off.png) no-repeat top left;
+}
+
+#flg-connect-nc.flg-pipe-off {
+	background: url(3images/nc-off.png) no-repeat top left;
+}
+#flg-connect-sa.flg-pipe-off {
+	background: url(3images/sa-off.png) no-repeat top left;
+}
+
+#flg-connect-share.flg-pipe-middle {
+	background: url(3images/share-dim.png) no-repeat top left;
+}
+#flg-connect-remix.flg-pipe-middle {
+	background: url(3images/remix-dim.png) no-repeat top left;
+}
+
+#flg-connect-nc.flg-pipe-middle {
+	background: url(3images/nc-dim.png) no-repeat top left;
+}
+#flg-connect-sa.flg-pipe-middle {
+	background: url(3images/sa-dim.png) no-repeat top left;
+}
+
+#flg-connect-share.flg-pipe-on {
+	background: url(3images/share-on.png) no-repeat top left;
+}
+#flg-connect-remix.flg-pipe-on {
+	background: url(3images/remix-on.png) no-repeat top left;
+}
+
+
+#flg-connect-nc.flg-pipe-on {
+	background: url(3images/nc-on.png) no-repeat top left;
+}
+#flg-connect-sa.flg-pipe-on {
+  background: url(3images/sa-on.png) no-repeat top left;
+}
+
+
+
+#flg-connect-share, 
+#flg-connect-remix, 
+#flg-connect-nc, 
+#flg-connect-sa {
+	width:  203px;
+	height:  173px;
+	border-width: 4px;
+	
+}
+
+#flg-connect-share a:link, 
+#flg-connect-remix a:link, 
+#flg-connect-nc a:link, 
+#flg-connect-sa a:link,
+#flg-connect-share a:visited,
+#flg-connect-remix a:visited,
+#flg-connect-nc a:visited,
+#flg-connect-sa a:visited {
+	display:  block;
+	width:  100%;
+	height:  100%;
+}
+
+#flg-conditions {
+	clear: both;
+}
+
+#flg-conditions #flg-c-nc {
+	float: left;
+}
+
+#flg-conditions #flg-c-sa {
+	float: right;
+}
+
+#flg-result {
+	width: 208px;
+	height: 80px;
+	padding: 20px;
+/*	border: 1px solid #aaa;*/
+}

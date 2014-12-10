@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://creativecommons.org/ns#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <head>
+    <title>CC0 Waiver</title>
+  </head>
+  <body>
+    <h2>Cryo Protein Repository Project</h2>
+
+<p xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:dc="http://purl.org/dc/elements/1.1/" about="http://example.org/repository" rel="cc:licenseOffer">
+<a rel="license"
+   href="http://labs.creativecommons.org/licenses/zero-waive/1.0/us/" style="text-decoration:none;">
+   <img src="http://labs.creativecommons.org/zero/images/88x31/cc-zero.png" border="0" alt="CC0" /></a>
+<br/>To the extent possible under law, <a rel="cc:waivedBy" href="http://example.org/cryo">
+<span about="http://example.org/cryo" property="dc:title">Cryo Protein Repository, Inc.</span></a> has <a rel="license"
+      href="http://labs.creativecommons.org/licenses/zero-waive/1.0/us/">waived</a> 
+all copyright, moral rights, database rights, and any other rights that 
+might be asserted over <a href="http://example.org/repository"><span about="http://example.org/repository" property="dc:title">The Cryo Protein Project</span></a>. 
+</p>
+
+  </body>
+</html>

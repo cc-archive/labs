@@ -1,0 +1,109 @@
+9
+
+dir
+12475
+http://code.creativecommons.org/svnroot/jswidget/tags/0.2
+http://code.creativecommons.org/svnroot
+
+
+
+2008-03-22T00:41:34.357316Z
+9469
+paulproteus
+has-props
+
+svn:special svn:externals svn:needs-lock
+svn:externals
+
+
+
+
+
+
+
+
+
+
+aec4f576-4910-0410-beeb-ecb0427469e7
+
+complete.js
+file
+
+
+
+
+2008-04-16T22:20:46.000000Z
+f451b354a03ff3fb2aa0fe1a8135a12f
+2007-07-19T22:05:41.762009Z
+6312
+paulproteus
+
+images
+dir
+
+gen_template_js.py
+file
+
+
+
+
+2008-04-16T22:20:46.000000Z
+bdda13f4dc9fc0fab3e0e5537a01f670
+2007-07-25T17:12:38.159541Z
+6351
+paulproteus
+
+example_web_app
+dir
+
+.htaccess
+file
+
+
+
+
+2008-04-16T22:20:46.000000Z
+5f79d78fb538e3418766dcc0cbf94a5e
+2007-07-19T16:46:15.528165Z
+6296
+paulproteus
+
+js
+dir
+
+Makefile
+file
+
+
+
+
+2008-04-16T22:20:46.000000Z
+676fa5d5479c1c92b140a7c8c4c2b12d
+2007-07-25T17:12:38.159541Z
+6351
+paulproteus
+
+README
+file
+
+
+
+
+2008-04-16T22:20:46.000000Z
+2a5f15424282cbe9313bab628c030502
+2007-07-17T00:02:54.840762Z
+6247
+paulproteus
+
+template.html
+file
+
+
+
+
+2008-04-16T22:20:46.000000Z
+23f9fbb5454aa20fcbf855d13d867aac
+2007-07-25T17:12:38.159541Z
+6351
+paulproteus
+

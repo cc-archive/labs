@@ -1,0 +1,30 @@
+\pagebreak
+% Information regarding the family tree
+\begin{center}
+\bfseries{Termination of Transfer Information Sheet\\Creative Commons\\Document created on: -Document Creation Date-}
+\end{center}
+\begin{tabular}{p{0.98\textwidth}}
+\hline
+\\
+\end{tabular}
+\begin{center}
+\bfseries{Author Descendants}
+\end{center}
+\begin{tabular}{p{0.1\textwidth}rp{0.5in}l}
+\multicolumn{4}{}{}\\
+\multicolumn{4}{}{}\\
+&\bfseries{Author:}&&[Author's Name] [(deceased)]\\
+&\bfseries{Widow:}&&[Widow's Name] [(deceased)]\\
+\multicolumn{4}{}{}\\
+&\bfseries{Child:}&&[Child's Name] [(deceased)]\\
+&\bfseries{Grandchild:}&&[Grandchild's Name] [(deceased)]\\
+&\bfseries{Grandchild:}&&[Grandchild's Name] [(deceased)]\\
+\multicolumn{4}{}{}\\
+&\bfseries{Child:}&&[Child's Name] [(deceased)]\\
+&&&No Grandchildren\\
+\multicolumn{4}{}{}\\
+&\bfseries{Child:}&&[Child's Name] [(deceased)]\\
+\multicolumn{4}{}{}\\
+&\bfseries{Child:}&&[Child's Name] [(deceased)]\\
+\end{tabular}
+\end{document}

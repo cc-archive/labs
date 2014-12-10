@@ -1,0 +1,294 @@
+body {
+	background-color: #ABB3AC;
+	margin-top: 30px;
+}
+/* Freedoms License Generator - 1 */
+
+#flg-container {
+	text-align: center;
+	margin: 0 auto;
+	width: 75%;
+	position: relative;
+	top: 0; left: 0;
+    /* border: 1px solid black; */
+}
+
+#flg-sidebar {
+	float: left;
+	text-align: left;
+	width: 25%;
+}
+
+h4.freedoms {
+	margin: 5px;
+	color: #6C9D31;
+}
+h4.conditions {
+	margin: 5px;
+	color: #C0272D;
+}
+
+#flg-ui {
+	width: 525px;
+	padding: 10px 0 10px 10px;
+	margin: 0 auto;
+	
+	border-top: 2px solid #CADB2A;
+	border-bottom: 2px solid #F26522;
+}
+
+#flg-ui img {
+	border: none;
+}
+
+#flg-ui a:link {
+	text-decoration: none;
+}
+
+#flg-freedoms {
+	clear: both;
+}
+
+#flg-freedoms #flg-f-share {
+	float: left;
+}
+
+#flg-freedoms #flg-f-remix {
+	float: right;
+}
+
+#flg-left {
+	clear: both;
+	width: 326px;
+	float: left;
+	margin:  15px 0;
+}
+#flg-mid {
+	position: relative;
+	top: 200px;
+	left: 190px;
+	width:  120px;
+
+}
+#flg-right {
+	width: 326px;
+	margin:  15px 0;
+	float:  left;
+	margin-left: -142px;
+	margin-top:  85px;
+}
+
+#flg-connect-share {
+	float: left;
+	margin-left:  21px;
+}
+
+#flg-connect-remix {
+	float: right;
+	margin-top:  -69px;
+/*	margin-right:  9px;*/
+}
+
+#flg-connect-nc {
+	clear: both;
+	margin-top: -82px;
+	margin-left:  21px;
+	float: left;
+}
+
+#flg-connect-sa {
+	clear: both;
+	margin-top: -82px;
+/*	margin-left:  -9px;*/
+	float: right;
+}
+
+#flg-connect-share.flg-pipe-off {
+	background: url(images/share-dim.png) no-repeat top left;
+}
+#flg-connect-remix.flg-pipe-off {
+	background: url(images/remix-dim.png) no-repeat top left;
+}
+
+#flg-connect-nc.flg-pipe-off {
+	background: url(images/nc-off.png) no-repeat top left;
+}
+#flg-connect-sa.flg-pipe-off {
+	background: url(images/sa-off.png) no-repeat top left;
+}
+
+#flg-connect-share.flg-pipe-middle {
+	background: url(images/share-dim.png) no-repeat top left;
+}
+#flg-connect-remix.flg-pipe-middle {
+	background: url(images/remix-dim.png) no-repeat top left;
+}
+
+#flg-connect-nc.flg-pipe-middle {
+	background: url(images/nc-dim.png) no-repeat top left;
+}
+#flg-connect-sa.flg-pipe-middle {
+	background: url(images/sa-dim.png) no-repeat top left;
+}
+
+#flg-connect-share.flg-pipe-on {
+	background: url(images/share-on.png) no-repeat top left;
+}
+#flg-connect-remix.flg-pipe-on {
+	background: url(images/remix-on.png) no-repeat top left;
+}
+
+
+#flg-connect-nc.flg-pipe-on {
+	background: url(images/nc-on.png) no-repeat top left;
+}
+#flg-connect-sa.flg-pipe-on {
+  background: url(images/sa-on.png) no-repeat top left;
+}
+
+
+
+#flg-connect-share {
+		width:  326px;
+		height:  245px;
+}
+
+#flg-connect-remix {
+		height:  326px;
+		width: 245px;
+		margin-left: 0px;
+}
+#flg-connect-nc {
+	height:  326px;
+	width:  245px;
+}
+#flg-connect-sa {
+	width:  326px;
+	height:  245px;
+	border-width: 4px;
+	
+}
+
+#flg-connect-share a:link, 
+#flg-connect-remix a:link, 
+#flg-connect-nc a:link, 
+#flg-connect-sa a:link,
+#flg-connect-share a:visited, 
+#flg-connect-remix a:visited,
+#flg-connect-nc a:visited,
+#flg-connect-sa a:visited {
+	display:  block;
+	width:  100%;
+	height:  100%;
+}
+
+#flg-conditions {
+	clear: both;
+}
+
+#flg-conditions #flg-c-nc {
+	float: left;
+}
+
+#flg-conditions #flg-c-sa {
+	float: right;
+}
+
+#flg-result {
+	position:  absolute;
+	width: 85px;
+	height: 80px;
+	padding: 30px 20px 10px 20px;
+/*	background: url(../images/fuzzy.png);*/
+	background-color:  #fff;
+	font-size:  80%;
+	border:  2px dashed #777;
+	text-align: center;
+}
+
+textarea#result
+{
+    width: 100%;
+    border: 1px solid #ccc;
+    color: gray;
+    margin-top: 1%;
+}
+
+
+#more_info
+{
+    border: 1px solid #eee;
+    padding: 0.5% 2% 1% 2%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+
+}
+#more_info table
+{
+    width: 65%;
+}
+
+#more_info .header
+{
+    width: 35%;
+}
+
+#more_info input
+{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+
+.tooltip
+{
+    background:     white;
+    border:         2px solid gray;
+    padding:        3px 10px 3px 10px;
+    width:          300px;
+    text-align:     left;
+}
+
+.tooltip .icon
+{
+    float:          left; 
+    padding-right:  4%;
+    padding-bottom: 20%;
+}
+
+.tooltipimage
+{
+    border:         2px solid gray;
+}
+
+
+  
+  #Freedoms_container {
+    margin: 0 auto;
+    position: relative; 
+    height: 500px; 
+    width: 435px;
+  }
+
+#Freedoms_centerLicense {
+	text-align: center;
+		
+}
+
+#Freedoms_image_button-shadow-clean {
+	position: absolute; 
+	left: 94px; 
+	top: 190px;
+	width: 250px;
+	height: 45px;
+	background-color: #333;
+	opacity: 0.85;
+}
+
+
+a, a:link {
+	color: #fff;
+	font: 140% Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+}

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svnroot/!svn/ver/12464/jswidget/trunk
+END
+accept-to-gettext.inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/!svn/ver/10768/jswidget/trunk/accept-to-gettext.inc.php
+END
+phphelpers.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/10769/jswidget/trunk/phphelpers.php
+END
+gen_translations.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/10750/jswidget/trunk/gen_translations.py
+END
+html2dom.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/10745/jswidget/trunk/html2dom.js
+END
+update_jurisdictions.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/10740/jswidget/trunk/update_jurisdictions.py
+END
+complete.js
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/!svn/ver/10776/jswidget/trunk/complete.js
+END
+gen_template_js.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/!svn/ver/10774/jswidget/trunk/gen_template_js.py
+END
+depends.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/6668/jswidget/trunk/depends.py
+END
+append_ourselves.js
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/!svn/ver/12464/jswidget/trunk/append_ourselves.js
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/!svn/ver/10777/jswidget/trunk/.htaccess
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/7474/jswidget/trunk/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/!svn/ver/10745/jswidget/trunk/README
+END
+template.html
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/12459/jswidget/trunk/template.html
+END
