@@ -17,10 +17,11 @@ general fun posts with some ideas for interesting hacks.
 In building [The List app](http://github.com/creativecommons/list), I
 have picked up a bunch of cheap Android phones from Amazon. This,
 coupled with my natural hoarding abilities has left me with a desk
-covered in phones. The severe lack of USB ports on most modern laptops
-(my ThinkPad has three, and my external keyboard and mouse use two of
-them) left me withthe job of finding an interesting solution to the
-problem.
+covered in phones (thanks to Rob Myers and all the other people who
+gave me their old G1 phones in the past) but sadly, the severe lack of
+USB ports on most modern laptops (my ThinkPad has three, and my
+external keyboard and mouse use two of them) left me with the job of
+finding an interesting solution to the problem.
 
 At Mozfest in London, I saw a demo by Dave Green and Dave Page of
 their [CheapSynth project](http://cheapsynth.com), which takes an old
