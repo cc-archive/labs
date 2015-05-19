@@ -10,9 +10,9 @@ permalink: /contact/
 
 * Send us a bug report. Generally, filing them against the [main CC.org repo](https://github.com/creativecommons/creativecommons.org/issues) is preferred, but if there's a bug with another project, report it there. You'll know what to do.
 
-* Join the CC development mailing list. This is unfortunately broken. In early 2015, we're moving to our own self-hosted GNU Mailman instance to overcome this problem.
+* Join the [CC development mailing list](http://lists.ibiblio.org/mailman/listinfo/cc-devel). 
 
-* Email us. webmaster at the main Creative Commons domain, or mattl at the same place. You choose.
+* Email us. webmaster at the main Creative Commons domain.
 
 ### Contacting Matt
 
