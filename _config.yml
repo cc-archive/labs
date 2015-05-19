@@ -1,6 +1,6 @@
 # Site settings
 title: Creative Commons Labs
-email: your-email@domain.com
+email: webmaster@creativecommons.org
 description: > # this means to ignore newlines until "baseurl:"
    Website of the Creative Commons tech team.
 baseurl: "/labs/" # the subpath of your site, e.g. /blog/
