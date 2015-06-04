@@ -1,0 +1,121 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# CC Cron Bot <webmaster@creativecommons.org>, 2011
+# Peter Leth <peter@pluk.dk>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-25 19:47+0000\n"
+"Last-Translator: Peter Leth <peter@pluk.dk>\n"
+"Language-Team: Danish (http://www.transifex.com/projects/p/CC/language/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Find indhold som du må dele, bruge og bearbejde"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Indtast din søgning"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Jeg vil have noget, jeg kan ..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "anvend til <em>kommercielle formål</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>modificer, tilpas,</em> eller <em>byg videre på</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Søg ved hjælp af"
+
+#: index.php:53
+msgid "Video"
+msgstr "Video"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Billede"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Musik"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Medier"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Hvad er dette?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Bemærk venligst, at search.creativecommons.org <em>ikke er en søgemaskine,</em> men snarere tilbyder nem adgang til at søge ydelser fra andre uafhængige organisationer. CC har ingen kontrol over de resultater, der returneres. <em>Antag derfor ikke, at de resultater, der vises i denne søgeportal er under en CC-licens.</em> Du bør altid kontrollere, at arbejdet faktisk er under en CC-licens ved at følge linket. Da der ikke er nogen registrering af CC-licenseret indhold, kan CC på ingen måde at afgøre, hvad der er og ikke er blevet udgivet med en CC-licens. Hvis du er i tvivl, bør du kontakte indehaveren af ophavsretten direkte, eller prøv at kontakte det sted, hvor du fandt indholdet."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>Tilføj CC Søg</a></strong> til din browser."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Lær hvordan</strong></a> man skifter til eller fra CC Search i Firefox søgefeltet."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Hjælp Oversæt"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Kontakt"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Donér til CC"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Politikker"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Beskyttelse af personlige oplysninger"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Vilkår for brug"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Udviklere"

@@ -1,0 +1,121 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# alira <constanza@derechosdigitales.org>, 2011
+# Nathan Kinkade <nkinkade@creativecommons.org>, 2011
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-26 19:05+0000\n"
+"Last-Translator: Claudio Ruiz <claudio@derechosdigitales.org>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/CC/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Encuentra contenido para compartir, usar y mezclar"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Ingresa tu búsqueda"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Quiero algo que pueda..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "uso para <em> propósitos comerciales </em> "
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>modificar </em>, <em> adaptar </em>, <em> editar</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Buscar usando"
+
+#: index.php:53
+msgid "Video"
+msgstr "Video"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Imagen"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Música"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Medios de de comunicación"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "¿Qué es esto?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Por favor nota que search.creativecommons.org <em>no es un mecanismo de búsqueda</em>, pero ofrece acceso conveniente a servicios de buscador de otras organizaciones independientes. CC no tiene control sobre los resultados. <em>No asume que los resultados de esta búsqueda están bajo licencia CC</em>. Siempre debes verificar que la obra está actualmanete bajo una licencia CC siguiendo el link. Debido a que no hay registro para usar una licencia CC, no hay manera de determinar qué ha sido y no ha sido situado bajo los términos de una licencia CC. Si está en duda debe contactar a quién posee los derechos de autor directamente, o intentar contactar el sitio donde encontro el material."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "Agregar buscador CC a tu navegador"
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Aprende cómo </strong></a> cambiar desde o hacia el buscador CC en tu barra de Firefox."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Ayuda a traducir"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Contacto"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Donar a CC"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Políticas"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Privacidad"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Condiciones de uso"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Desarrolladores"

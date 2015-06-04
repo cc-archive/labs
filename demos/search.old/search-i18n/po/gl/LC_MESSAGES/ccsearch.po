@@ -1,0 +1,120 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# xesusmosquera <xesusmosquera@gmail.com>, 2012
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: xesusmosquera <xesusmosquera@gmail.com>\n"
+"Language-Team: Galician (http://www.transifex.com/projects/p/CC/language/gl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: gl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Atopa contido para compartires, empregares e modificares."
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Introduce a túa busca"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Quero algo que eu poida..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "usar para <em>propósitos comerciais</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>modificar </em>, <em> adaptar </em> ou <em> editar</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Buscar usando"
+
+#: index.php:53
+msgid "Video"
+msgstr "Vídeo"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Imaxe"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Música"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Media"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Que é isto?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Por favor, repara en que search.creativecommons.org <em>non é un mecanismo de busca</em>, senón que ofrece acceso conveniente a servizos de buscador doutras organizacións independentes. CC non ten control sobre os resultados das buscas. <em>Non asume que os resultados desta procura están baixo licenza CC</em>. Sempre debes verificar que a obra está actualmanete baixo unha licenza CC seguindo a ligazón. Debido a que non hai rexistro para empregar unha licenza CC, non hai xeito de determinar que foi e que non foi situado baixo os termos dunha licenza CC. Se tes dúbidas debes contactar con quen posúa os dereitos de autor directamente ou tentar contactar co sitio onde atopaches o material."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>Agregar a busca CC</strong></a> ao teu navegador."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Aprende como </strong></a> cambiar desde ou cara ao buscador CC na túa barra de Firefox."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Axudar a traducir"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Contacto"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Doazón a CC"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Políticas"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Privacidade"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Condicións de uso"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Desenvolvedores"

@@ -1,0 +1,285 @@
+# ccSearch English-US PO File
+# This file is distributed under the same license as the ccSearch package.
+# Copyright (C) 2006 Creative Commons
+# Jon Phillips <jon@rejon.org>, 2006
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ccSearch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-29 13:31-0400\n"
+"PO-Revision-Date: 2010-05-11 11:31+0000\n"
+"Last-Translator: Ignasi Labastida i Juan <ilabastida@ub.edu>\n"
+"Language-Team: English <cc-devel@lists.ibiblio.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.3-svn\n"
+
+#: index.php:68 intro.php:43
+msgid "Help Translate"
+msgstr "Ajudeu a traduir"
+
+#: index.php:93
+msgid "Creative Commons"
+msgstr "Creative Commons"
+
+#: index.php:93
+msgid "Search"
+msgstr "Cerca"
+
+#: index.php:109
+msgid "Enter search query"
+msgstr "Introduïu l'element de cerca"
+
+#: index.php:127
+msgid "Only show search results"
+msgstr "Mostra només els resultats de la cerca"
+
+#: index.php:133
+msgid "ccSearch"
+msgstr "ccSearch"
+
+#: index.php:135
+msgid "by <a href=\"http://creativecommons.org/\">Creative Commons</a>"
+msgstr "per <a href=\"http://creativecommons.org/\">Creative Commons</a>"
+
+#: index.php:141
+msgid "Go"
+msgstr "Vés-hi"
+
+#: index.php:144
+msgid "Understand your search results"
+msgstr "Entengueu els resultats de la cerca"
+
+#: index.php:146
+msgid "(info)"
+msgstr "(informació)"
+
+#: index.php:147 index.php:170
+msgid "Understand Your Search Results"
+msgstr "Entengueu els resultats de la vostra cerca"
+
+#: index.php:154
+msgid "I want something that I can..."
+msgstr "Vull quelcom que pugui..."
+
+#: index.php:157
+msgid "use for <em>commercial purposes</em>"
+msgstr "utilitzar amb <em>finalitats comercials</em>"
+
+#: index.php:161
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>modificar</em>, <em>adaptar</em> o <em>crear a partir d'ell</em>"
+
+#: index.php:172
+msgid ""
+"<em>You should always verify that the work you are re-using has a Creative "
+"Commmons license attached to it</em>.  Search.creativecommons.org offers "
+"convenient access to search services provided by other independent "
+"organizations. Selecting\n"
+"different search options within the result list&mdash;particularly Image\n"
+"search for Google and Yahoo&mdash;may lead to the inclusion of results\n"
+"which are not Creative Commons licensed.  <a href=\"http://wiki."
+"creativecommons.org/CcSearch\">Learn more &raquo</a>."
+msgstr ""
+"<em>Sempre heu de verificar que l'obra que esteu reutilitzant duu adjunta "
+"una llicència de Creative Commmons</em>.  Search.creativecommons.org us "
+"ofereix un accés còmode als serveis de cerca proporcionats per "
+"organitzacions independents. La selecció\n"
+"de diferents opcions de cerca a partir de la llista "
+"resultats&mdash;especialment en la cerca d'imatges\n"
+" a Google i Yahoo&mdash;us pot donar lloc a la inclusió de resultats\n"
+"que no tenen una llicència de Creative Commons. <a "
+"href=\"http://wiki.creativecommons.org/CcSearch\">Més informació &raquo</a>."
+
+#: index.php:177
+msgid ""
+"<em>Can't find what you're looking for?</em>  This search tool is not "
+"exhaustive&mdash;there are plenty more <a href=\"http://wiki.creativecommons."
+"org/Content_Curators\">Creative Commons Content Directories &raquo</a>"
+msgstr ""
+"<em>No trobeu allò que esteu cercant?</em>  Aquest eina de cerca no és "
+"exhaustiva&mdash;hi ha molts més <a "
+"href=\"http://wiki.creativecommons.org/Content_Curators\">directoris de "
+"continguts amb llicències de Creative Commons &raquo</a>"
+
+#: index.php:186
+msgid "Learn about setting your Firefox search engine"
+msgstr "Apreneu com configurar el motor de cerca del vostre Firefox"
+
+#: index.php:192
+msgid "Contact"
+msgstr "Contacte"
+
+#: index.php:196
+msgid "Support CC"
+msgstr "Doneu suport a CC"
+
+#: index.php:200
+msgid "Policies"
+msgstr "Polítiques"
+
+#: index.php:204
+msgid "Privacy"
+msgstr "Privacitat"
+
+#: index.php:208
+msgid "Terms of Use"
+msgstr "Condicions d'ús"
+
+#: index.php:220
+msgid "Google Web Search"
+msgstr "Cerca de webs amb Google"
+
+#: index.php:220 index.php:221
+msgid "Google"
+msgstr "Google"
+
+#: index.php:220 index.php:222
+msgid "Web"
+msgstr "Web"
+
+#: index.php:221
+msgid "Google Image Search"
+msgstr "Cerca d'imatges amb Google"
+
+#: index.php:221 index.php:223
+msgid "Image"
+msgstr "Imatge"
+
+#: index.php:222
+msgid "Web Search"
+msgstr "Cerca de webs"
+
+#: index.php:222
+msgid "Yahoo"
+msgstr "Yahoo"
+
+#: index.php:223
+msgid "Flickr Image Search"
+msgstr "Cerca d'imatges a Flickr"
+
+#: index.php:223
+msgid "flickr"
+msgstr "flickr"
+
+#: index.php:224
+msgid "Blip.tv Video Search"
+msgstr "Cerca de vídeos a Blip.tv"
+
+#: index.php:224
+msgid "blip.tv"
+msgstr "blip.tv"
+
+#: index.php:224
+msgid "Video"
+msgstr "Vídeo"
+
+#: index.php:225
+msgid "Jamendo Music Search"
+msgstr "Cerca de música a Jamendo"
+
+#: index.php:225
+msgid "jamendo"
+msgstr "jamendo"
+
+#: index.php:225
+msgid "Music"
+msgstr "Música"
+
+#: index.php:226
+msgid "Spin Xpress Media Search"
+msgstr "Cerca de mitjans de comunicació a Spin Xpress"
+
+#: index.php:226 index.php:227
+msgid "Media"
+msgstr "Mitjans de comunicació"
+
+#: index.php:227
+msgid "Wikimedia Commons Media Search"
+msgstr "Cerca de continguts a Wikimedia Commons"
+
+#: index.php:229 index.php:231
+msgid "Music Search"
+msgstr "Cerca de música"
+
+#: index.php:229
+msgid "ccMixter"
+msgstr "ccMixter"
+
+#: index.php:230
+msgid "Clip Art Search"
+msgstr "Cerca d'imatges predissenyades"
+
+#: index.php:230
+msgid "Open Clip Art Library"
+msgstr "Open Clip Art Library"
+
+#: index.php:238
+msgid "CCSEARCH REQUIRES A BROWSER WHICH SUPPORTS IFRAMES."
+msgstr "CCSEARCH REQUEREIX UN NAVEGADOR QUE SUPORTI IFRAMES."
+
+#: intro.php:66
+msgid "ccSearch Intro"
+msgstr "Introducció a ccSearch"
+
+#: intro.php:130
+msgid "Enter a Search Query Above To Get Started"
+msgstr "Introduïu un element de cerca a la part superior per començar"
+
+#: intro.php:133
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>, "
+"but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal "
+"are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr ""
+"Tingueu en compte que search.creativecommons.org <em>no és un motor de "
+"cerca</em>, sinó que ofereix un accés còmode als serveis de cerca "
+"proporcionats per altres organitzacions independents. CC no té control sobre "
+"els resultats que es retornen. <em>No assumiu que els resultats mostrats en "
+"aquest portal de cerca es trobin subjectes a una llicència de CC </em>. "
+"Sempre heu de verificar que l'obra es troba realment subjecte a una "
+"llicència de CC, mitjançant l'enllaç. Com que no hi ha cap mena de registre "
+"per a l'ús d'una llicència de CC, CC no té manera de determinar el que s'ha "
+"posat i el que no s'ha posat amb els termes d'una llicència de CC. Si en "
+"teniu algun dubte poseu-vos en contacte directament amb el titular dels "
+"drets d'explotació o intenteu comunicar-vos amb el lloc on es troba el "
+"contingut."
+
+#: intro.php:136
+msgid "About Creative Commons"
+msgstr "Quant a Creative Commons"
+
+#: intro.php:140
+msgid ""
+"Creative Commons is a <em>nonprofit</em> corporation dedicated to making it "
+"easier for people to share and build upon the work of others, consistent "
+"with the rules of copyright."
+msgstr ""
+"Creative Commons és una corporació <em>sense ànim de lucre</em> dedicada a "
+"fer més fàcil per a la gent compartir i crear a partir de l'obra d'altres, "
+"de conformitat amb les normes dels drets de propietat intel·lectual."
+
+#: intro.php:143
+msgid ""
+"We provide <em>free</em> licenses and other legal tools to mark creative "
+"work with the freedom the creator wants it to carry, so others can share, "
+"remix, use commercially, or any combination thereof."
+msgstr ""
+"Us oferim llicències <em>lliures</em> i altres instruments jurídics per "
+"marcar una obra creativa amb la llibertat que el creador vol que porti per "
+"tal que es pugui compartir amb altres, i que aquests puguin remesclar-la, "
+"utilitzar-la de manera comercial o una combinació d'aquestes opcions."
+
+#: cc-language-ui.php:179
+msgid "Language"
+msgstr "Idioma"

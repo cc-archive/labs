@@ -1,0 +1,120 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# Gisle Hannemyr <gisle@hannemyr.no>, 2011,2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-27 05:24+0000\n"
+"Last-Translator: Gisle Hannemyr <gisle@hannemyr.no>\n"
+"Language-Team: Norwegian (http://www.transifex.com/projects/p/CC/language/no/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: no\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Finn innhold som du kan dele, bruke, og tilpasse (remixe)"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Skriv inn søkestreng"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Jeg leter etter noe jeg kan ..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "bruke for <em>kommersielle formål</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>modifisere</em>, <em>tilpasse</em>, eller <em>bygge videre på</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Søk ved hjelp av"
+
+#: index.php:53
+msgid "Video"
+msgstr "Video"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Bilde"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Musikk"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Media"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Hva er dette?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Websiden <b>search.creativecommons.org</b> er <em>ikke</em> et arkiv eller en søkemotor.  Alt den gjør er å gi en oversikt over ulike søketjenester som tilbys av ulike uavhengige organisasjoner.  Creative Commons har <em>ingen kontroll</em> over hva disse søketjenestene gjør.  <strong>Du må ikke automatisk anta at resultatene som de ulike søketjenestene returnerer er tilgjengelig under en Creative Commons-lisens.</strong>  Før du bruker slikt materiale bør du selv verifisere at verket det er snakk om faktisk er tilgjengelig under en Creative Commons-lisens.  Vær også oppmerksom på at organisasjonen Creative Commons ikke har noe register over materiale som er utstyrt med Creative Commons-lisens, og kan ikke gi deg svar på hva som er, og hva som ikke er, tilgjengelig under en slik lisens.  Dersom du er i tvil om den opphavsrettslige statusen til materiale du har funnet gjennom søk, så bør du selv kontakte rettighetshaver for å undersøke om materialet faktisk er underlagt Creative Commons-lisens, eller be om bekreftelse fra nettstedet der materialet ligger om at materialet er korrekt merket med Creative Commons-lisens."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>Legg til CC Søk</strong></a> i din nettleser."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Lær hvordan</strong> </a> du bytter til eller fra CC Søk i Firefox search bar."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Hjelp til med oversettelser"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Kontakt"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Doner til CC"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Retningslinjer"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Personvern"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Vilkår for bruk"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Utviklere"

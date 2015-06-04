@@ -1,0 +1,120 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# Xuacu Saturio <xuacusk8@gmail.com>, 2012
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: Xuacu Saturio <xuacusk8@gmail.com>\n"
+"Language-Team: Asturian (http://www.transifex.com/projects/p/CC/language/ast/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ast\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Alcuentra conteníu que puedas compartir, usar y mesturar"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Escribi lo que quies consultar"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Quiero daqué que pueda..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "usar con <em>fines comerciales</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>camudar</em>, <em>adautar</em>, o <em>reconstruir</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Guetar usando"
+
+#: index.php:53
+msgid "Video"
+msgstr "Videu"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Imaxe"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Música"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Multimedia"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "¿Qué ye esto?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Por favor, atalanta que search.creativecommons.org <em>nun ye un motor de gueta</em>, sinón qu'ufre un accesu afayadizu a servicios de gueta que dan otres organizaciones independientes. CC nun tien control dalu sobro los resultaos devueltos. <em>Nun asumas que los resultaos qu'apaecen nesti portal de gueta tan baxo una llicencia CC</em>. Siempres tienes de comprobar que'l trabayu ta daveres baxo una llicencia CC siguiendo l'enllaz. Como nun hai un rexistru pa usar una llicencia CC, CC nun tien manera de determinar lo que ta puesto o non baxo los términos d'una llicencia CC. Si tienes duldes tendríes de ponete en contautu con quien tenga los drechos d'autor direutamente, o intentar comunicate col sitiu nel qu'atopasti los conteníos."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>Amestar CC Search</strong></a> al to navegador."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Deprende cómo</strong></a> cambiar a o dende CC Search na barra de gueta de Firefox."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Ayudar cola traducción"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Contautu"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Fai un donativu a CC"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Polítiques"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Intimidá"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Términos d'usu"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Desendolcadores"

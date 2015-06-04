@@ -1,0 +1,121 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# Nathan Kinkade <nkinkade@creativecommons.org>, 2011
+# 省志 辛 <xingzhi.xin@gmail.com>, 2011, 2012
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: 省志 辛 <xingzhi.xin@gmail.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/CC/language/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "查找能够分享、使用和混合的内容"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "输入搜索关键词"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "我需要找到的内容可以"
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "用于<em>商业目的</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>修改</em>，<em>改编</em>，或者<em>演绎</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "你要用哪个网站搜索？"
+
+#: index.php:53
+msgid "Video"
+msgstr "视频"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "图片"
+
+#: index.php:71
+msgid "Web"
+msgstr "网页"
+
+#: index.php:83
+msgid "Music"
+msgstr "音乐"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "多媒体"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "这是什么？"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "请注意，search.creativecommons.org 不是搜索引擎，而只是提供一个便于使用的界面链接到其他独立单位提供的搜素服务。CC对搜索结果没有控制权。不能假定在本搜索页面显示的搜索结果都是采用CC许可协议发布的。你必须通过点击搜索结果后的链接来确认该作品是否确实以CC许可协议发布。\n\n因为使用CC协议无需注册，CC无法确认哪些作品采用了CC许可协议发布。\n\n如果你对搜索结果有疑问，应该直接联系作品的著作权所有人，或联系提供作品的网站。"
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>把CC搜索加入你的浏览器</strong></a>。"
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "学习如何在FireFox搜索栏<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>切换CC搜索</strong></a>。"
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "帮助翻译"
+
+#: index.php:151
+msgid "Contact"
+msgstr "联系我们"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "向CC捐款"
+
+#: index.php:155
+msgid "Policies"
+msgstr "政策"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "隐私权"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "使用条款"
+
+#: index.php:161
+msgid "Developers"
+msgstr "开发者"

@@ -1,0 +1,8 @@
+# Pootle preferences for project ccsearch, language lt
+
+rights:
+  default = u'view, suggest, archive, pocompile'
+  nkinkade = u'view, suggest, translate, overwrite, review, archive, pocompile, assign, admin, commit'
+  nobody = u'view'
+  rq = u'view, suggest, translate, overwrite, review, archive, pocompile'
+  creativecommonslt = u'view, suggest, translate, overwrite, review, archive, pocompile'

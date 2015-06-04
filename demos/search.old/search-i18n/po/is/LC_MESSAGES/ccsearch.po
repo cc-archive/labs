@@ -1,0 +1,121 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# Bragi Halldorsson <bragi@this.is>, 2011
+# Sveinn í Felli <sveinki@nett.is>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
+"Language-Team: Icelandic (http://www.transifex.com/projects/p/CC/language/is/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: is\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Finna efni sem þú mátt deila, nota og aðlaga"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Sláðu inn leitarstreng þinn"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Ég vil eitthvað sem ég get ..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "notað í <em>viðskiptalegum tilgangi</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>breytt, aðlagað</em> eða <em>byggt á</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Leita með því að nota"
+
+#: index.php:53
+msgid "Video"
+msgstr "Myndskeið"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Mynd"
+
+#: index.php:71
+msgid "Web"
+msgstr "Netið"
+
+#: index.php:83
+msgid "Music"
+msgstr "Tónlist"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Miðill"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Hvað er þetta?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Athugaðu að search.creativecommons.org er <em>ekki a leitarvél,</em> heldur býður þægilegan aðgang að leitar þjónustu annarra óháðra aðila. CC hefur enga stjórn á þeim árangri sem leitin skilar. <em>Ekki gera ráð fyrir að niðurstöður sem birtast á þessari leitarsíðu séu undir CC leyfi.</em> Þú ættir alltaf að sannreyna að verkið sé í raun undir CC leyfi með því að fylgja tenglinum. Þar er sem enga skráningu þarf til að nota CC leyfi, hefur CC enga leið til að ákvarða hvað hefur og hefur ekki verið sett fram undir skilmálum CC leyfis. Ef þú ert í vafa skaltu hafa samband við handhafa höfundarréttar beint, eða reyna að hafa samband við síðuna þar sem þú fannst efnið."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<strong><a href=\"#\" id=\"addOpenSearch\">Bæta CC leit</a></strong> við vafrann þinn."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<strong><a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\">Lærðu hvernig á</a></strong> að skipta til og frá CC leitar á Firefox leitar stikunni."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Hjálp við þýðingu"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Hafa samband"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Styrkja CC"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Starfsreglur"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Friðhelgi"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Notkunarskilmálar"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Hönnuðir"

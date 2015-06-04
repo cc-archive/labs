@@ -1,0 +1,122 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# Fırat Akandere <f.akandere@gmail.com>, 2011
+# Tuğcan Olgun <tolgun@live.com>, 2011
+# Tulga <tulgaulug@gmail.com>, 2011
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: Fırat Akandere <f.akandere@gmail.com>\n"
+"Language-Team: Turkish (http://www.transifex.com/projects/p/CC/language/tr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Paylaşabileceğiniz, kullanabileceğiniz ve değiştirebileceğiniz içerik(ler) bulun."
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Aranacak kelimeyi girin"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Kriterler"
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "<em>ticari amaçlar</em> için kullan"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>değiştirme</em>, <em>uyarlama</em> veya <em>geliştirme</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Aranacak site"
+
+#: index.php:53
+msgid "Video"
+msgstr "Video"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Görsel"
+
+#: index.php:71
+msgid "Web"
+msgstr "İnternet"
+
+#: index.php:83
+msgid "Music"
+msgstr "Müzik"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Medya"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Bu nedir?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "search.creativecommons.org bir <em>arama motoru değildir</em>. Bunun yerine diğer bağımsız kuruluşların servis sağlayıcılarının arama servislerinden yararlanır. CC, çıkan sonuçların üstünde kontrol sahibi değildir. <em>Bu arama portalında çıkan sonuçların CC lisansına sahip olduğunu varsaymayınız</em>. Her zaman, çalışmanın CC lisansına sahip olduğunu, çalışmanın linkinden doğrulamalısınız. CC lisansının kullanımına ilişkin bir kayıt olmadığı için CC'nin, CC lisansı kullanılıp kullanılmadığını belirleyeceği bir yol yoktur. Eğer şüpheniz var ise, eser sahibiyle ya da eserin bulunduğu site ile iletişime geçmelisiniz."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "Tarayıcınıza <a href=\"#\" id=\"addOpenSearch\"><strong>CC Araması</strong></a> ekleyin."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "Firefox tarayıcınızın arama barına CC Aramasını <a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>nasıl ekleyeceğinizi öğrenin</strong></a>"
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Çeviriye Yardım Edin"
+
+#: index.php:151
+msgid "Contact"
+msgstr "İletişim"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "CC'ye bağış yapın"
+
+#: index.php:155
+msgid "Policies"
+msgstr "İlkeler"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Gizlilik"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Kullanım Koşulları"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Geliştiriciler"

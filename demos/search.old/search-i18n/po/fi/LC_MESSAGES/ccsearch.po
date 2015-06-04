@@ -1,0 +1,122 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# apuasi, 2011
+# Herkko Hietanen <herkko@gmail.com>, 2011
+# tarmo <tarmo@iki.fi>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-25 15:52+0000\n"
+"Last-Translator: tarmo <tarmo@iki.fi>\n"
+"Language-Team: Finnish (http://www.transifex.com/projects/p/CC/language/fi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Etsi sisältöä jota voit jakaa, käyttää ja muokata"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Kirjoita hakuehtosi"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Haluan jotain, jota voin..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "käyttää <em>kaupallisiin tarkoituksiin</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>muokata</em>, <em>sovittaa</em>, tai <em>jalostaa</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Hae käyttäen"
+
+#: index.php:53
+msgid "Video"
+msgstr "Video"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Kuva"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Musiikki"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Media"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Mikä tämä on?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Huomaa, että search.creativecommons.org <em>ei ole hakukone</em>, vaan tarjoaa kätevästi pääsyä muihin hakupalveluihin. CC ei hallinnoi hakutuloksia. <em>Älä oleta, että tulokset ovat CC-lisensoituja.</em> Varmista, että työ on CC-lisenssin alainen seuraamalla linkkiä. Koska CC-lisensoituja teoksia ei ole rekisteröity, CC:llä ei ole tapaa selvittää, mitkä teokset on tai ei ole lisensoitu CC-lisensseillä. Jos olet epävarma, ota yhteys suoraan tekijänoikeuden haltijaan, tai yrittää ottaa yhteyttä sivustoon, josta löysit teoksen."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<strong><a href=\"#\" id=\"addOpenSearch\">Lisää CC-haku</a></strong> selaimeesi."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Opi kuinka</strong></a> saat CC-haun Firefoxin hakupalkkiin."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Auta kääntämään"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Ota yhteyttä"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Lahjoita CC:lle"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Käytännöt"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Tietosuoja"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Käyttöehdot"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Kehittäjät"

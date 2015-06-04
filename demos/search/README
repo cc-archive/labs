@@ -1,0 +1,21 @@
+Here's how you do locale-related things with search.creativecommons.org.
+
+When you neeed to...
+
+== Rebuild the mo (compiled PO files) ==
+
+$ make
+
+== Refresh the POT (PO template) with new strings from the PHP ==
+
+$ make update-po-files
+
+== Update the languages with the new POT you just generated ==
+
+$ make update-po-files
+
+== Add a new langauge ==
+
+$ svn copy locale/en_US locale/$new_lang
+$ svn rm locale/$new_lang/pootle-ccsearch-en_US.prefs
+$ svn commit -m "added $new_lang"

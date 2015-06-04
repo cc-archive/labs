@@ -1,0 +1,121 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# eneli <eneli@eitsa.ee>, 2011
+# Nathan Kinkade <nkinkade@creativecommons.org>, 2011
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: eneli <eneli@eitsa.ee>\n"
+"Language-Team: Estonian (http://www.transifex.com/projects/p/CC/language/et/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr ""
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Sisesta otsikriteerium"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Soovin leida midagi, mida ma võin..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "kasutada <em>ärilisel otstarbel</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>muuta</em>, <em>kohandada</em> ning <em>töödelda</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Otsi kasutades"
+
+#: index.php:53
+msgid "Video"
+msgstr "video"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "pildid"
+
+#: index.php:71
+msgid "Web"
+msgstr "veeb"
+
+#: index.php:83
+msgid "Music"
+msgstr "muusika"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "meedia"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Mis see on?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Pane tähele, et search.creativecommons.org <em>ei ole otsimootor</em>, vaid hoopis vahemees juurdepääsul teiste organisatsioonide poolt pakutavatele otsiteenustele. CC-l pole kontrolli kuvatavate otsitulemuste osas. <em>Ära eelda, et selles otsiportaalis kuvatavad tulemused on avaldatud CC litsentsi all</em>. Sa pead alati kontrollima, et teos on päriselt avaldatud CC litsentsi all, klikkides teose lingil. Kuna CC-litsentside kasutamiseks pole vajalik registreerumine, siis pole CC-l mingit võimalust kontrollida, mis on ja mis pole avaldatud mõne CC-litsentsi all. Kui sul tekib kahtlus, siis peaksid pöörduma otse autoriõiguste omaniku poole või saidi poole, kust sa selle sisu leidsid."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>Lisa CC otsing</strong></a> oma brauserisse."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Uuri, kuidas</strong></a> liikuda CC otsingule ja otsingust Firefoxi otsinguribal."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Aita tõlkida"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Kontakt"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Anneta CC-le"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Üldtingimused"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Privaatsus"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Kasutustingimused"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Arendajad"

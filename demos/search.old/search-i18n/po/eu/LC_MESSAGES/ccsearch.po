@@ -1,0 +1,122 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# alira <constanza@derechosdigitales.org>, 2011
+# ilabastida <ilabastida@ub.edu>, 2011
+# Nathan Kinkade <nkinkade@creativecommons.org>, 2011
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: ilabastida <ilabastida@ub.edu>\n"
+"Language-Team: Basque (http://www.transifex.com/projects/p/CC/language/eu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: eu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Aurkitu edukia partekatzeko, nahasteko eta erabiltzeko"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Bilatu hau"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Nahi nuke zerbait..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "erabil dezakedana <em>merkataritza xedeetarako</em> "
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>aldatzeko</em>, <em>egokitzeko</em>, <em>editatzeko</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Bilatu hau erabiliz:"
+
+#: index.php:53
+msgid "Video"
+msgstr "Bideoa"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Irudia"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Musika"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Hedabideak"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Zer da hau?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Mesedez, gogoan izan search.creativecommons.org <em>ez dela bilatzaile bat</em>, baizik beste erakunde batzuen edukiak aurkitzeko bide egoki bat. CCk ez ditu emaitzak kontrolpean. <em>Beraz, ez sinetsi, besterik gabe, bilaketaren emaitzak CC baimen baten mende egongo direnik</em>. Beti egiaztatu beharra daukazu, loturaren atzean dagoen lana CC baimen baten mende ote den. Izan ere, CC baimenak erabiltzeko erregistrorik ez dagoenez, zaila da jakitea zer ote dagoen CC baimen bati loturik. Zalantzarik sortzen bazaizu, hobe duzu zuzenean harremanetan jartzea jabetza intelektualaren eskubideen jabearekin, edota edukia gordetzen duen webgunearekin."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>Ipini CC bilaketa</strong></a> zure nabigatzailean."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Ikasi nola</strong></a> egin behar duzun Firefox-en CC bilaketa alorrera jotzeko."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Lagundu euskaratzen"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Harremanak"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Eman dirua CCri"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Jokabide arauak"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Pribatutasuna"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Erabilpen baldintzak"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Garatzaileak"

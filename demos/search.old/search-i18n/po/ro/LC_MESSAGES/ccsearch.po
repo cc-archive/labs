@@ -1,0 +1,121 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# Bogo Bogdan <cazacu.bogdan@gmail.com>, 2013
+# flo110 <flo_loveanime_flo@yahoo.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: Bogo Bogdan <cazacu.bogdan@gmail.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/projects/p/CC/language/ro/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Gaseste continut pe care-l poti imparti, utiliza sau modifica"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Cauta"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Vreau ceva care..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "folositi pentru <em>scopuri comerciale</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>modifica</em>, <em>adapteaza</em>, sau <em>dezvolta</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Cauta folosind"
+
+#: index.php:53
+msgid "Video"
+msgstr "Vid"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Imagine"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Muzica"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Medi"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Ce este asta?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Va rugam sa aveti in vedere ca search.creativecommons.org <em>nu este un motor de cautare</em>, ci mai degraba faciliteaza accesul la servicii de cautare furnizate de alte organizatii independente. CC nu are control asupra rezultatelor returnate. <em>Nu asumati ca rezultatele afisate in portalul de cautare sunt licentiate CC</em>. intotdeauna veriificati ca lucrarea este licentiata CC prin accesarea link-ului aferent lucrarii. De vreme ce nu exista inregistrari pentru a folosi o licenta CC, nu avem cum sa determinam ce a este si ce nu este licentiat. Daca aveti dubii, va rugam sa contactati persoana ce detine drepturile asupra lucrarii direct, sau site-ul unde ati gasit lucrarea."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>Adauga Cautare CC </strong></a> in navigatorul tau."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Invata cum</strong></a>sa treci la sau de la cautari CC in campul de cautari din Firefox."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Help Translate"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Contact"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Doneaza catre CC"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Politici"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Confidentialitate"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Termeni si Conditii"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Dezvoltatori"

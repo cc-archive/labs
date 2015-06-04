@@ -1,0 +1,124 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# ahmedbadawy <ahmedbadawy@outlook.com>, 2013
+# alaa <alaa@manalaa.net>, 2011
+# bassel <bassel.safadi@gmail.com>, 2011
+# haswires, 2012
+# FSouici <musique1967@yahoo.fr>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: ahmedbadawy <ahmedbadawy@outlook.com>\n"
+"Language-Team: Arabic (http://www.transifex.com/projects/p/CC/language/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "اعثر على محتوى يمكنك مشاركته، استخدامه وتعديله"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "أدخل عبارة البحث"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "أريد شيئا أستطيع أن..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "تستخدم <em>للأغراض التجارية</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>تعديل</em>, <em>تكييف</em>, أو <em>البناء عليه</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "بحث باستخدام"
+
+#: index.php:53
+msgid "Video"
+msgstr "فيديو"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "صورة"
+
+#: index.php:71
+msgid "Web"
+msgstr "شبكة"
+
+#: index.php:83
+msgid "Music"
+msgstr "موسيقى"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "وسائط"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "ما هذا؟"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "يرجى الملاحظة ان search.creativecommons.org <em>ليس محرك بحث</em>، ولكنه يوفر لك الوصول الى نتائج البحث المقدمة من خلال مؤسسات اخرى مستقلة. مؤسسة المشاع الإبداعي ليس لها التحكم على النتائج المردودة لك. <em>لا تفترض ان النتائج الظاهره في البحث هي تحت رخصة المشاع الإبداعي</em>. يجب عليك دائماً التحقق ان هذا المحتوى هو فعلياً تحت رخصة المشاع الإبداعي عبر هذا الرابط. بما إن لا يوجد تسجيل لأستخدام رخصة المشاع الإبداعي. مؤسسة المشاع الإبداعي لا يمكنها الحسم إذا كانت المادة لديها او ليس لديها الصلاحية للأستخدام تحت شروط رخصة المشاع الإبداعي. إذا لديك شك يجب عليك التأكد من خلال التواصل مع صاحب الحقوق الملكية الفكرية مباشرة، او يمكنك الإتصال بالموقع عندما تجد المحتوى."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>أضف محرك بحث المشاع الإبداعي</strong></a> إلى متصفحك."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>تعلم كيف</strong></a> التحويل الى او من البحث في المشاع الإبداعي في شريط البحث لمتصفح فَيَرْفُكْس."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "مساعدة في الترجمة"
+
+#: index.php:151
+msgid "Contact"
+msgstr "إتصل"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "تبرع للمشاع الإبداعي"
+
+#: index.php:155
+msgid "Policies"
+msgstr "سياسات"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "خصوصية"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "شروط الاستخدام"
+
+#: index.php:161
+msgid "Developers"
+msgstr "مطورين"

@@ -1,0 +1,120 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# Tomoaki Watanabe <tomoaki@creativecommons.jp>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: Tomoaki Watanabe <tomoaki@creativecommons.jp>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/CC/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "共有、利用、リミックスできるコンテンツを探す"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "検索用クエリを入力して下さい。"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "探しているコンテンツは…"
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "<em>営利目的</em>に利用"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>改変</em>, <em>翻案</em>, などが可能"
+
+#: index.php:48
+msgid "Search using"
+msgstr ""
+
+#: index.php:53
+msgid "Video"
+msgstr "動画"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "画像"
+
+#: index.php:71
+msgid "Web"
+msgstr "ウェブ"
+
+#: index.php:83
+msgid "Music"
+msgstr "音楽"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "メディア"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "この意味は？"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr ""
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>CC検索</strong></a> をあなたのブラウザに追加する。"
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>ご案内：</strong></a> あなたがお使いのFirefox の検索ボックスをCC検索に切り替える方法"
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "翻訳を手伝う"
+
+#: index.php:151
+msgid "Contact"
+msgstr "問い合わせ"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "CCへのご寄付"
+
+#: index.php:155
+msgid "Policies"
+msgstr "ポリシー"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "プライバシー"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "利用規約"
+
+#: index.php:161
+msgid "Developers"
+msgstr "開発者"

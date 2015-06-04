@@ -1,0 +1,122 @@
+# Copyright (C) 2011 Creative Commons
+# 
+# Translators:
+# CC_Belgium <info@creativecommons.be>, 2012
+# Maarten Zeinstra <mz@kl.nl>, 2012-2013
+# Nathan Kinkade <nkinkade@creativecommons.org>, 2011
+msgid ""
+msgstr ""
+"Project-Id-Version: Creative Commons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-14 20:47+0000\n"
+"PO-Revision-Date: 2013-11-20 09:49+0000\n"
+"Last-Translator: Maarten Zeinstra <mz@kl.nl>\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/CC/language/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.php:29
+msgid "Find content you can share, use and remix"
+msgstr "Zoek media die je dan delen, gebruiken en remixen"
+
+#: index.php:32
+msgid "Enter your search query"
+msgstr "Voer je zoekopdracht in"
+
+#: index.php:39
+msgid "I want something that I can..."
+msgstr "Ik zoek iets wat ik..."
+
+#: index.php:41
+msgid "use for <em>commercial purposes</em>"
+msgstr "kan gebruiken voor <em>commerciële doeleinden</em>"
+
+#: index.php:43
+msgid "<em>modify</em>, <em>adapt</em>, or <em>build upon</em>"
+msgstr "<em>kan wijzigen</em>, <em>kan aanpassen</em>, en <em>op kan bouwen</em>"
+
+#: index.php:48
+msgid "Search using"
+msgstr "Zoeken met"
+
+#: index.php:53
+msgid "Video"
+msgstr "Video"
+
+#: index.php:59 index.php:65 index.php:77 index.php:89
+msgid "Image"
+msgstr "Afbeeldingen"
+
+#: index.php:71
+msgid "Web"
+msgstr "Web"
+
+#: index.php:83
+msgid "Music"
+msgstr "Muziek"
+
+#: index.php:95 index.php:101
+msgid "Media"
+msgstr "Media"
+
+#: index.php:111
+msgid "What is this?"
+msgstr "Wat is dit?"
+
+#: index.php:113
+msgid ""
+"Please note that search.creativecommons.org is <em>not a search engine</em>,"
+" but rather offers convenient access to search services provided by other "
+"independent organizations. CC has no control over the results that are "
+"returned. <em>Do not assume that the results displayed in this search portal"
+" are under a CC license</em>. You should always verify that the work is "
+"actually under a CC license by following the link. Since there is no "
+"registration to use a CC license, CC has no way to determine what has and "
+"hasn't been placed under the terms of a CC license. If you are in doubt you "
+"should contact the copyright holder directly, or try to contact the site "
+"where you found the content."
+msgstr "Let op: search.creativecommons.org is <em>geen zoekmachine</em>, maar biedt gemakkelijk toegang tot zoekdiensten van andere onafhankelijke organisaties. CC heeft geen controle over de resultaten die worden weergegeven. <em>Ga er niet van uit dat de weergegeven resultaten vrijgegeven zijn onder CC-licenties.</ em> Controleer altijd of het werk daadwerkelijk onder een CC-licentie valt door naar de bron van het materiaal te kijken. Omdat er geen registratie bestaat van CC-licenties, heeft CC geen manier om te bepalen wat wel en niet vrijgegeven is onder de voorwaarden van een CC-licentie. Neem bij twijfel altijd contact op met de auteursrechthebbende, of probeer contact op te nemen met de site waar je het materiaal gevonden hebt."
+
+#: index.php:120
+msgid ""
+"<a href=\"#\" id=\"addOpenSearch\"><strong>Add CC Search</strong></a> to "
+"your browser."
+msgstr "<a href=\"#\" id=\"addOpenSearch\"><strong>Voeg CC Search</strong></a> toe aan je browser."
+
+#: index.php:121
+msgid ""
+"<a "
+"href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Learn"
+" how</strong></a> to switch to or from CC Search in your Firefox search bar."
+msgstr "<a href=\"http://wiki.creativecommons.org/Firefox_and_CC_Search\"><strong>Uitleg over zoeken</strong></a> met CC Search in je Firefox search bar."
+
+#: index.php:149
+msgid "Help Translate"
+msgstr "Help met vertalen"
+
+#: index.php:151
+msgid "Contact"
+msgstr "Contact"
+
+#: index.php:153
+msgid "Donate to CC"
+msgstr "Doneren aan CC"
+
+#: index.php:155
+msgid "Policies"
+msgstr "Beleid"
+
+#: index.php:157
+msgid "Privacy"
+msgstr "Privacy"
+
+#: index.php:159
+msgid "Terms of Use"
+msgstr "Terms of Use"
+
+#: index.php:161
+msgid "Developers"
+msgstr "Ontwikkelaars"
