@@ -1,4 +1,4 @@
-<? include_once "_header.php"; ?>
+<?php include_once "_header.php"; ?>
 
 <div id="intro">
 
@@ -914,4 +914,4 @@ We may not respond immediately but we will definitely respond and assist you as 
 </p><br style="clear:both;" />
 </div>
 
-<? include_once "_footer.php"; ?>
+<?php include_once "_footer.php"; ?>

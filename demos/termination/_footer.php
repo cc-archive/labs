@@ -6,4 +6,4 @@
   <a href="faq.php">FAQ</a> |
   <a href="termination.php">Start the Termination Tool</a>
 </div>
-<? include_once "../_footer.php"; ?>
+<?php include_once "../_footer.php"; ?>

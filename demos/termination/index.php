@@ -1,4 +1,4 @@
-<? include_once "_header.php"; ?>
+<?php include_once "_header.php"; ?>
 
 <div id="totnav">
 
@@ -89,4 +89,4 @@ will simply be summarized and presented in an Information Sheet.</p>
 <p><b>Please note, this tool is not, nor is it intended to be, legal advice, or a substitute for legal advice.</b></p>
 </div>
 
-<? include_once "_footer.php"; ?>
+<?php include_once "_footer.php"; ?>

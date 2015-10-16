@@ -1,4 +1,4 @@
-<? include_once "_header.php"; ?>
+<?php include_once "_header.php"; ?>
 
 <div id="totnav">
 
@@ -133,4 +133,4 @@ We have also compiled <a href="documents.php">some hints and tips about where yo
 
 </div>
 
-<? include_once "_footer.php"; ?>
+<?php include_once "_footer.php"; ?>

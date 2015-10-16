@@ -1,4 +1,4 @@
-<? $head_extra = '
+<?php $head_extra = '
 
     <script type="text/javascript">
       //<![CDATA[
@@ -11,7 +11,7 @@
 
 '; ?>
 
-<? include_once "_header.php"; ?>
+<?php include_once "_header.php"; ?>
 
 <form id="term_form">
   <div id="loading">
@@ -1544,4 +1544,4 @@
 
 </form>
 
-<? include_once "_footer.php"; ?>
+<?php include_once "_footer.php"; ?>

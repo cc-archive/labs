@@ -1,9 +1,9 @@
-<? $pagetitle = "CC Termination of Transfer Tool"; ?>
-<? $head_extra = '
+<?php $pagetitle = "CC Termination of Transfer Tool"; ?>
+<?php $head_extra = '
     <link rel="stylesheet" href="includes/documents.css" type="text/css" />
 '; ?>
 
-<? include_once "_header.php"; ?>
+<?php include_once "_header.php"; ?>
 
 <div id="totnav">
 
@@ -191,4 +191,4 @@ When it comes to searching the Copyright Office's records, in addition to conduc
 <p>Back to: <a href="what_information_do_i_need.php">Overview of Termination of Transfer Tool</a></p>
 </div>
 
-<? include_once "_footer.php"; ?>
+<?php include_once "_footer.php"; ?>
