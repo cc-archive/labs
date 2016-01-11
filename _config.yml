@@ -3,7 +3,8 @@ title: Creative Commons Labs
 email: webmaster@creativecommons.org
 description: > # this means to ignore newlines until "baseurl:"
    Website of the Creative Commons tech team.
-baseurl: "/labs/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://labs.creativecommons.org" # the base hostname & protocol for your site
 twitter_username: creativecommons
 github_username:  creativecommons
 

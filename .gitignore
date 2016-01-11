@@ -31,3 +31,6 @@ tramp
 # apitest
 /apitest/node_modules
 _site/
+
+# Jekyll
+.jekyll-metadata
