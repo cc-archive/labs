@@ -2,7 +2,9 @@
 layout: post
 title:  "Getting started with hacking on The List"
 date:   2014-12-15 19:34:00
-categories: development
+categories: []
+tags:
+- development
 author:
   login: mattl
   display_as: Matt Lee

@@ -2,7 +2,9 @@
 layout: post
 title:  "How creativecommons.org is built"
 date:   2014-12-10 10:05:34
-categories: infrastructure
+categories: []
+tags:
+- infrastructure
 author:
   login: mattl
   display_as: Matt Lee

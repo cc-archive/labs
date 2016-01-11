@@ -47,13 +47,13 @@ author:
 &nbsp;&nbsp;&lt;h4&gt;Were you looking for:&lt;/h4&gt;
 
 &nbsp;&nbsp;&lt;ul class="archives" id="suggested_licenses"&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;{% for license in license_versions %}
+&nbsp;&nbsp;&nbsp;&nbsp;&#123;% for license in license_versions %&#125;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="{{ license.uri }}"&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b&gt;{{ license.title(target_lang) }}&lt;/b&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="&#123;&#123; license.uri &#125;&#125;"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b&gt;&#123;&#123; license.title(target_lang) &#125;&#125;&lt;/b&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;{% endfor %}
+&nbsp;&nbsp;&nbsp;&nbsp;&#123;% endfor %&#125;
 &nbsp;&nbsp;&lt;/ul&gt;
 </pre>
 <p>If you've used <a href="https://docs.djangoproject.com/en/dev/topics/templates/">Django's templating system</a> before, this should look very familiar, because that's the primary source of inspiration for Jinja2.  There are a few things I like about Jinja2 though that Django's templating system doesn't have, but the biggest and clearest of these things is the ability to pass arguments into functions, as you can see that we're doing here with license.title(target_lang).  Anyway, it massively beats making a template tag every time you want to pass an argument into a function.</p>
@@ -61,12 +61,12 @@ author:
 <p>Not too much to say about converting from ZPT to Jinja2.  It's really just a lot of manual work, combing through everything and moving it around.</p>
 <p>More interestingly might be our translation conversion process.  Simply throwing out old translations and re-extracting with new ones is not an option... it's a lot of effort for translators to go through and translate things and asking them to do it all over again is simply too much to ask and just not going to happen.  Pass 1 was to simply get the templates moved over rather than try to both convert templates and the logical-&gt;english key system all at once (this move away from logical keys has been tried and fizzled before, probably because there are simply too many moving parts across our codebase... so we wanted to take this incrementally, and this seemed like the best place to go first).  We're simply doing stuff like this:</p>
 <pre>
-&nbsp;&nbsp;&lt;h3&gt;{{ cctrans(locale, "deed.retired")|safe }}&lt;/h3&gt;
+&nbsp;&nbsp;&lt;h3&gt;&#123;&#123; cctrans(locale, "deed.retired")|safe &#125;&#125;&lt;/h3&gt;
 </pre>
 <p>Where cctrans is a simple logical key translation function.  Next steps:</p>
 <ul>
 <li>Create a script that converts all our .po files to eliminate the logical keys and move them to English-only.</li>
-<li>Write a script to auto-interpolate {{ cctrans() }} calls in templates to { % trans % }{ % endtrans % } Jinja2 tags.</li>
+<li>Write a script to auto-interpolate &#123;&#123; cctrans() &#125;&#125; calls in templates to &#123; % trans % &#125;&#123; % endtrans % &#125; Jinja2 tags.</li>
 <li>Do all the many manual changes to all our python codebases.</li>
 </ul>
 <p>At that point, we should be able to wrap this all up.</p>

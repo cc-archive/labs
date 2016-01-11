@@ -2,7 +2,9 @@
 layout: post
 title:  "Weekend hacks #1"
 date:   2014-12-12 12:44
-categories: weekend-hacks
+categories: []
+tags:
+- weekend-hacks
 author:
   login: mattl
   display_as: Matt Lee
