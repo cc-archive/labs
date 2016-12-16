@@ -12,18 +12,12 @@ permalink: /contact/
 
 * Join the [CC development mailing list](http://lists.ibiblio.org/mailman/listinfo/cc-devel). 
 
-* Email us. webmaster at the main Creative Commons domain.
+* Email us: webmaster at the main Creative Commons domain.
 
-### Contacting Matt
-
-* Follow me on GNU social or Twitter: @mattl (with a self hosted GNU social at <https://mattl.io>)
-
-* In person. If you're in the Boston, MA area or elsewhere. Let me know. I travel a fair amount to San Francisco, but also to Europe and other places in the US.
-
-I'm available to come talk about CC tech work at your event.
+* Slack: #cc-developers on CC slack.
 
 ### Contacting Rob
 
 * Follow me on GNU social or Twitter: @robmyers (for GNU social I'm on [quitter.se](https://quitter.se/robmyers)).
 
-* In person. If you're in the Vancouver, BC area or elsewhere. Let me know. I travel less than Matt but I love meeting up with people when I do.
+* In person. If you're in the Vancouver, BC area or anywhere I happen to be at the time let me know. I love meeting up with people.
